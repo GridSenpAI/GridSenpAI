@@ -52,7 +52,7 @@ The system ingests information such as:
 • facility load architecture
 • electrical protection schemes
 
-Using document intelligence and retrieval augmented reasoning, GridSensai converts this information into modeling inputs used by planners.
+Using document intelligence and retrieval augmented reasoning, GridSenpAI converts this information into modeling inputs used by planners.
 
 Outputs include parameters compatible with tools such as:
 
@@ -165,7 +165,7 @@ This translation layer enables planners to model large facilities more accuratel
 
 Project Goals
 
-GridSensai aims to:
+GridSenpAI aims to:
 
 • reduce uncertainty in large load modeling
 • accelerate interconnection studies
