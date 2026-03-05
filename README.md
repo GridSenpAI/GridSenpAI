@@ -1,16 +1,201 @@
-## Hi there 👋
+GridSensai
 
-<!--
-**GridSensai/GridSensai** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+AI-powered translation between data center electrical design and grid interconnection modeling
 
-Here are some ideas to get you started:
+GridSensai is an artificial intelligence platform designed to bridge the information gap between large load customers (LLCs) such as hyperscale data centers and transmission planners (TPs) responsible for grid reliability studies.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Modern data centers are highly complex electrical systems composed of UPS systems, generators, power electronics, and control systems. Transmission planners must evaluate the grid impacts of these facilities, but the information provided during interconnection applications is often incomplete or difficult to translate into power system simulation parameters.
+
+GridSensai solves this problem by automatically translating facility electrical design information into model-ready parameters that can be used directly in transmission planning tools.
+
+Problem
+
+Large load interconnection requests are rapidly increasing due to growth in:
+
+• Hyperscale data centers
+• AI compute clusters
+• Electrified industrial loads
+
+Transmission planners must determine how these loads will behave during:
+
+• grid disturbances
+• voltage events
+• frequency events
+• switching operations
+
+However, planners often lack detailed information about how the facility’s internal electrical systems will respond to these events.
+
+As a result:
+
+• planners make conservative assumptions
+• modeling uncertainty increases
+• study timelines increase
+• interconnection queues grow
+
+GridSensai addresses this modeling translation gap.
+
+Solution
+
+GridSensai uses AI-assisted engineering translation to convert facility design information into structured parameters suitable for power system simulation tools.
+
+The system ingests information such as:
+
+• single line electrical diagrams
+• generator specifications
+• UPS topology and control behavior
+• facility load architecture
+• electrical protection schemes
+
+Using document intelligence and retrieval augmented reasoning, GridSensai converts this information into modeling inputs used by planners.
+
+Outputs include parameters compatible with tools such as:
+
+• PSS/E
+• PSLF
+• PowerWorld
+
+System Architecture
+
+GridSensai uses a document intelligence and reasoning pipeline built on the IBM watsonx ecosystem.
+
+Core components include:
+
+Document Ingestion
+IBM Watson Discovery
+
+Knowledge Retrieval (RAG)
+Watson Discovery vector retrieval
+
+Reasoning Engine
+watsonx.ai foundation models
+
+Translation Engine
+GridSensai parameter translation layer
+
+Data Storage
+IBM Cloud Object Storage
+Db2 / structured parameter store
+
+API Layer
+IBM API Connect
+
+Deployment
+Red Hat OpenShift
+
+High Level Workflow
+Data Center Electrical Documentation
+        ↓
+Document Ingestion
+(IBM Watson Discovery)
+
+        ↓
+Knowledge Retrieval
+(RAG via Watson Discovery)
+
+        ↓
+AI Reasoning
+(watsonx.ai foundation model)
+
+        ↓
+Parameter Translation Engine
+(GridSensai logic layer)
+
+        ↓
+Structured Output
+(Grid modeling parameters)
+
+        ↓
+Transmission Planning Tools
+PSS/E | PSLF | PowerWorld
+Repository Structure
+GridSensai
+│
+├── docs
+│   ├── SRS
+│   ├── System_Architecture
+│   ├── Data_Schemas
+│   ├── Algorithm_Specifications
+│   ├── Test_Plan
+│
+├── schemas
+│   ├── facility_inputs
+│   ├── modeling_outputs
+│
+├── translation_engine
+│
+├── rag_pipeline
+│
+├── examples
+│
+└── README.md
+Core Engineering Artifacts
+
+This repository contains the foundational system design documentation.
+
+Key artifacts include:
+
+• Software Requirements Specification (SRS)
+• System Architecture Document
+• Data Schema Documentation
+• Translation Engine Algorithm Specification
+• Parameter Mapping Table
+• System Test Plan
+
+These documents define the system design and engineering approach used to implement GridSensai.
+
+Parameter Translation Concept
+
+GridSensai converts facility electrical design parameters into grid modeling parameters.
+
+Example mapping:
+
+Facility Input	Translation Logic	Transmission Planner Parameter
+UPS topology	infer load control behavior	ZIP load coefficients
+Generator model	determine dynamic response	dynamic generator model
+Load distribution	aggregate behavior	composite load model
+Power electronics	identify fast response behavior	inverter-based resource model
+
+This translation layer enables planners to model large facilities more accurately.
+
+Project Goals
+
+GridSensai aims to:
+
+• reduce uncertainty in large load modeling
+• accelerate interconnection studies
+• improve grid reliability planning
+• enable better communication between data center engineers and transmission planners
+
+Project Status
+
+Current stage:
+
+Research and architecture development
+
+Active work includes:
+
+• stakeholder interviews
+• engineering parameter research
+• AI translation pipeline design
+• prototype system development
+
+Contributors
+
+GridSensai is being developed as part of research into improving large load interconnection analysis.
+
+Project contributors include engineers and researchers working in:
+
+• power systems engineering
+• data center electrical design
+• artificial intelligence
+• grid interconnection processes
+
+License
+
+License information will be provided in this repository.
+
+Contact
+
+For research collaboration or discussion regarding grid interconnection modeling challenges:
+
+GridSensai Project Team
