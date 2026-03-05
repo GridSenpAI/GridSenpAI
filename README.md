@@ -125,22 +125,19 @@ PSS/E | PSLF | PowerWorld
 GridSenpAI
 │
 ├── docs
-│   ├── SRS
-│   ├── System_Architecture
-│   ├── Data_Schemas
-│   ├── Algorithm_Specifications
-│   ├── Test_Plan
+│ ├── SRS
+│ ├── System_Architecture
+│ ├── Data_Schemas
+│ ├── Algorithm_Specifications
+│ ├── Test_Plan
 │
 ├── schemas
-│   ├── facility_inputs
-│   ├── modeling_outputs
+│ ├── facility_inputs
+│ ├── modeling_outputs
 │
 ├── translation_engine
-│
 ├── rag_pipeline
-│
 ├── examples
-│
 └── README.md
 ## Core Engineering Artifacts
 
