@@ -1,0 +1,1100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gridsenpai.local/schemas/gridsenpai_inputs_schema_v1_ontology_aligned.json",
+  "title": "GridSenpAI Canonical Input Schema v1.0 (Ontology Aligned)",
+  "description": "Canonical normalized input model for GridSenpAI. This schema is designed to merge facility-side documents, interconnection requirements, structured intake responses, and retrieval-backed facts into a single governed project/run state.",
+  "type": "object",
+  "required": [
+    "run_id",
+    "schema_version",
+    "project_context",
+    "interconnection_context",
+    "facility_electrical_system",
+    "load_system",
+    "field_registry",
+    "source_registry"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "schema_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "project_context": {
+      "$ref": "#/$defs/projectContext"
+    },
+    "interconnection_context": {
+      "$ref": "#/$defs/interconnectionContext"
+    },
+    "facility_electrical_system": {
+      "$ref": "#/$defs/facilityElectricalSystem"
+    },
+    "load_system": {
+      "$ref": "#/$defs/loadSystem"
+    },
+    "ups_inverter_systems": {
+      "$ref": "#/$defs/upsInverterSystems"
+    },
+    "backup_power_system": {
+      "$ref": "#/$defs/backupPowerSystem"
+    },
+    "mechanical_cooling_system": {
+      "$ref": "#/$defs/mechanicalCoolingSystem"
+    },
+    "protection_controls_communications": {
+      "$ref": "#/$defs/protectionControlsCommunications"
+    },
+    "metering_telemetry": {
+      "$ref": "#/$defs/meteringTelemetry"
+    },
+    "operating_characteristics": {
+      "$ref": "#/$defs/operatingCharacteristics"
+    },
+    "buildout_and_schedule": {
+      "$ref": "#/$defs/buildoutAndSchedule"
+    },
+    "field_registry": {
+      "type": "object",
+      "description": "Field-level governed state for values resolved during normalization.",
+      "additionalProperties": {
+        "$ref": "#/$defs/fieldState"
+      }
+    },
+    "source_registry": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/sourceArtifact"
+      }
+    },
+    "conflicts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/conflictRecord"
+      }
+    },
+    "follow_up_questions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/followUpQuestion"
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "$defs": {
+    "statusEnum": {
+      "type": "string",
+      "enum": [
+        "CONFIRMED",
+        "INFERRED",
+        "ASSUMED",
+        "CONFLICTING",
+        "MISSING",
+        "REVIEW_REQUIRED"
+      ]
+    },
+    "provenanceType": {
+      "type": "string",
+      "enum": [
+        "evidence",
+        "rule",
+        "assumption",
+        "interview",
+        "model_candidate"
+      ]
+    },
+    "measurement": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": [
+            "number",
+            "string",
+            "null"
+          ]
+        },
+        "units": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "raw_value": {
+          "type": [
+            "string",
+            "number",
+            "null"
+          ]
+        },
+        "raw_units": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "status": {
+          "$ref": "#/$defs/statusEnum"
+        },
+        "confidence_score": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "provenance_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "source_field_paths": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "fieldState": {
+      "type": "object",
+      "required": [
+        "field_path",
+        "status"
+      ],
+      "properties": {
+        "field_path": {
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/$defs/statusEnum"
+        },
+        "value": {},
+        "units": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "provenance_type": {
+          "$ref": "#/$defs/provenanceType"
+        },
+        "provenance_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "source_field_paths": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "dependency_paths": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "sourceAnchor": {
+      "type": "object",
+      "properties": {
+        "anchor_id": {
+          "type": "string"
+        },
+        "artifact_id": {
+          "type": "string"
+        },
+        "page": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "text_excerpt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "bbox": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "number"
+          },
+          "minItems": 4,
+          "maxItems": 4
+        }
+      },
+      "required": [
+        "anchor_id",
+        "artifact_id"
+      ],
+      "additionalProperties": false
+    },
+    "sourceArtifact": {
+      "type": "object",
+      "required": [
+        "artifact_id",
+        "file_name",
+        "artifact_type"
+      ],
+      "properties": {
+        "artifact_id": {
+          "type": "string"
+        },
+        "file_name": {
+          "type": "string"
+        },
+        "artifact_type": {
+          "type": "string"
+        },
+        "mime_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "relative_path": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "page_count": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "source_anchors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/sourceAnchor"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "projectContext": {
+      "type": "object",
+      "required": [
+        "project_name"
+      ],
+      "properties": {
+        "project_name": {
+          "type": "string"
+        },
+        "project_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "queue_position": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "study_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "study_revision": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "utility_or_iso": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "transmission_owner": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "responsibilities_split": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "responsible_party": {
+                "type": "string"
+              },
+              "obligation": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "responsible_party",
+              "obligation"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "interconnectionContext": {
+      "type": "object",
+      "properties": {
+        "poi": {
+          "type": "object",
+          "properties": {
+            "substation_name": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "poi_voltage_kv": {
+              "$ref": "#/$defs/measurement"
+            },
+            "line_or_bus_name": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "interconnection_type": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "terminal_configuration": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        "substation_topology": {
+          "type": "object",
+          "properties": {
+            "scheme_type": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "enum": [
+                null,
+                "single_bus",
+                "double_bus",
+                "ring_bus",
+                "breaker_and_half",
+                "other"
+              ]
+            },
+            "breaker_count": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "tie_breaker_count": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "bus_sections": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "line_terminals": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "required_additions": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "utility_requirements": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "requirement_id": {
+                "type": "string"
+              },
+              "category": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "$ref": "#/$defs/statusEnum"
+              },
+              "provenance_refs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "requirement_id",
+              "category",
+              "description",
+              "status"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "transformer": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rating_mva": {
+          "$ref": "#/$defs/measurement"
+        },
+        "primary_voltage_kv": {
+          "$ref": "#/$defs/measurement"
+        },
+        "secondary_voltage_kv": {
+          "$ref": "#/$defs/measurement"
+        },
+        "impedance_percent": {
+          "$ref": "#/$defs/measurement"
+        },
+        "tap_range": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "switchgear": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "voltage_kv": {
+          "$ref": "#/$defs/measurement"
+        },
+        "configuration": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "bus_name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "feeder_count": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "facilityElectricalSystem": {
+      "type": "object",
+      "properties": {
+        "frequency_hz": {
+          "$ref": "#/$defs/measurement"
+        },
+        "service_transformers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/transformer"
+          }
+        },
+        "medium_voltage_switchgear": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/switchgear"
+          }
+        },
+        "low_voltage_switchgear": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/switchgear"
+          }
+        },
+        "feeders": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "distribution_buses": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "loadBlock": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "category": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            null,
+            "it_load",
+            "mechanical_load",
+            "auxiliary_load",
+            "critical_process_load",
+            "other"
+          ]
+        },
+        "peak_mw": {
+          "$ref": "#/$defs/measurement"
+        },
+        "fraction_of_total": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "criticality": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "served_by_ups": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "loadSystem": {
+      "type": "object",
+      "properties": {
+        "total_peak_mw": {
+          "$ref": "#/$defs/measurement"
+        },
+        "it_load": {
+          "$ref": "#/$defs/measurement"
+        },
+        "mechanical_load": {
+          "$ref": "#/$defs/measurement"
+        },
+        "auxiliary_load": {
+          "$ref": "#/$defs/measurement"
+        },
+        "critical_process_load": {
+          "$ref": "#/$defs/measurement"
+        },
+        "load_blocks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/loadBlock"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "upsSystem": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "topology": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            null,
+            "n_plus_1",
+            "2n",
+            "distributed_redundant",
+            "block_redundant",
+            "other"
+          ]
+        },
+        "module_rating_kw": {
+          "$ref": "#/$defs/measurement"
+        },
+        "module_count": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "battery_autonomy_minutes": {
+          "$ref": "#/$defs/measurement"
+        },
+        "bypass_mode": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "upsInverterSystems": {
+      "type": "object",
+      "properties": {
+        "ups_systems": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/upsSystem"
+          }
+        },
+        "inverter_dominated_fraction": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "generatorUnit": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rating_mw": {
+          "$ref": "#/$defs/measurement"
+        },
+        "count": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "dispatch_mode": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "fuel_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "backupPowerSystem": {
+      "type": "object",
+      "properties": {
+        "generators_present": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "generator_units": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/generatorUnit"
+          }
+        },
+        "fuel_system_description": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "standby_strategy": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "mechanicalEquipment": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "equipment_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "motor_rating_kw": {
+          "$ref": "#/$defs/measurement"
+        },
+        "vfd_present": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "quantity": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "mechanicalCoolingSystem": {
+      "type": "object",
+      "properties": {
+        "equipment": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/mechanicalEquipment"
+          }
+        },
+        "cooling_load_mw": {
+          "$ref": "#/$defs/measurement"
+        }
+      },
+      "additionalProperties": false
+    },
+    "protectionControlsCommunications": {
+      "type": "object",
+      "properties": {
+        "relay_schemes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "breaker_failure_scheme_present": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "transfer_trip_present": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "dtt_present": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "scada_interface_required": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "telecom_requirements": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "witness_testing_requirements": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "meteringTelemetry": {
+      "type": "object",
+      "properties": {
+        "revenue_metering_required": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "mw_telemetry_required": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "mvar_telemetry_required": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "breaker_status_points_required": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "interval_data_required": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "metering_notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "operatingCharacteristics": {
+      "type": "object",
+      "properties": {
+        "power_factor_requirement": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reactive_capability": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ride_through_requirement": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "steady_state_limit_mw": {
+          "$ref": "#/$defs/measurement"
+        },
+        "max_ramp_up_mw_per_min": {
+          "$ref": "#/$defs/measurement"
+        },
+        "max_ramp_down_mw_per_min": {
+          "$ref": "#/$defs/measurement"
+        }
+      },
+      "additionalProperties": false
+    },
+    "buildoutAndSchedule": {
+      "type": "object",
+      "properties": {
+        "phases": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "phase_name": {
+                "type": "string"
+              },
+              "scheduled_in_service_date": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "format": "date"
+              },
+              "incremental_mw": {
+                "$ref": "#/$defs/measurement"
+              },
+              "cumulative_mw": {
+                "$ref": "#/$defs/measurement"
+              }
+            },
+            "required": [
+              "phase_name"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "energization_sequence": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "conflictRecord": {
+      "type": "object",
+      "required": [
+        "field_path",
+        "review_status"
+      ],
+      "properties": {
+        "field_path": {
+          "type": "string"
+        },
+        "existing_value": {},
+        "candidate_value": {},
+        "reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "review_status": {
+          "type": "string",
+          "enum": [
+            "NEEDS_REVIEW",
+            "RESOLVED",
+            "WAIVED"
+          ]
+        },
+        "provenance_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "followUpQuestion": {
+      "type": "object",
+      "required": [
+        "question_id",
+        "field_path",
+        "reason"
+      ],
+      "properties": {
+        "question_id": {
+          "type": "string"
+        },
+        "field_path": {
+          "type": "string"
+        },
+        "reason": {
+          "type": "string"
+        },
+        "severity": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            null,
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        "suggested_sources": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
