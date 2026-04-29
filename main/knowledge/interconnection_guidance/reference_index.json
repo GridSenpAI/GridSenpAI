@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.1.0",
+  "description": "Canonical interconnection guidance index for planner-facing retrieval and gap resolution. Meta-files are excluded from retrieval records.",
+  "record_count": 4,
+  "records": [
+    {
+      "name": "ercot_large_load_interconnection_guidance.txt",
+      "path": "knowledge/interconnection_guidance/ercot_large_load_interconnection_guidance.txt",
+      "size_bytes": 3290,
+      "retrieval_priority": "high"
+    },
+    {
+      "name": "interconnection_review_checklist.txt",
+      "path": "knowledge/interconnection_guidance/interconnection_review_checklist.txt",
+      "size_bytes": 684,
+      "retrieval_priority": "medium"
+    },
+    {
+      "name": "telemetry_metering_guidance.txt",
+      "path": "knowledge/interconnection_guidance/telemetry_metering_guidance.txt",
+      "size_bytes": 1252,
+      "retrieval_priority": "high"
+    },
+    {
+      "name": "protection_controls_guidance.txt",
+      "path": "knowledge/interconnection_guidance/protection_controls_guidance.txt",
+      "size_bytes": 1351,
+      "retrieval_priority": "high"
+    }
+  ]
+}

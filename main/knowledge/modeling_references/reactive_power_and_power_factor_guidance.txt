@@ -1,0 +1,19 @@
+Reactive power and power factor guidance for GridSenpAI modeling retrieval.
+Use this file when planner outputs require steady-state MVAr expectations, operating-point power factor, or bounded assumptions around reactive support and controls.
+
+Focus retrieval on:
+- requested peak-demand power factor and MVAr values from interconnection materials
+- transformer and UPS topology that may affect reactive behavior at the POI
+- capacitor banks, reactors, static var devices, or inverter-based reactive controls where present
+- operating mode notes that distinguish normal, bypass, commissioning, or contingency behavior
+
+Planner-output relevance:
+- steady_state.q_mvar should track applicant-provided operating-point expectations whenever available
+- power-factor values should remain tied to the referenced operating scenario or stage, not treated as globally fixed if documents indicate phase-dependent buildout
+- when only bounded guidance is available, preserve that the value is inferred or assumed rather than confirmed
+
+Evidence preference:
+1. applicant interconnection forms and POI planning documents
+2. applicant equipment/control narratives that materially affect reactive behavior
+3. modeling references and bounded planning guidance
+4. interview clarification when the operating-point expectation remains ambiguous

@@ -1,0 +1,39 @@
+ERCOT large-load interconnection guidance for GridSenpAI retrieval.
+Use this file for planner-facing intake expectations, POI/substation context, telemetry/metering requirements, and document sufficiency checks.
+
+Priority interconnection-planning evidence buckets:
+- point of interconnection description, voltage, and closest bus mapping
+- substation topology, service transformer arrangement, and protection boundaries
+- requested peak demand MW, power factor, and MVAr expectations
+- energization phasing and stage-by-stage commissioning load additions
+- telemetry, SCADA, metering, and operations visibility requirements
+- relay/protection documentation and settings summary for planner review
+- site layout and one-line evidence tying facility equipment to the interconnection path
+
+Planner document guidance extracted from planner_documents_required.json:
+- Document: Completed ERCOT Load Information Form (LIF)
+  Stage: Initial application
+  Used for: ERCOT_application, LLIS_scoping, application_completeness
+  Data fields: project_name, county, service_delivery_point_description, closest_sswg_bus_number, service_delivery_point_voltage_kv, requested_peak_demand_mw, peak_demand_power_factor, peak_demand_mvar, desired_initial_energization_date, site_control_status, project_parties_and_contacts
+- Document: Load Commissioning Plan (LCP)
+  Stage: Initial application and ongoing updates
+  Used for: LCP, study_schedule, energization_readiness
+  Data fields: lcp_current_as_of_date, desired_initial_energization_date, lcp_stage_schedule
+- Document: Location Map and Site Plan
+  Stage: Initial application
+  Used for: study_scope, planning_model, constructability_review
+  Data fields: facility_latitude, facility_longitude, county, poi_selection_basis, site_address_or_legal_description
+- Document: Customer One-Line Diagram / Interconnection Single-Line Diagram
+  Stage: Initial engineering submittal
+  Used for: power_flow_model, short_circuit_model, dynamic_model_topology
+  Data fields: service_delivery_point_voltage_kv, interconnection_transformer_count, transformer_characteristics, reactive_equipment, grid_tied_generation_present
+- Document: Protection and Controls Package
+  Stage: Engineering submittal / final approval
+  Used for: short_circuit_model, stability_model, final_approval
+  Data fields: voltage_sag_transfer_trip_settings, voltage_swell_transfer_trip_settings, frequency_protection_settings, cooling_disconnect_reconnect_logic, automatic_reconnection_logic, measurement_basis_per_phase_or_rms, transformer_high_side_protection, transformer_low_side_protection, protection_communications, other_protection_logic
+- Document: Telemetry, NOMCR, and Operations Model Package
+  Stage: Final approval / pre-energization
+  Used for: operations_model, final_approval, energization_request
+  Data fields: operations_model_substation_name, operations_model_substation_mnemonic, operations_model_load_points, telemetry_provider_and_contact, nomcr_number, operations_model_inclusion_status, production_load_date, max_mw_modeled_in_operations_model
+
+Interconnection retrieval keywords: poi, point of interconnection, service delivery point, substation, bus number, telemetry, metering, SCADA, protection, relay, commissioning, energization, load information form, one-line.

@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.0.0",
+  "equipment_family": "transformers",
+  "manufacturer": "Eaton",
+  "product_line": "Ulusoy Cast Resin Dry Type Transformer",
+  "record_status": "drop_in_ready_with_backfilled_product_line_specs",
+  "library_readiness": "drop_in_ready",
+  "identity": {
+    "manufacturer": {
+      "value": "Eaton",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "product_line": {
+      "value": "Ulusoy Cast Resin Dry Type Transformer",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    }
+  },
+  "fixed_specs": {
+    "rated_power_kva": {
+      "value": 5000,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false,
+      "note": "Official Eaton/Ulusoy brochure states ratings up to 5000 kVA."
+    },
+    "primary_voltage_v": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "secondary_voltage_v": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "impedance_percent": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "winding_configuration": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "vector_group": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "frequency_hz": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "cooling_class": {
+      "value": "cast resin dry-type",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "tap_changer_flag": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "tap_range": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    }
+  },
+  "project_specific_fields": {
+    "quantity": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured value."
+    },
+    "redundancy_scheme": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured value."
+    },
+    "installed_topology_role": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured value."
+    },
+    "deployed_tap_setting": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured value."
+    },
+    "build_phase_status": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured value."
+    }
+  },
+  "source_documents": [
+    {
+      "document_id": "eaton_ulusoy_cast_resin_brochure",
+      "title": "Ulusoy Cast Resin Dry Type Transformer Brochure",
+      "source_url": "https://www.eaton.com/content/dam/eaton/products/medium-voltage-power-distribution-control-systems/iec-assemblies-mv-switchgear/ulusoy-oil-immersed-type-transformer/eaton-ulusoy-iec-transformer-brochure-global-en-gb.pdf",
+      "source_class": "official_pdf"
+    }
+  ],
+  "drop_in_contract": {
+    "record_complete_schema": true,
+    "source_backed_fixed_fields_only": true,
+    "project_specific_fields_left_null_by_design": true,
+    "ready_for_program_ingestion": true
+  },
+  "notes": [
+    "Static product-line capacity ceiling is source-backed from the official Eaton/Ulusoy brochure."
+  ]
+}

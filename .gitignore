@@ -1,0 +1,198 @@
+# ============================================================
+# GridSenpAI .gitignore
+# Public repo safety + Python project hygiene
+# ============================================================
+
+
+# ============================================================
+# Python bytecode / compiled artifacts
+# ============================================================
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+
+# ============================================================
+# Virtual environments
+# ============================================================
+.venv/
+venv/
+env/
+ENV/
+**/.venv/
+**/venv/
+**/env/
+**/ENV/
+
+
+# ============================================================
+# Environment files / secrets
+# Keep .env.example, ignore real env files
+# ============================================================
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+
+# ============================================================
+# Test / lint / type-check / coverage caches
+# ============================================================
+.pytest_cache/
+**/.pytest_cache/
+.mypy_cache/
+**/.mypy_cache/
+.ruff_cache/
+**/.ruff_cache/
+.tox/
+.nox/
+.coverage
+coverage.xml
+htmlcov/
+
+
+# ============================================================
+# IDE / editor files
+# ============================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+
+# ============================================================
+# OS files
+# ============================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+
+# ============================================================
+# Logs
+# ============================================================
+*.log
+logs/
+**/logs/
+
+
+# ============================================================
+# Runtime/generated GridSenpAI folders
+# Keep placeholder files, ignore generated contents
+# ============================================================
+
+# Runs may contain user/applicant documents, extracted state, audit data,
+# canonical facility state, adjudication outputs, planner exports, etc.
+runs/*
+**/runs/*
+!runs/.gitkeep
+!runs/README.md
+!**/runs/.gitkeep
+!**/runs/README.md
+
+# Exports may contain generated planner packets, TLDRs, PDFs, DOCX, JSON, etc.
+exports/*
+**/exports/*
+!exports/.gitkeep
+!exports/README.md
+!**/exports/.gitkeep
+!**/exports/README.md
+
+# Models may contain huge local GGUF/model files or licensed model assets.
+models/*
+**/models/*
+!models/.gitkeep
+!models/README.md
+!**/models/.gitkeep
+!**/models/README.md
+
+
+# ============================================================
+# Sample data
+# ============================================================
+# main/sample_data/ is intentionally allowed because it contains
+# AI-generated public example PDFs for demo/testing.
+#
+# Do NOT place confidential applicant/project PDFs here unless you intend
+# to commit them publicly.
+#
+# Private/local test packets should go somewhere ignored, such as:
+#   main/local_sample_data/
+#   local_sample_data/
+#
+# No ignore rule is applied to sample_data/ on purpose.
+
+local_sample_data/
+**/local_sample_data/
+
+
+# ============================================================
+# OCR / parsing temporary artifacts
+# ============================================================
+tests/.gridsenpai_ocr_tmp/
+**/tests/.gridsenpai_ocr_tmp/
+*.ocr.json
+*.layout.json
+
+
+# ============================================================
+# Generated vendor-document artifacts
+# ============================================================
+knowledge/vendor_documents/pdf_library_import_manifest.csv
+**/knowledge/vendor_documents/pdf_library_import_manifest.csv
+
+# Ignore actual vendor PDFs unless you have explicit rights to redistribute them.
+knowledge/vendor_documents/pdf_library/**/*.pdf
+**/knowledge/vendor_documents/pdf_library/**/*.pdf
+
+
+# ============================================================
+# Generated document/data exports
+# ============================================================
+*.docx
+*.pdf
+*.xlsx
+*.xls
+*.parquet
+*.sqlite
+*.sqlite3
+*.db
+*.duckdb
+
+
+# ============================================================
+# Allow intentional docs and sample PDFs despite broad generated rules
+# ============================================================
+!docs/**/*.docx
+!**/docs/**/*.docx
+!docs/**/*.pdf
+!**/docs/**/*.pdf
+
+!sample_data/**/*.pdf
+!**/sample_data/**/*.pdf
+
+
+# ============================================================
+# Build/package artifacts
+# ============================================================
+build/
+dist/
+*.egg-info/
+.eggs/
+
+
+# ============================================================
+# Misc temp files
+# ============================================================
+tmp/
+temp/
+**/tmp/
+**/temp/
+*.tmp
+*.bak
+*.orig

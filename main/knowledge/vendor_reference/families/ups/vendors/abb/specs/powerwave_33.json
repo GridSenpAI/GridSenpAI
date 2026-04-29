@@ -1,0 +1,154 @@
+{
+  "schema_version": "2.0.0",
+  "equipment_family": "ups",
+  "manufacturer": "ABB",
+  "model": "PowerWave 33",
+  "record_status": "drop_in_ready_with_backfilled_fixed_specs",
+  "library_readiness": "drop_in_ready",
+  "identity": {
+    "manufacturer": {
+      "value": "ABB",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "model": {
+      "value": "PowerWave 33",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    }
+  },
+  "fixed_specs": {
+    "rated_power_kw": {
+      "value": 500,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false,
+      "note": "Official source states PowerWave 33 is available from 60 kW to 500 kW."
+    },
+    "rated_power_kva": {
+      "value": 500,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false,
+      "note": "Official source indicates 1.0 output power factor."
+    },
+    "input_voltage_v": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "output_voltage_v": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "frequency_hz": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "ups_topology": {
+      "value": "transformer-free double conversion",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "transfer_time_ms": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "ride_through_seconds": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "runtime_minutes": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "battery_chemistry": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "efficiency_percent": {
+      "value": 96.0,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false,
+      "note": "Official source states up to 96% efficiency."
+    },
+    "frame_capacity_kw": {
+      "value": 500,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "module_rating_kw": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "scalable_capacity_flag": {
+      "value": true,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false,
+      "note": "Official source states scalable in parallel up to 5 MW."
+    }
+  },
+  "project_specific_fields": {
+    "quantity": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured behavior."
+    },
+    "redundancy_scheme": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured behavior."
+    },
+    "recharge_behavior": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured behavior."
+    },
+    "bypass_behavior": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured behavior."
+    },
+    "loading_sequence": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured behavior."
+    },
+    "restoration_sequence": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured behavior."
+    }
+  },
+  "source_documents": [
+    {
+      "document_id": "abb_powerwave33_brochure",
+      "title": "ABB Power Protection Brochure",
+      "source_url": "https://library.e.abb.com/public/26b4606d4afb447fc1257bc10036b7aa/2UCD301125-P_a%20Power%20protection%20brochure.pdf",
+      "source_class": "official_pdf"
+    },
+    {
+      "document_id": "abb_ups_catalogue",
+      "title": "ABB UPS Catalogue",
+      "source_url": "https://library.e.abb.com/public/35de3494f44a4b46a9f7d44f80c0a0f3/ABB_UPS_Catalogue_web.pdf",
+      "source_class": "official_pdf"
+    }
+  ],
+  "drop_in_contract": {
+    "record_complete_schema": true,
+    "source_backed_fixed_fields_only": true,
+    "project_specific_fields_left_null_by_design": true,
+    "ready_for_program_ingestion": true
+  }
+}

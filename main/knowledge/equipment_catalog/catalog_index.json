@@ -1,0 +1,4060 @@
+{
+  "schema_version": "1.0.0",
+  "description": "Canonical equipment catalog index generated from legacy vendor_reference family spec records.",
+  "record_count": 66,
+  "records": [
+    {
+      "equipment_family": "generators",
+      "manufacturer": "Caterpillar",
+      "model_or_product_line": "3512",
+      "record_status": "drop_in_ready_with_source_backed_fixed_specs",
+      "spec_path": "knowledge/vendor_reference/families/generators/vendors/caterpillar/specs/3512.json",
+      "fixed_spec_names": [
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ],
+      "source_urls": [
+        "https://emc.cat.com/pubdirect.ashx?media_string_id=TSS-DM8227-04-GS-EPG-11646447.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Caterpillar",
+        "CAT"
+      ],
+      "model_aliases": [
+        "3512"
+      ],
+      "source_domains": [
+        "emc.cat.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://emc.cat.com/pubdirect.ashx?media_string_id=TSS-DM8227-04-GS-EPG-11646447.pdf",
+          "source_domain": "emc.cat.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "generators",
+        "Caterpillar",
+        "3512",
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ]
+    },
+    {
+      "equipment_family": "generators",
+      "manufacturer": "Caterpillar",
+      "model_or_product_line": "3516C",
+      "record_status": "drop_in_ready_with_source_backed_fixed_specs",
+      "spec_path": "knowledge/vendor_reference/families/generators/vendors/caterpillar/specs/3516c.json",
+      "fixed_spec_names": [
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ],
+      "source_urls": [
+        "https://emc.cat.com/pubdirect.ashx?media_string_id=TSS-DM8263-03-GS-EPG-9042193.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Caterpillar",
+        "CAT"
+      ],
+      "model_aliases": [
+        "3516C"
+      ],
+      "source_domains": [
+        "emc.cat.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://emc.cat.com/pubdirect.ashx?media_string_id=TSS-DM8263-03-GS-EPG-9042193.pdf",
+          "source_domain": "emc.cat.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "generators",
+        "Caterpillar",
+        "3516C",
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ]
+    },
+    {
+      "equipment_family": "generators",
+      "manufacturer": "Caterpillar",
+      "model_or_product_line": "C18",
+      "record_status": "drop_in_ready_with_source_backed_fixed_specs",
+      "spec_path": "knowledge/vendor_reference/families/generators/vendors/caterpillar/specs/c18.json",
+      "fixed_spec_names": [
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ],
+      "source_urls": [
+        "https://emc.cat.com/pubdirect.ashx?media_string_id=TSS-DM8518-04-GS-EPG-9045560.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Caterpillar",
+        "CAT"
+      ],
+      "model_aliases": [
+        "C18"
+      ],
+      "source_domains": [
+        "emc.cat.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://emc.cat.com/pubdirect.ashx?media_string_id=TSS-DM8518-04-GS-EPG-9045560.pdf",
+          "source_domain": "emc.cat.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "generators",
+        "Caterpillar",
+        "C18",
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ]
+    },
+    {
+      "equipment_family": "generators",
+      "manufacturer": "Caterpillar",
+      "model_or_product_line": "C27",
+      "record_status": "drop_in_ready_with_source_backed_fixed_specs",
+      "spec_path": "knowledge/vendor_reference/families/generators/vendors/caterpillar/specs/c27.json",
+      "fixed_spec_names": [
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ],
+      "source_urls": [
+        "https://emc.cat.com/pubdirect.ashx?media_string_id=TSS-DM9068-01-GS-EPG-7399947.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Caterpillar",
+        "CAT"
+      ],
+      "model_aliases": [
+        "C27"
+      ],
+      "source_domains": [
+        "emc.cat.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://emc.cat.com/pubdirect.ashx?media_string_id=TSS-DM9068-01-GS-EPG-7399947.pdf",
+          "source_domain": "emc.cat.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "generators",
+        "Caterpillar",
+        "C27",
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ]
+    },
+    {
+      "equipment_family": "generators",
+      "manufacturer": "Caterpillar",
+      "model_or_product_line": "C32",
+      "record_status": "drop_in_ready_with_source_backed_fixed_specs",
+      "spec_path": "knowledge/vendor_reference/families/generators/vendors/caterpillar/specs/c32.json",
+      "fixed_spec_names": [
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ],
+      "source_urls": [
+        "https://emc.cat.com/pubdirect.ashx?media_string_id=SS-9203904-18332039-010.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Caterpillar",
+        "CAT"
+      ],
+      "model_aliases": [
+        "C32"
+      ],
+      "source_domains": [
+        "emc.cat.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://emc.cat.com/pubdirect.ashx?media_string_id=SS-9203904-18332039-010.pdf",
+          "source_domain": "emc.cat.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "generators",
+        "Caterpillar",
+        "C32",
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ]
+    },
+    {
+      "equipment_family": "generators",
+      "manufacturer": "Cummins",
+      "model_or_product_line": "C1000D6ED",
+      "record_status": "ready_for_library_with_partial_population",
+      "spec_path": "knowledge/vendor_reference/families/generators/vendors/cummins/specs/c1000d6ed.json",
+      "fixed_spec_names": [
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ],
+      "source_urls": [
+        "https://www.social.cummins.com/sites/default/files/2025-06/s-6786-spec-sheet.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Cummins",
+        "Cummins Power Generation"
+      ],
+      "model_aliases": [
+        "C1000D6ED"
+      ],
+      "source_domains": [
+        "www.social.cummins.com"
+      ],
+      "retrieval_priority": "normal",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.social.cummins.com/sites/default/files/2025-06/s-6786-spec-sheet.pdf",
+          "source_domain": "www.social.cummins.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "generators",
+        "Cummins",
+        "C1000D6ED",
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ]
+    },
+    {
+      "equipment_family": "generators",
+      "manufacturer": "Cummins",
+      "model_or_product_line": "C1250D6E",
+      "record_status": "ready_for_library_with_partial_population",
+      "spec_path": "knowledge/vendor_reference/families/generators/vendors/cummins/specs/c1250d6e.json",
+      "fixed_spec_names": [
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ],
+      "source_urls": [
+        "https://www.cummins.com/sites/default/files/2025-03/diesel-gen-set-rating-cards-north-america-60hz-2025.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Cummins",
+        "Cummins Power Generation"
+      ],
+      "model_aliases": [
+        "C1250D6E"
+      ],
+      "source_domains": [
+        "www.cummins.com"
+      ],
+      "retrieval_priority": "normal",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.cummins.com/sites/default/files/2025-03/diesel-gen-set-rating-cards-north-america-60hz-2025.pdf",
+          "source_domain": "www.cummins.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "generators",
+        "Cummins",
+        "C1250D6E",
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ]
+    },
+    {
+      "equipment_family": "generators",
+      "manufacturer": "Cummins",
+      "model_or_product_line": "C2000D6E",
+      "record_status": "ready_for_library_with_partial_population",
+      "spec_path": "knowledge/vendor_reference/families/generators/vendors/cummins/specs/c2000d6e.json",
+      "fixed_spec_names": [
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ],
+      "source_urls": [
+        "https://www.cummins.com/sites/default/files/2025-03/diesel-gen-set-rating-cards-north-america-60hz-2025.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Cummins",
+        "Cummins Power Generation"
+      ],
+      "model_aliases": [
+        "C2000D6E"
+      ],
+      "source_domains": [
+        "www.cummins.com"
+      ],
+      "retrieval_priority": "normal",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.cummins.com/sites/default/files/2025-03/diesel-gen-set-rating-cards-north-america-60hz-2025.pdf",
+          "source_domain": "www.cummins.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "generators",
+        "Cummins",
+        "C2000D6E",
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ]
+    },
+    {
+      "equipment_family": "generators",
+      "manufacturer": "Cummins",
+      "model_or_product_line": "C3000D6EB",
+      "record_status": "ready_for_library_with_partial_population",
+      "spec_path": "knowledge/vendor_reference/families/generators/vendors/cummins/specs/c3000d6eb.json",
+      "fixed_spec_names": [
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ],
+      "source_urls": [
+        "https://mart.cummins.com/imagelibrary/data/assetfiles/0071487.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Cummins",
+        "Cummins Power Generation"
+      ],
+      "model_aliases": [
+        "C3000D6EB"
+      ],
+      "source_domains": [
+        "mart.cummins.com"
+      ],
+      "retrieval_priority": "normal",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://mart.cummins.com/imagelibrary/data/assetfiles/0071487.pdf",
+          "source_domain": "mart.cummins.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "generators",
+        "Cummins",
+        "C3000D6EB",
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ]
+    },
+    {
+      "equipment_family": "generators",
+      "manufacturer": "Cummins",
+      "model_or_product_line": "C600D6E",
+      "record_status": "ready_for_library_with_partial_population",
+      "spec_path": "knowledge/vendor_reference/families/generators/vendors/cummins/specs/c600d6e.json",
+      "fixed_spec_names": [
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ],
+      "source_urls": [
+        "https://www.social.cummins.com/sites/default/files/2025-06/s-6786-spec-sheet.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Cummins",
+        "Cummins Power Generation"
+      ],
+      "model_aliases": [
+        "C600D6E"
+      ],
+      "source_domains": [
+        "www.social.cummins.com"
+      ],
+      "retrieval_priority": "normal",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.social.cummins.com/sites/default/files/2025-06/s-6786-spec-sheet.pdf",
+          "source_domain": "www.social.cummins.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "generators",
+        "Cummins",
+        "C600D6E",
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ]
+    },
+    {
+      "equipment_family": "generators",
+      "manufacturer": "Generac",
+      "model_or_product_line": "SD1250",
+      "record_status": "ready_for_library_with_partial_population",
+      "spec_path": "knowledge/vendor_reference/families/generators/vendors/generac/specs/sd1250.json",
+      "fixed_spec_names": [
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ],
+      "source_urls": [
+        "https://legacy.genconnect.generac.com/Media/vwDoc.axd?d=a25e7212-1cad-46e6-b789-7d3204b40d62"
+      ],
+      "manufacturer_aliases": [
+        "Generac"
+      ],
+      "model_aliases": [
+        "SD1250"
+      ],
+      "source_domains": [
+        "legacy.genconnect.generac.com"
+      ],
+      "retrieval_priority": "normal",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://legacy.genconnect.generac.com/Media/vwDoc.axd?d=a25e7212-1cad-46e6-b789-7d3204b40d62",
+          "source_domain": "legacy.genconnect.generac.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "generators",
+        "Generac",
+        "SD1250",
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ]
+    },
+    {
+      "equipment_family": "generators",
+      "manufacturer": "Generac",
+      "model_or_product_line": "SD1500",
+      "record_status": "ready_for_library_with_partial_population",
+      "spec_path": "knowledge/vendor_reference/families/generators/vendors/generac/specs/sd1500.json",
+      "fixed_spec_names": [
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ],
+      "source_urls": [
+        "https://www.generac.com/globalassets/products/business/stationary-generators/diesel-industrial-generators/spec-sheets/sd1500-1500kw-diesel-generator-specsheet.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Generac"
+      ],
+      "model_aliases": [
+        "SD1500"
+      ],
+      "source_domains": [
+        "www.generac.com"
+      ],
+      "retrieval_priority": "normal",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.generac.com/globalassets/products/business/stationary-generators/diesel-industrial-generators/spec-sheets/sd1500-1500kw-diesel-generator-specsheet.pdf",
+          "source_domain": "www.generac.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "generators",
+        "Generac",
+        "SD1500",
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ]
+    },
+    {
+      "equipment_family": "generators",
+      "manufacturer": "Generac",
+      "model_or_product_line": "SDMD2250",
+      "record_status": "ready_for_library_with_partial_population",
+      "spec_path": "knowledge/vendor_reference/families/generators/vendors/generac/specs/sdmd2250.json",
+      "fixed_spec_names": [
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ],
+      "source_urls": [
+        "https://www.generac.com/industrial-products/stationary-generators/stationary-generator-2250kw-diesel-65-6l/"
+      ],
+      "manufacturer_aliases": [
+        "Generac"
+      ],
+      "model_aliases": [
+        "SDMD2250"
+      ],
+      "source_domains": [
+        "www.generac.com"
+      ],
+      "retrieval_priority": "normal",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.generac.com/industrial-products/stationary-generators/stationary-generator-2250kw-diesel-65-6l/",
+          "source_domain": "www.generac.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "generators",
+        "Generac",
+        "SDMD2250",
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ]
+    },
+    {
+      "equipment_family": "generators",
+      "manufacturer": "Generac",
+      "model_or_product_line": "SDMD2500",
+      "record_status": "ready_for_library_with_partial_population",
+      "spec_path": "knowledge/vendor_reference/families/generators/vendors/generac/specs/sdmd2500.json",
+      "fixed_spec_names": [
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ],
+      "source_urls": [
+        "https://legacy.genconnect.generac.com/Media/vwDoc.axd?d=59755abd-f5b1-4919-81b0-87b5cb9cac62"
+      ],
+      "manufacturer_aliases": [
+        "Generac"
+      ],
+      "model_aliases": [
+        "SDMD2500"
+      ],
+      "source_domains": [
+        "legacy.genconnect.generac.com"
+      ],
+      "retrieval_priority": "normal",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://legacy.genconnect.generac.com/Media/vwDoc.axd?d=59755abd-f5b1-4919-81b0-87b5cb9cac62",
+          "source_domain": "legacy.genconnect.generac.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "generators",
+        "Generac",
+        "SDMD2500",
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ]
+    },
+    {
+      "equipment_family": "generators",
+      "manufacturer": "Generac",
+      "model_or_product_line": "SDMD3000",
+      "record_status": "ready_for_library_with_partial_population",
+      "spec_path": "knowledge/vendor_reference/families/generators/vendors/generac/specs/sdmd3000.json",
+      "fixed_spec_names": [
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ],
+      "source_urls": [
+        "https://www.generac.com/industrial-products/stationary-generators/stationary-generator-3000kw-diesel-87-5l/"
+      ],
+      "manufacturer_aliases": [
+        "Generac"
+      ],
+      "model_aliases": [
+        "SDMD3000"
+      ],
+      "source_domains": [
+        "www.generac.com"
+      ],
+      "retrieval_priority": "normal",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.generac.com/industrial-products/stationary-generators/stationary-generator-3000kw-diesel-87-5l/",
+          "source_domain": "www.generac.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "generators",
+        "Generac",
+        "SDMD3000",
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ]
+    },
+    {
+      "equipment_family": "generators",
+      "manufacturer": "Rolls-Royce / mtu",
+      "model_or_product_line": "12V4000 DS1650",
+      "record_status": "ready_for_library_with_partial_population",
+      "spec_path": "knowledge/vendor_reference/families/generators/vendors/mtu_rolls_royce/specs/12v4000_ds1650.json",
+      "fixed_spec_names": [
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ],
+      "source_urls": [
+        "https://www.mtu-solutions.com/content/dam/mtu/download/applications/power-generation/16120643_PG_Solutionguide_Systems_interaktiv.pdf/_jcr_content/renditions/original./16120643_PG_Solutionguide_Systems_interaktiv.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Rolls-Royce / mtu",
+        "Rolls-Royce",
+        "mtu",
+        "Rolls-Royce mtu"
+      ],
+      "model_aliases": [
+        "12V4000 DS1650",
+        "12V4000DS1650"
+      ],
+      "source_domains": [
+        "www.mtu-solutions.com"
+      ],
+      "retrieval_priority": "normal",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.mtu-solutions.com/content/dam/mtu/download/applications/power-generation/16120643_PG_Solutionguide_Systems_interaktiv.pdf/_jcr_content/renditions/original./16120643_PG_Solutionguide_Systems_interaktiv.pdf",
+          "source_domain": "www.mtu-solutions.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "generators",
+        "Rolls-Royce / mtu",
+        "12V4000 DS1650",
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ]
+    },
+    {
+      "equipment_family": "generators",
+      "manufacturer": "Rolls-Royce / mtu",
+      "model_or_product_line": "12V4000 DS2000",
+      "record_status": "ready_for_library_with_partial_population",
+      "spec_path": "knowledge/vendor_reference/families/generators/vendors/mtu_rolls_royce/specs/12v4000_ds2000.json",
+      "fixed_spec_names": [
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ],
+      "source_urls": [
+        "https://www.mtu-solutions.com/content/dam/mtu/download/applications/power-generation/16120643_PG_Solutionguide_Systems_interaktiv.pdf/_jcr_content/renditions/original./16120643_PG_Solutionguide_Systems_interaktiv.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Rolls-Royce / mtu",
+        "Rolls-Royce",
+        "mtu",
+        "Rolls-Royce mtu"
+      ],
+      "model_aliases": [
+        "12V4000 DS2000",
+        "12V4000DS2000"
+      ],
+      "source_domains": [
+        "www.mtu-solutions.com"
+      ],
+      "retrieval_priority": "normal",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.mtu-solutions.com/content/dam/mtu/download/applications/power-generation/16120643_PG_Solutionguide_Systems_interaktiv.pdf/_jcr_content/renditions/original./16120643_PG_Solutionguide_Systems_interaktiv.pdf",
+          "source_domain": "www.mtu-solutions.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "generators",
+        "Rolls-Royce / mtu",
+        "12V4000 DS2000",
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ]
+    },
+    {
+      "equipment_family": "generators",
+      "manufacturer": "Rolls-Royce / mtu",
+      "model_or_product_line": "16V4000 DS2500",
+      "record_status": "ready_for_library_with_partial_population",
+      "spec_path": "knowledge/vendor_reference/families/generators/vendors/mtu_rolls_royce/specs/16v4000_ds2500.json",
+      "fixed_spec_names": [
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ],
+      "source_urls": [
+        "https://www.mtu-solutions.com/content/dam/mtu/products/power-generation/powergeneration-product-list-latest/231211_PG_Spec_16V4000DS2500G04_2500kW_3D_T2_SCAQMD_60Hz_45C.pdf/_jcr_content/renditions/original./231211_PG_Spec_16V4000DS2500G04_2500kW_3D_T2_SCAQMD_60Hz_45C.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Rolls-Royce / mtu",
+        "Rolls-Royce",
+        "mtu",
+        "Rolls-Royce mtu"
+      ],
+      "model_aliases": [
+        "16V4000 DS2500",
+        "16V4000DS2500"
+      ],
+      "source_domains": [
+        "www.mtu-solutions.com"
+      ],
+      "retrieval_priority": "normal",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.mtu-solutions.com/content/dam/mtu/products/power-generation/powergeneration-product-list-latest/231211_PG_Spec_16V4000DS2500G04_2500kW_3D_T2_SCAQMD_60Hz_45C.pdf/_jcr_content/renditions/original./231211_PG_Spec_16V4000DS2500G04_2500kW_3D_T2_SCAQMD_60Hz_45C.pdf",
+          "source_domain": "www.mtu-solutions.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "generators",
+        "Rolls-Royce / mtu",
+        "16V4000 DS2500",
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ]
+    },
+    {
+      "equipment_family": "generators",
+      "manufacturer": "Rolls-Royce / mtu",
+      "model_or_product_line": "20V4000 DS2750",
+      "record_status": "ready_for_library_with_partial_population",
+      "spec_path": "knowledge/vendor_reference/families/generators/vendors/mtu_rolls_royce/specs/20v4000_ds2750.json",
+      "fixed_spec_names": [
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ],
+      "source_urls": [
+        "https://www.mtu-solutions.com/content/dam/mtu/download/applications/power-generation/16120643_PG_Solutionguide_Systems_interaktiv.pdf/_jcr_content/renditions/original./16120643_PG_Solutionguide_Systems_interaktiv.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Rolls-Royce / mtu",
+        "Rolls-Royce",
+        "mtu",
+        "Rolls-Royce mtu"
+      ],
+      "model_aliases": [
+        "20V4000 DS2750",
+        "20V4000DS2750"
+      ],
+      "source_domains": [
+        "www.mtu-solutions.com"
+      ],
+      "retrieval_priority": "normal",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.mtu-solutions.com/content/dam/mtu/download/applications/power-generation/16120643_PG_Solutionguide_Systems_interaktiv.pdf/_jcr_content/renditions/original./16120643_PG_Solutionguide_Systems_interaktiv.pdf",
+          "source_domain": "www.mtu-solutions.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "generators",
+        "Rolls-Royce / mtu",
+        "20V4000 DS2750",
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ]
+    },
+    {
+      "equipment_family": "generators",
+      "manufacturer": "Rolls-Royce / mtu",
+      "model_or_product_line": "20V4000 DS3100",
+      "record_status": "ready_for_library_with_partial_population",
+      "spec_path": "knowledge/vendor_reference/families/generators/vendors/mtu_rolls_royce/specs/20v4000_ds3100.json",
+      "fixed_spec_names": [
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ],
+      "source_urls": [
+        "https://www.mtu-solutions.com/content/dam/mtu/download/applications/power-generation/16120643_PG_Solutionguide_Systems_interaktiv.pdf/_jcr_content/renditions/original./16120643_PG_Solutionguide_Systems_interaktiv.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Rolls-Royce / mtu",
+        "Rolls-Royce",
+        "mtu",
+        "Rolls-Royce mtu"
+      ],
+      "model_aliases": [
+        "20V4000 DS3100",
+        "20V4000DS3100"
+      ],
+      "source_domains": [
+        "www.mtu-solutions.com"
+      ],
+      "retrieval_priority": "normal",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.mtu-solutions.com/content/dam/mtu/download/applications/power-generation/16120643_PG_Solutionguide_Systems_interaktiv.pdf/_jcr_content/renditions/original./16120643_PG_Solutionguide_Systems_interaktiv.pdf",
+          "source_domain": "www.mtu-solutions.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "generators",
+        "Rolls-Royce / mtu",
+        "20V4000 DS3100",
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ]
+    },
+    {
+      "equipment_family": "generators",
+      "manufacturer": "Rehlko",
+      "model_or_product_line": "KD1250",
+      "record_status": "ready_for_library_with_partial_population",
+      "spec_path": "knowledge/vendor_reference/families/generators/vendors/rehlko/specs/kd1250.json",
+      "fixed_spec_names": [
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ],
+      "source_urls": [
+        "https://techcomm.rehlko.com/%24web/techcomm/pdf/Rehlko_Industrial_Full_Line_Brochure.pdf",
+        "https://techcomm.rehlko.com/techcomm/pdf/g5610.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Rehlko",
+        "Kohler",
+        "Kohler / Rehlko"
+      ],
+      "model_aliases": [
+        "KD1250"
+      ],
+      "source_domains": [
+        "techcomm.rehlko.com"
+      ],
+      "retrieval_priority": "normal",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://techcomm.rehlko.com/%24web/techcomm/pdf/Rehlko_Industrial_Full_Line_Brochure.pdf",
+          "source_domain": "techcomm.rehlko.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        },
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://techcomm.rehlko.com/techcomm/pdf/g5610.pdf",
+          "source_domain": "techcomm.rehlko.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "generators",
+        "Rehlko",
+        "KD1250",
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ]
+    },
+    {
+      "equipment_family": "generators",
+      "manufacturer": "Rehlko",
+      "model_or_product_line": "KD1500",
+      "record_status": "ready_for_library_with_partial_population",
+      "spec_path": "knowledge/vendor_reference/families/generators/vendors/rehlko/specs/kd1500.json",
+      "fixed_spec_names": [
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ],
+      "source_urls": [
+        "https://techcomm.rehlko.com/%24web/techcomm/pdf/Rehlko_Industrial_Full_Line_Brochure.pdf",
+        "https://techcomm.rehlko.com/techcomm/pdf/g5598.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Rehlko",
+        "Kohler",
+        "Kohler / Rehlko"
+      ],
+      "model_aliases": [
+        "KD1500"
+      ],
+      "source_domains": [
+        "techcomm.rehlko.com"
+      ],
+      "retrieval_priority": "normal",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://techcomm.rehlko.com/%24web/techcomm/pdf/Rehlko_Industrial_Full_Line_Brochure.pdf",
+          "source_domain": "techcomm.rehlko.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        },
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://techcomm.rehlko.com/techcomm/pdf/g5598.pdf",
+          "source_domain": "techcomm.rehlko.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "generators",
+        "Rehlko",
+        "KD1500",
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ]
+    },
+    {
+      "equipment_family": "generators",
+      "manufacturer": "Rehlko",
+      "model_or_product_line": "KD1750",
+      "record_status": "ready_for_library_with_partial_population",
+      "spec_path": "knowledge/vendor_reference/families/generators/vendors/rehlko/specs/kd1750.json",
+      "fixed_spec_names": [
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ],
+      "source_urls": [
+        "https://techcomm.rehlko.com/%24web/techcomm/pdf/Rehlko_Industrial_Full_Line_Brochure.pdf",
+        "https://techcomm.rehlko.com/techcomm/pdf/g5600.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Rehlko",
+        "Kohler",
+        "Kohler / Rehlko"
+      ],
+      "model_aliases": [
+        "KD1750"
+      ],
+      "source_domains": [
+        "techcomm.rehlko.com"
+      ],
+      "retrieval_priority": "normal",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://techcomm.rehlko.com/%24web/techcomm/pdf/Rehlko_Industrial_Full_Line_Brochure.pdf",
+          "source_domain": "techcomm.rehlko.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        },
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://techcomm.rehlko.com/techcomm/pdf/g5600.pdf",
+          "source_domain": "techcomm.rehlko.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "generators",
+        "Rehlko",
+        "KD1750",
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ]
+    },
+    {
+      "equipment_family": "generators",
+      "manufacturer": "Rehlko",
+      "model_or_product_line": "KD2000",
+      "record_status": "ready_for_library_with_partial_population",
+      "spec_path": "knowledge/vendor_reference/families/generators/vendors/rehlko/specs/kd2000.json",
+      "fixed_spec_names": [
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ],
+      "source_urls": [
+        "https://techcomm.rehlko.com/%24web/techcomm/pdf/Rehlko_Industrial_Full_Line_Brochure.pdf",
+        "https://techcomm.rehlko.com/techcomm/pdf/g5601.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Rehlko",
+        "Kohler",
+        "Kohler / Rehlko"
+      ],
+      "model_aliases": [
+        "KD2000"
+      ],
+      "source_domains": [
+        "techcomm.rehlko.com"
+      ],
+      "retrieval_priority": "normal",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://techcomm.rehlko.com/%24web/techcomm/pdf/Rehlko_Industrial_Full_Line_Brochure.pdf",
+          "source_domain": "techcomm.rehlko.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        },
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://techcomm.rehlko.com/techcomm/pdf/g5601.pdf",
+          "source_domain": "techcomm.rehlko.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "generators",
+        "Rehlko",
+        "KD2000",
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ]
+    },
+    {
+      "equipment_family": "generators",
+      "manufacturer": "Rehlko",
+      "model_or_product_line": "KD2500",
+      "record_status": "ready_for_library_with_partial_population",
+      "spec_path": "knowledge/vendor_reference/families/generators/vendors/rehlko/specs/kd2500.json",
+      "fixed_spec_names": [
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ],
+      "source_urls": [
+        "https://techcomm.rehlko.com/%24web/techcomm/pdf/Rehlko_Industrial_Full_Line_Brochure.pdf",
+        "https://techcomm.rehlko.com/techcomm/pdf/g5628.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Rehlko",
+        "Kohler",
+        "Kohler / Rehlko"
+      ],
+      "model_aliases": [
+        "KD2500"
+      ],
+      "source_domains": [
+        "techcomm.rehlko.com"
+      ],
+      "retrieval_priority": "normal",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://techcomm.rehlko.com/%24web/techcomm/pdf/Rehlko_Industrial_Full_Line_Brochure.pdf",
+          "source_domain": "techcomm.rehlko.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        },
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://techcomm.rehlko.com/techcomm/pdf/g5628.pdf",
+          "source_domain": "techcomm.rehlko.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "generators",
+        "Rehlko",
+        "KD2500",
+        "frequency_hz",
+        "power_factor",
+        "rated_power_kva",
+        "rated_power_kw",
+        "standby_or_prime_rating",
+        "voltage_v"
+      ]
+    },
+    {
+      "equipment_family": "switchgear",
+      "manufacturer": "ABB",
+      "model_or_product_line": "PrimeGear ZX0",
+      "record_status": "drop_in_ready_with_backfilled_product_line_specs",
+      "spec_path": "knowledge/vendor_reference/families/switchgear/vendors/abb/specs/primegear_zx0.json",
+      "fixed_spec_names": [
+        "breaker_type",
+        "current_rating_a",
+        "enclosure_type",
+        "indoor_outdoor",
+        "insulation_type",
+        "interrupting_rating_ka",
+        "switchgear_class",
+        "voltage_class_v"
+      ],
+      "source_urls": [
+        "https://library.e.abb.com/public/fdfea296592041b0a55796e3978cd0a9/DS%202446%20ZX0%20block%20design%20en.pdf"
+      ],
+      "manufacturer_aliases": [
+        "ABB"
+      ],
+      "model_aliases": [
+        "PrimeGear ZX0",
+        "PrimeGearZX0"
+      ],
+      "source_domains": [
+        "library.e.abb.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://library.e.abb.com/public/fdfea296592041b0a55796e3978cd0a9/DS%202446%20ZX0%20block%20design%20en.pdf",
+          "source_domain": "library.e.abb.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "switchgear",
+        "ABB",
+        "PrimeGear ZX0",
+        "breaker_type",
+        "current_rating_a",
+        "enclosure_type",
+        "indoor_outdoor",
+        "insulation_type",
+        "interrupting_rating_ka",
+        "switchgear_class",
+        "voltage_class_v"
+      ]
+    },
+    {
+      "equipment_family": "switchgear",
+      "manufacturer": "ABB",
+      "model_or_product_line": "UniGear 550",
+      "record_status": "drop_in_ready_with_backfilled_product_line_specs",
+      "spec_path": "knowledge/vendor_reference/families/switchgear/vendors/abb/specs/unigear_550.json",
+      "fixed_spec_names": [
+        "breaker_type",
+        "current_rating_a",
+        "enclosure_type",
+        "indoor_outdoor",
+        "insulation_type",
+        "interrupting_rating_ka",
+        "switchgear_class",
+        "voltage_class_v"
+      ],
+      "source_urls": [
+        "https://library.e.abb.com/public/2be5a7efeda34375a70a8538f388fc4d/UniGear%20550_Catalogue_1VCP000327_RevE_EN.pdf"
+      ],
+      "manufacturer_aliases": [
+        "ABB"
+      ],
+      "model_aliases": [
+        "UniGear 550",
+        "UniGear550"
+      ],
+      "source_domains": [
+        "library.e.abb.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://library.e.abb.com/public/2be5a7efeda34375a70a8538f388fc4d/UniGear%20550_Catalogue_1VCP000327_RevE_EN.pdf",
+          "source_domain": "library.e.abb.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "switchgear",
+        "ABB",
+        "UniGear 550",
+        "breaker_type",
+        "current_rating_a",
+        "enclosure_type",
+        "indoor_outdoor",
+        "insulation_type",
+        "interrupting_rating_ka",
+        "switchgear_class",
+        "voltage_class_v"
+      ]
+    },
+    {
+      "equipment_family": "switchgear",
+      "manufacturer": "ABB",
+      "model_or_product_line": "UniGear ZS2",
+      "record_status": "drop_in_ready_with_backfilled_product_line_specs",
+      "spec_path": "knowledge/vendor_reference/families/switchgear/vendors/abb/specs/unigear_zs2.json",
+      "fixed_spec_names": [
+        "breaker_type",
+        "current_rating_a",
+        "enclosure_type",
+        "indoor_outdoor",
+        "insulation_type",
+        "interrupting_rating_ka",
+        "switchgear_class",
+        "voltage_class_v"
+      ],
+      "source_urls": [
+        "https://library.e.abb.com/public/7f805917cb20a435c1257b1300574297/Cat_UniGear%20ZS2-En.pdf",
+        "https://library.e.abb.com/public/0bf847a1152c4e2aac8eeb197fa11b84/UniGearZS2_EN.pdf"
+      ],
+      "manufacturer_aliases": [
+        "ABB"
+      ],
+      "model_aliases": [
+        "UniGear ZS2",
+        "UniGearZS2"
+      ],
+      "source_domains": [
+        "library.e.abb.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://library.e.abb.com/public/7f805917cb20a435c1257b1300574297/Cat_UniGear%20ZS2-En.pdf",
+          "source_domain": "library.e.abb.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        },
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://library.e.abb.com/public/0bf847a1152c4e2aac8eeb197fa11b84/UniGearZS2_EN.pdf",
+          "source_domain": "library.e.abb.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "switchgear",
+        "ABB",
+        "UniGear ZS2",
+        "breaker_type",
+        "current_rating_a",
+        "enclosure_type",
+        "indoor_outdoor",
+        "insulation_type",
+        "interrupting_rating_ka",
+        "switchgear_class",
+        "voltage_class_v"
+      ]
+    },
+    {
+      "equipment_family": "switchgear",
+      "manufacturer": "ABB",
+      "model_or_product_line": "ZS8.4",
+      "record_status": "drop_in_ready_with_backfilled_product_line_specs",
+      "spec_path": "knowledge/vendor_reference/families/switchgear/vendors/abb/specs/zs8.4.json",
+      "fixed_spec_names": [
+        "breaker_type",
+        "current_rating_a",
+        "enclosure_type",
+        "indoor_outdoor",
+        "insulation_type",
+        "interrupting_rating_ka",
+        "switchgear_class",
+        "voltage_class_v"
+      ],
+      "source_urls": [
+        "https://library.e.abb.com/public/9fb8e5eb4d5c4000bcbd1290ffac359b/Catalogue%20ZS8.4_en.pdf"
+      ],
+      "manufacturer_aliases": [
+        "ABB"
+      ],
+      "model_aliases": [
+        "ZS8.4"
+      ],
+      "source_domains": [
+        "library.e.abb.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://library.e.abb.com/public/9fb8e5eb4d5c4000bcbd1290ffac359b/Catalogue%20ZS8.4_en.pdf",
+          "source_domain": "library.e.abb.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "switchgear",
+        "ABB",
+        "ZS8.4",
+        "breaker_type",
+        "current_rating_a",
+        "enclosure_type",
+        "indoor_outdoor",
+        "insulation_type",
+        "interrupting_rating_ka",
+        "switchgear_class",
+        "voltage_class_v"
+      ]
+    },
+    {
+      "equipment_family": "switchgear",
+      "manufacturer": "Eaton",
+      "model_or_product_line": "MEB / MSB",
+      "record_status": "drop_in_ready_with_backfilled_product_line_specs",
+      "spec_path": "knowledge/vendor_reference/families/switchgear/vendors/eaton/specs/meb_msb.json",
+      "fixed_spec_names": [
+        "breaker_type",
+        "current_rating_a",
+        "enclosure_type",
+        "indoor_outdoor",
+        "insulation_type",
+        "interrupting_rating_ka",
+        "switchgear_class",
+        "voltage_class_v"
+      ],
+      "source_urls": [
+        "https://www.eaton.com/content/dam/eaton/products/medium-voltage-power-distribution-control-systems/mv-switchgear/eaton-medium-voltage-switchgear-line-card-sa020040en.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Eaton"
+      ],
+      "model_aliases": [
+        "MEB / MSB",
+        "MEB/MSB",
+        "MEB MSB"
+      ],
+      "source_domains": [
+        "www.eaton.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.eaton.com/content/dam/eaton/products/medium-voltage-power-distribution-control-systems/mv-switchgear/eaton-medium-voltage-switchgear-line-card-sa020040en.pdf",
+          "source_domain": "www.eaton.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "switchgear",
+        "Eaton",
+        "MEB / MSB",
+        "breaker_type",
+        "current_rating_a",
+        "enclosure_type",
+        "indoor_outdoor",
+        "insulation_type",
+        "interrupting_rating_ka",
+        "switchgear_class",
+        "voltage_class_v"
+      ]
+    },
+    {
+      "equipment_family": "switchgear",
+      "manufacturer": "Eaton",
+      "model_or_product_line": "MVS",
+      "record_status": "drop_in_ready_with_backfilled_product_line_specs",
+      "spec_path": "knowledge/vendor_reference/families/switchgear/vendors/eaton/specs/mvs.json",
+      "fixed_spec_names": [
+        "breaker_type",
+        "current_rating_a",
+        "enclosure_type",
+        "indoor_outdoor",
+        "insulation_type",
+        "interrupting_rating_ka",
+        "switchgear_class",
+        "voltage_class_v"
+      ],
+      "source_urls": [
+        "https://www.eaton.com/content/dam/eaton/products/medium-voltage-power-distribution-control-systems/mv-switchgear/eaton-mvs-mva-capabilities-br022016en-en-us.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Eaton"
+      ],
+      "model_aliases": [
+        "MVS"
+      ],
+      "source_domains": [
+        "www.eaton.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.eaton.com/content/dam/eaton/products/medium-voltage-power-distribution-control-systems/mv-switchgear/eaton-mvs-mva-capabilities-br022016en-en-us.pdf",
+          "source_domain": "www.eaton.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "switchgear",
+        "Eaton",
+        "MVS",
+        "breaker_type",
+        "current_rating_a",
+        "enclosure_type",
+        "indoor_outdoor",
+        "insulation_type",
+        "interrupting_rating_ka",
+        "switchgear_class",
+        "voltage_class_v"
+      ]
+    },
+    {
+      "equipment_family": "switchgear",
+      "manufacturer": "Eaton",
+      "model_or_product_line": "Power Xpert IGX",
+      "record_status": "drop_in_ready_with_backfilled_product_line_specs",
+      "spec_path": "knowledge/vendor_reference/families/switchgear/vendors/eaton/specs/power_xpert_igx.json",
+      "fixed_spec_names": [
+        "breaker_type",
+        "current_rating_a",
+        "enclosure_type",
+        "indoor_outdoor",
+        "insulation_type",
+        "interrupting_rating_ka",
+        "switchgear_class",
+        "voltage_class_v"
+      ],
+      "source_urls": [
+        "https://www.eaton.com/content/dam/eaton/products/medium-voltage-power-distribution-control-systems/mv-switchgear/igx/eaton-power-xpert-igx-selector-guide-sa042011en.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Eaton"
+      ],
+      "model_aliases": [
+        "Power Xpert IGX",
+        "PowerXpertIGX",
+        "IGX"
+      ],
+      "source_domains": [
+        "www.eaton.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.eaton.com/content/dam/eaton/products/medium-voltage-power-distribution-control-systems/mv-switchgear/igx/eaton-power-xpert-igx-selector-guide-sa042011en.pdf",
+          "source_domain": "www.eaton.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "switchgear",
+        "Eaton",
+        "Power Xpert IGX",
+        "breaker_type",
+        "current_rating_a",
+        "enclosure_type",
+        "indoor_outdoor",
+        "insulation_type",
+        "interrupting_rating_ka",
+        "switchgear_class",
+        "voltage_class_v"
+      ]
+    },
+    {
+      "equipment_family": "switchgear",
+      "manufacturer": "Eaton",
+      "model_or_product_line": "Power Xpert XGIS",
+      "record_status": "drop_in_ready_with_backfilled_product_line_specs",
+      "spec_path": "knowledge/vendor_reference/families/switchgear/vendors/eaton/specs/power_xpert_xgis.json",
+      "fixed_spec_names": [
+        "breaker_type",
+        "current_rating_a",
+        "enclosure_type",
+        "indoor_outdoor",
+        "insulation_type",
+        "interrupting_rating_ka",
+        "switchgear_class",
+        "voltage_class_v"
+      ],
+      "source_urls": [
+        "https://www.eaton.com/in/en-us/catalog/medium-voltage-power-distribution-control-systems/power-xpert-xgis-gas-insulated-medium-voltage-switchgear.html",
+        "https://www.eaton.com/content/dam/eaton/products/medium-voltage-power-distribution-control-systems/power-xpert-xgis-gas-insulated-medium-voltage-switchgear/eaton-xgis-install-commissioning-ib022018en.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Eaton"
+      ],
+      "model_aliases": [
+        "Power Xpert XGIS",
+        "PowerXpertXGIS",
+        "XGIS"
+      ],
+      "source_domains": [
+        "www.eaton.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.eaton.com/in/en-us/catalog/medium-voltage-power-distribution-control-systems/power-xpert-xgis-gas-insulated-medium-voltage-switchgear.html",
+          "source_domain": "www.eaton.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        },
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.eaton.com/content/dam/eaton/products/medium-voltage-power-distribution-control-systems/power-xpert-xgis-gas-insulated-medium-voltage-switchgear/eaton-xgis-install-commissioning-ib022018en.pdf",
+          "source_domain": "www.eaton.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "switchgear",
+        "Eaton",
+        "Power Xpert XGIS",
+        "breaker_type",
+        "current_rating_a",
+        "enclosure_type",
+        "indoor_outdoor",
+        "insulation_type",
+        "interrupting_rating_ka",
+        "switchgear_class",
+        "voltage_class_v"
+      ]
+    },
+    {
+      "equipment_family": "switchgear",
+      "manufacturer": "Eaton",
+      "model_or_product_line": "VacClad-W",
+      "record_status": "drop_in_ready_with_backfilled_product_line_specs",
+      "spec_path": "knowledge/vendor_reference/families/switchgear/vendors/eaton/specs/vacclad_w.json",
+      "fixed_spec_names": [
+        "breaker_type",
+        "current_rating_a",
+        "enclosure_type",
+        "indoor_outdoor",
+        "insulation_type",
+        "interrupting_rating_ka",
+        "switchgear_class",
+        "voltage_class_v"
+      ],
+      "source_urls": [
+        "https://www.eaton.com/content/dam/eaton/products/medium-voltage-power-distribution-control-systems/mv-switchgear/vacclad-w/eaton-vacclad-w-switchgear-brochure-br042002en.pdf",
+        "https://www.eaton.com/content/dam/eaton/products/medium-voltage-power-distribution-control-systems/vacclad-w-pages/eaton-vacclad-metal-clad-mv-switchgear-brochure-br022017en-en-us.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Eaton"
+      ],
+      "model_aliases": [
+        "VacClad-W",
+        "VacCladW"
+      ],
+      "source_domains": [
+        "www.eaton.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.eaton.com/content/dam/eaton/products/medium-voltage-power-distribution-control-systems/mv-switchgear/vacclad-w/eaton-vacclad-w-switchgear-brochure-br042002en.pdf",
+          "source_domain": "www.eaton.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        },
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.eaton.com/content/dam/eaton/products/medium-voltage-power-distribution-control-systems/vacclad-w-pages/eaton-vacclad-metal-clad-mv-switchgear-brochure-br022017en-en-us.pdf",
+          "source_domain": "www.eaton.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "switchgear",
+        "Eaton",
+        "VacClad-W",
+        "breaker_type",
+        "current_rating_a",
+        "enclosure_type",
+        "indoor_outdoor",
+        "insulation_type",
+        "interrupting_rating_ka",
+        "switchgear_class",
+        "voltage_class_v"
+      ]
+    },
+    {
+      "equipment_family": "switchgear",
+      "manufacturer": "Schneider Electric",
+      "model_or_product_line": "Masterclad MV Metal-Clad Switchgear",
+      "record_status": "drop_in_ready_with_backfilled_product_line_specs",
+      "spec_path": "knowledge/vendor_reference/families/switchgear/vendors/schneider_electric/specs/masterclad_mv_metal_clad_switchgear.json",
+      "fixed_spec_names": [
+        "breaker_type",
+        "current_rating_a",
+        "enclosure_type",
+        "indoor_outdoor",
+        "insulation_type",
+        "interrupting_rating_ka",
+        "switchgear_class",
+        "voltage_class_v"
+      ],
+      "source_urls": [
+        "https://www.se.com/us/en/download/document/998-23449998_GMA/",
+        "https://www.se.com/us/en/download/document/6055CT9901/"
+      ],
+      "manufacturer_aliases": [
+        "Schneider Electric",
+        "Schneider"
+      ],
+      "model_aliases": [
+        "Masterclad MV Metal-Clad Switchgear",
+        "MastercladMVMetalCladSwitchgear"
+      ],
+      "source_domains": [
+        "www.se.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.se.com/us/en/download/document/998-23449998_GMA/",
+          "source_domain": "www.se.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        },
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.se.com/us/en/download/document/6055CT9901/",
+          "source_domain": "www.se.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "switchgear",
+        "Schneider Electric",
+        "Masterclad MV Metal-Clad Switchgear",
+        "breaker_type",
+        "current_rating_a",
+        "enclosure_type",
+        "indoor_outdoor",
+        "insulation_type",
+        "interrupting_rating_ka",
+        "switchgear_class",
+        "voltage_class_v"
+      ]
+    },
+    {
+      "equipment_family": "switchgear",
+      "manufacturer": "Schneider Electric",
+      "model_or_product_line": "MCset 4",
+      "record_status": "drop_in_ready_with_backfilled_product_line_specs",
+      "spec_path": "knowledge/vendor_reference/families/switchgear/vendors/schneider_electric/specs/mcset_4.json",
+      "fixed_spec_names": [
+        "breaker_type",
+        "current_rating_a",
+        "enclosure_type",
+        "indoor_outdoor",
+        "insulation_type",
+        "interrupting_rating_ka",
+        "switchgear_class",
+        "voltage_class_v"
+      ],
+      "source_urls": [
+        "https://www.se.com/ww/en/product-range/727-mcset-4/"
+      ],
+      "manufacturer_aliases": [
+        "Schneider Electric",
+        "Schneider"
+      ],
+      "model_aliases": [
+        "MCset 4",
+        "MCset4"
+      ],
+      "source_domains": [
+        "www.se.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.se.com/ww/en/product-range/727-mcset-4/",
+          "source_domain": "www.se.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "switchgear",
+        "Schneider Electric",
+        "MCset 4",
+        "breaker_type",
+        "current_rating_a",
+        "enclosure_type",
+        "indoor_outdoor",
+        "insulation_type",
+        "interrupting_rating_ka",
+        "switchgear_class",
+        "voltage_class_v"
+      ]
+    },
+    {
+      "equipment_family": "switchgear",
+      "manufacturer": "Schneider Electric",
+      "model_or_product_line": "RM6",
+      "record_status": "drop_in_ready_with_backfilled_product_line_specs",
+      "spec_path": "knowledge/vendor_reference/families/switchgear/vendors/schneider_electric/specs/rm6.json",
+      "fixed_spec_names": [
+        "breaker_type",
+        "current_rating_a",
+        "enclosure_type",
+        "indoor_outdoor",
+        "insulation_type",
+        "interrupting_rating_ka",
+        "switchgear_class",
+        "voltage_class_v"
+      ],
+      "source_urls": [
+        "https://www.se.com/ww/en/product-range/2116-rm6/"
+      ],
+      "manufacturer_aliases": [
+        "Schneider Electric",
+        "Schneider"
+      ],
+      "model_aliases": [
+        "RM6"
+      ],
+      "source_domains": [
+        "www.se.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.se.com/ww/en/product-range/2116-rm6/",
+          "source_domain": "www.se.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "switchgear",
+        "Schneider Electric",
+        "RM6",
+        "breaker_type",
+        "current_rating_a",
+        "enclosure_type",
+        "indoor_outdoor",
+        "insulation_type",
+        "interrupting_rating_ka",
+        "switchgear_class",
+        "voltage_class_v"
+      ]
+    },
+    {
+      "equipment_family": "switchgear",
+      "manufacturer": "Schneider Electric",
+      "model_or_product_line": "SureSeT Air Insulated Switchgear",
+      "record_status": "drop_in_ready_with_backfilled_product_line_specs",
+      "spec_path": "knowledge/vendor_reference/families/switchgear/vendors/schneider_electric/specs/sureset_air_insulated_switchgear.json",
+      "fixed_spec_names": [
+        "breaker_type",
+        "current_rating_a",
+        "enclosure_type",
+        "indoor_outdoor",
+        "insulation_type",
+        "interrupting_rating_ka",
+        "switchgear_class",
+        "voltage_class_v"
+      ],
+      "source_urls": [
+        "https://www.se.com/us/en/download/document/6055CT2201/",
+        "https://www.se.com/us/en/download/document/998-21765207/"
+      ],
+      "manufacturer_aliases": [
+        "Schneider Electric",
+        "Schneider"
+      ],
+      "model_aliases": [
+        "SureSeT Air Insulated Switchgear",
+        "SureSeTAirInsulatedSwitchgear"
+      ],
+      "source_domains": [
+        "www.se.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.se.com/us/en/download/document/6055CT2201/",
+          "source_domain": "www.se.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        },
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.se.com/us/en/download/document/998-21765207/",
+          "source_domain": "www.se.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "switchgear",
+        "Schneider Electric",
+        "SureSeT Air Insulated Switchgear",
+        "breaker_type",
+        "current_rating_a",
+        "enclosure_type",
+        "indoor_outdoor",
+        "insulation_type",
+        "interrupting_rating_ka",
+        "switchgear_class",
+        "voltage_class_v"
+      ]
+    },
+    {
+      "equipment_family": "switchgear",
+      "manufacturer": "Siemens",
+      "model_or_product_line": "8DA10 / 8DB10 / 8DAB",
+      "record_status": "drop_in_ready_with_backfilled_product_line_specs",
+      "spec_path": "knowledge/vendor_reference/families/switchgear/vendors/siemens/specs/8da10_8db10_8dab.json",
+      "fixed_spec_names": [
+        "breaker_type",
+        "current_rating_a",
+        "enclosure_type",
+        "indoor_outdoor",
+        "insulation_type",
+        "interrupting_rating_ka",
+        "switchgear_class",
+        "voltage_class_v"
+      ],
+      "source_urls": [
+        "https://assets.new.siemens.com/siemens/assets/api/uuid%3Af0512c3e-6ace-43a0-9a66-7a6a4fb652ce/Siemens-8DAB-2021-EN.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Siemens"
+      ],
+      "model_aliases": [
+        "8DA10 / 8DB10 / 8DAB",
+        "8DA10/8DB10/8DAB",
+        "8DA10 8DB10 8DAB"
+      ],
+      "source_domains": [
+        "assets.new.siemens.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://assets.new.siemens.com/siemens/assets/api/uuid%3Af0512c3e-6ace-43a0-9a66-7a6a4fb652ce/Siemens-8DAB-2021-EN.pdf",
+          "source_domain": "assets.new.siemens.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "switchgear",
+        "Siemens",
+        "8DA10 / 8DB10 / 8DAB",
+        "breaker_type",
+        "current_rating_a",
+        "enclosure_type",
+        "indoor_outdoor",
+        "insulation_type",
+        "interrupting_rating_ka",
+        "switchgear_class",
+        "voltage_class_v"
+      ]
+    },
+    {
+      "equipment_family": "switchgear",
+      "manufacturer": "Siemens",
+      "model_or_product_line": "NXAIR M",
+      "record_status": "drop_in_ready_with_backfilled_product_line_specs",
+      "spec_path": "knowledge/vendor_reference/families/switchgear/vendors/siemens/specs/nxair_m.json",
+      "fixed_spec_names": [
+        "breaker_type",
+        "current_rating_a",
+        "enclosure_type",
+        "indoor_outdoor",
+        "insulation_type",
+        "interrupting_rating_ka",
+        "switchgear_class",
+        "voltage_class_v"
+      ],
+      "source_urls": [
+        "https://assets.new.siemens.com/siemens/assets/api/uuid%3A32161f64-3d7e-408e-ba82-2b607a1dd312/ha-25-75-nxair-m-en.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Siemens"
+      ],
+      "model_aliases": [
+        "NXAIR M",
+        "NXAIRM"
+      ],
+      "source_domains": [
+        "assets.new.siemens.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://assets.new.siemens.com/siemens/assets/api/uuid%3A32161f64-3d7e-408e-ba82-2b607a1dd312/ha-25-75-nxair-m-en.pdf",
+          "source_domain": "assets.new.siemens.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "switchgear",
+        "Siemens",
+        "NXAIR M",
+        "breaker_type",
+        "current_rating_a",
+        "enclosure_type",
+        "indoor_outdoor",
+        "insulation_type",
+        "interrupting_rating_ka",
+        "switchgear_class",
+        "voltage_class_v"
+      ]
+    },
+    {
+      "equipment_family": "switchgear",
+      "manufacturer": "Siemens",
+      "model_or_product_line": "NXAirS",
+      "record_status": "drop_in_ready_with_backfilled_product_line_specs",
+      "spec_path": "knowledge/vendor_reference/families/switchgear/vendors/siemens/specs/nxairs.json",
+      "fixed_spec_names": [
+        "breaker_type",
+        "current_rating_a",
+        "enclosure_type",
+        "indoor_outdoor",
+        "insulation_type",
+        "interrupting_rating_ka",
+        "switchgear_class",
+        "voltage_class_v"
+      ],
+      "source_urls": [
+        "https://assets.new.siemens.com/siemens/assets/api/uuid%3Aadbb75df-c506-4579-816a-464ab78acc19/siemens-nxairs-12-kv-catalog-en.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Siemens"
+      ],
+      "model_aliases": [
+        "NXAirS"
+      ],
+      "source_domains": [
+        "assets.new.siemens.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://assets.new.siemens.com/siemens/assets/api/uuid%3Aadbb75df-c506-4579-816a-464ab78acc19/siemens-nxairs-12-kv-catalog-en.pdf",
+          "source_domain": "assets.new.siemens.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "switchgear",
+        "Siemens",
+        "NXAirS",
+        "breaker_type",
+        "current_rating_a",
+        "enclosure_type",
+        "indoor_outdoor",
+        "insulation_type",
+        "interrupting_rating_ka",
+        "switchgear_class",
+        "voltage_class_v"
+      ]
+    },
+    {
+      "equipment_family": "switchgear",
+      "manufacturer": "Siemens",
+      "model_or_product_line": "SIMOSEC",
+      "record_status": "drop_in_ready_with_backfilled_product_line_specs",
+      "spec_path": "knowledge/vendor_reference/families/switchgear/vendors/siemens/specs/simosec.json",
+      "fixed_spec_names": [
+        "breaker_type",
+        "current_rating_a",
+        "enclosure_type",
+        "indoor_outdoor",
+        "insulation_type",
+        "interrupting_rating_ka",
+        "switchgear_class",
+        "voltage_class_v"
+      ],
+      "source_urls": [
+        "https://www.siemens-energy.com/global/en/home/products-services/product/simosec.html"
+      ],
+      "manufacturer_aliases": [
+        "Siemens"
+      ],
+      "model_aliases": [
+        "SIMOSEC"
+      ],
+      "source_domains": [
+        "www.siemens-energy.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.siemens-energy.com/global/en/home/products-services/product/simosec.html",
+          "source_domain": "www.siemens-energy.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "switchgear",
+        "Siemens",
+        "SIMOSEC",
+        "breaker_type",
+        "current_rating_a",
+        "enclosure_type",
+        "indoor_outdoor",
+        "insulation_type",
+        "interrupting_rating_ka",
+        "switchgear_class",
+        "voltage_class_v"
+      ]
+    },
+    {
+      "equipment_family": "transformers",
+      "manufacturer": "Eaton",
+      "model_or_product_line": "Cast Resin Dry-Type Transformer",
+      "record_status": "drop_in_ready_with_backfilled_product_line_specs",
+      "spec_path": "knowledge/vendor_reference/families/transformers/vendors/eaton/specs/cast_resin_dry_type_transformer.json",
+      "fixed_spec_names": [
+        "cooling_class",
+        "frequency_hz",
+        "impedance_percent",
+        "primary_voltage_v",
+        "rated_power_kva",
+        "secondary_voltage_v",
+        "tap_changer_flag",
+        "tap_range",
+        "vector_group",
+        "winding_configuration"
+      ],
+      "source_urls": [
+        "https://www.eaton.com/content/dam/eaton/products/medium-voltage-power-distribution-control-systems/eaton-dry-transfomer/eaton-dry-type-transformer-catalogue-en-us.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Eaton"
+      ],
+      "model_aliases": [
+        "Cast Resin Dry-Type Transformer",
+        "CastResinDryTypeTransformer"
+      ],
+      "source_domains": [
+        "www.eaton.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.eaton.com/content/dam/eaton/products/medium-voltage-power-distribution-control-systems/eaton-dry-transfomer/eaton-dry-type-transformer-catalogue-en-us.pdf",
+          "source_domain": "www.eaton.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "transformers",
+        "Eaton",
+        "Cast Resin Dry-Type Transformer",
+        "cooling_class",
+        "frequency_hz",
+        "impedance_percent",
+        "primary_voltage_v",
+        "rated_power_kva",
+        "secondary_voltage_v",
+        "tap_changer_flag",
+        "tap_range",
+        "vector_group",
+        "winding_configuration"
+      ]
+    },
+    {
+      "equipment_family": "transformers",
+      "manufacturer": "Eaton",
+      "model_or_product_line": "Dry-Type Distribution Transformers",
+      "record_status": "drop_in_ready_with_backfilled_product_line_specs",
+      "spec_path": "knowledge/vendor_reference/families/transformers/vendors/eaton/specs/dry_type_distribution_transformers.json",
+      "fixed_spec_names": [
+        "cooling_class",
+        "frequency_hz",
+        "impedance_percent",
+        "primary_voltage_v",
+        "rated_power_kva",
+        "secondary_voltage_v",
+        "tap_changer_flag",
+        "tap_range",
+        "vector_group",
+        "winding_configuration"
+      ],
+      "source_urls": [
+        "https://www.eaton.com/content/dam/eaton/products/design-guides---consultant-audience/eaton-dtdt-general-purpose-design-guide-dg009001en.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Eaton"
+      ],
+      "model_aliases": [
+        "Dry-Type Distribution Transformers",
+        "DryTypeDistributionTransformers"
+      ],
+      "source_domains": [
+        "www.eaton.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.eaton.com/content/dam/eaton/products/design-guides---consultant-audience/eaton-dtdt-general-purpose-design-guide-dg009001en.pdf",
+          "source_domain": "www.eaton.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "transformers",
+        "Eaton",
+        "Dry-Type Distribution Transformers",
+        "cooling_class",
+        "frequency_hz",
+        "impedance_percent",
+        "primary_voltage_v",
+        "rated_power_kva",
+        "secondary_voltage_v",
+        "tap_changer_flag",
+        "tap_range",
+        "vector_group",
+        "winding_configuration"
+      ]
+    },
+    {
+      "equipment_family": "transformers",
+      "manufacturer": "Eaton",
+      "model_or_product_line": "Ulusoy Cast Resin Dry Type Transformer",
+      "record_status": "drop_in_ready_with_backfilled_product_line_specs",
+      "spec_path": "knowledge/vendor_reference/families/transformers/vendors/eaton/specs/ulusoy_cast_resin_dry_type_transformer.json",
+      "fixed_spec_names": [
+        "cooling_class",
+        "frequency_hz",
+        "impedance_percent",
+        "primary_voltage_v",
+        "rated_power_kva",
+        "secondary_voltage_v",
+        "tap_changer_flag",
+        "tap_range",
+        "vector_group",
+        "winding_configuration"
+      ],
+      "source_urls": [
+        "https://www.eaton.com/content/dam/eaton/products/medium-voltage-power-distribution-control-systems/iec-assemblies-mv-switchgear/ulusoy-oil-immersed-type-transformer/eaton-ulusoy-iec-transformer-brochure-global-en-gb.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Eaton"
+      ],
+      "model_aliases": [
+        "Ulusoy Cast Resin Dry Type Transformer",
+        "UlusoyCastResinDryTypeTransformer"
+      ],
+      "source_domains": [
+        "www.eaton.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.eaton.com/content/dam/eaton/products/medium-voltage-power-distribution-control-systems/iec-assemblies-mv-switchgear/ulusoy-oil-immersed-type-transformer/eaton-ulusoy-iec-transformer-brochure-global-en-gb.pdf",
+          "source_domain": "www.eaton.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "transformers",
+        "Eaton",
+        "Ulusoy Cast Resin Dry Type Transformer",
+        "cooling_class",
+        "frequency_hz",
+        "impedance_percent",
+        "primary_voltage_v",
+        "rated_power_kva",
+        "secondary_voltage_v",
+        "tap_changer_flag",
+        "tap_range",
+        "vector_group",
+        "winding_configuration"
+      ]
+    },
+    {
+      "equipment_family": "transformers",
+      "manufacturer": "Hitachi Energy",
+      "model_or_product_line": "Dry-Type Distribution Transformers",
+      "record_status": "drop_in_ready_with_backfilled_product_line_specs",
+      "spec_path": "knowledge/vendor_reference/families/transformers/vendors/hitachi_energy/specs/dry_type_distribution_transformers.json",
+      "fixed_spec_names": [
+        "cooling_class",
+        "frequency_hz",
+        "impedance_percent",
+        "primary_voltage_v",
+        "rated_power_kva",
+        "secondary_voltage_v",
+        "tap_changer_flag",
+        "tap_range",
+        "vector_group",
+        "winding_configuration"
+      ],
+      "source_urls": [
+        "https://www.hitachienergy.com/products-and-solutions/transformers/distribution-transformers/dry-type-transformers"
+      ],
+      "manufacturer_aliases": [
+        "Hitachi Energy"
+      ],
+      "model_aliases": [
+        "Dry-Type Distribution Transformers",
+        "DryTypeDistributionTransformers"
+      ],
+      "source_domains": [
+        "www.hitachienergy.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.hitachienergy.com/products-and-solutions/transformers/distribution-transformers/dry-type-transformers",
+          "source_domain": "www.hitachienergy.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "transformers",
+        "Hitachi Energy",
+        "Dry-Type Distribution Transformers",
+        "cooling_class",
+        "frequency_hz",
+        "impedance_percent",
+        "primary_voltage_v",
+        "rated_power_kva",
+        "secondary_voltage_v",
+        "tap_changer_flag",
+        "tap_range",
+        "vector_group",
+        "winding_configuration"
+      ]
+    },
+    {
+      "equipment_family": "transformers",
+      "manufacturer": "Hitachi Energy",
+      "model_or_product_line": "RESIBLOC Dry-Type Transformers",
+      "record_status": "drop_in_ready_with_backfilled_product_line_specs",
+      "spec_path": "knowledge/vendor_reference/families/transformers/vendors/hitachi_energy/specs/resibloc_dry_type_transformers.json",
+      "fixed_spec_names": [
+        "cooling_class",
+        "frequency_hz",
+        "impedance_percent",
+        "primary_voltage_v",
+        "rated_power_kva",
+        "secondary_voltage_v",
+        "tap_changer_flag",
+        "tap_range",
+        "vector_group",
+        "winding_configuration"
+      ],
+      "source_urls": [
+        "https://www.hitachienergy.com/products-and-solutions/transformers/distribution-transformers/dry-type-transformers/resibloc-transformers",
+        "https://publisher.hitachienergy.com/documents?cid=9AAC818852"
+      ],
+      "manufacturer_aliases": [
+        "Hitachi Energy"
+      ],
+      "model_aliases": [
+        "RESIBLOC Dry-Type Transformers",
+        "RESIBLOCDryTypeTransformers"
+      ],
+      "source_domains": [
+        "publisher.hitachienergy.com",
+        "www.hitachienergy.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.hitachienergy.com/products-and-solutions/transformers/distribution-transformers/dry-type-transformers/resibloc-transformers",
+          "source_domain": "www.hitachienergy.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        },
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://publisher.hitachienergy.com/documents?cid=9AAC818852",
+          "source_domain": "publisher.hitachienergy.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "transformers",
+        "Hitachi Energy",
+        "RESIBLOC Dry-Type Transformers",
+        "cooling_class",
+        "frequency_hz",
+        "impedance_percent",
+        "primary_voltage_v",
+        "rated_power_kva",
+        "secondary_voltage_v",
+        "tap_changer_flag",
+        "tap_range",
+        "vector_group",
+        "winding_configuration"
+      ]
+    },
+    {
+      "equipment_family": "transformers",
+      "manufacturer": "Schneider Electric",
+      "model_or_product_line": "Trihal Cast Resin Transformer",
+      "record_status": "drop_in_ready_with_backfilled_product_line_specs",
+      "spec_path": "knowledge/vendor_reference/families/transformers/vendors/schneider_electric/specs/trihal_cast_resin_transformer.json",
+      "fixed_spec_names": [
+        "cooling_class",
+        "frequency_hz",
+        "impedance_percent",
+        "primary_voltage_v",
+        "rated_power_kva",
+        "secondary_voltage_v",
+        "tap_changer_flag",
+        "tap_range",
+        "vector_group",
+        "winding_configuration"
+      ],
+      "source_urls": [
+        "https://www.se.com/uk/en/download/document/NRJED315663EN/"
+      ],
+      "manufacturer_aliases": [
+        "Schneider Electric",
+        "Schneider"
+      ],
+      "model_aliases": [
+        "Trihal Cast Resin Transformer",
+        "TrihalCastResinTransformer"
+      ],
+      "source_domains": [
+        "www.se.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.se.com/uk/en/download/document/NRJED315663EN/",
+          "source_domain": "www.se.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "transformers",
+        "Schneider Electric",
+        "Trihal Cast Resin Transformer",
+        "cooling_class",
+        "frequency_hz",
+        "impedance_percent",
+        "primary_voltage_v",
+        "rated_power_kva",
+        "secondary_voltage_v",
+        "tap_changer_flag",
+        "tap_range",
+        "vector_group",
+        "winding_configuration"
+      ]
+    },
+    {
+      "equipment_family": "transformers",
+      "manufacturer": "Siemens",
+      "model_or_product_line": "Dry Type Transformers",
+      "record_status": "drop_in_ready_with_backfilled_product_line_specs",
+      "spec_path": "knowledge/vendor_reference/families/transformers/vendors/siemens/specs/dry_type_transformers.json",
+      "fixed_spec_names": [
+        "cooling_class",
+        "frequency_hz",
+        "impedance_percent",
+        "primary_voltage_v",
+        "rated_power_kva",
+        "secondary_voltage_v",
+        "tap_changer_flag",
+        "tap_range",
+        "vector_group",
+        "winding_configuration"
+      ],
+      "source_urls": [
+        "https://assets.new.siemens.com/siemens/assets/api/uuid%3A7a553373-0eac-4520-a1b3-d1a294c25b2d/s07-dry-type-transformers.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Siemens"
+      ],
+      "model_aliases": [
+        "Dry Type Transformers",
+        "DryTypeTransformers"
+      ],
+      "source_domains": [
+        "assets.new.siemens.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://assets.new.siemens.com/siemens/assets/api/uuid%3A7a553373-0eac-4520-a1b3-d1a294c25b2d/s07-dry-type-transformers.pdf",
+          "source_domain": "assets.new.siemens.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "transformers",
+        "Siemens",
+        "Dry Type Transformers",
+        "cooling_class",
+        "frequency_hz",
+        "impedance_percent",
+        "primary_voltage_v",
+        "rated_power_kva",
+        "secondary_voltage_v",
+        "tap_changer_flag",
+        "tap_range",
+        "vector_group",
+        "winding_configuration"
+      ]
+    },
+    {
+      "equipment_family": "transformers",
+      "manufacturer": "Siemens",
+      "model_or_product_line": "GEAFOL Cast-Resin Transformers",
+      "record_status": "drop_in_ready_with_backfilled_product_line_specs",
+      "spec_path": "knowledge/vendor_reference/families/transformers/vendors/siemens/specs/geafol_cast_resin_transformers.json",
+      "fixed_spec_names": [
+        "cooling_class",
+        "frequency_hz",
+        "impedance_percent",
+        "primary_voltage_v",
+        "rated_power_kva",
+        "secondary_voltage_v",
+        "tap_changer_flag",
+        "tap_range",
+        "vector_group",
+        "winding_configuration"
+      ],
+      "source_urls": [
+        "https://assets.new.siemens.com/siemens/assets/api/uuid%3Ac7cc607b-56e6-4ddd-a393-4a1ac08d846f/siemens-geafol-cast-resin-transformer.pdf",
+        "https://assets.new.siemens.com/siemens/assets/api/uuid%3A469af2a9-55a8-44ae-857c-dc3dcedc9993/geafol-cast-resin-transformers-planning-guidelines.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Siemens"
+      ],
+      "model_aliases": [
+        "GEAFOL Cast-Resin Transformers",
+        "GEAFOLCastResinTransformers"
+      ],
+      "source_domains": [
+        "assets.new.siemens.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://assets.new.siemens.com/siemens/assets/api/uuid%3Ac7cc607b-56e6-4ddd-a393-4a1ac08d846f/siemens-geafol-cast-resin-transformer.pdf",
+          "source_domain": "assets.new.siemens.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        },
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://assets.new.siemens.com/siemens/assets/api/uuid%3A469af2a9-55a8-44ae-857c-dc3dcedc9993/geafol-cast-resin-transformers-planning-guidelines.pdf",
+          "source_domain": "assets.new.siemens.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "transformers",
+        "Siemens",
+        "GEAFOL Cast-Resin Transformers",
+        "cooling_class",
+        "frequency_hz",
+        "impedance_percent",
+        "primary_voltage_v",
+        "rated_power_kva",
+        "secondary_voltage_v",
+        "tap_changer_flag",
+        "tap_range",
+        "vector_group",
+        "winding_configuration"
+      ]
+    },
+    {
+      "equipment_family": "ups",
+      "manufacturer": "ABB",
+      "model_or_product_line": "Conceptpower DPA 500",
+      "record_status": "drop_in_ready_with_backfilled_fixed_specs",
+      "spec_path": "knowledge/vendor_reference/families/ups/vendors/abb/specs/conceptpower_dpa_500.json",
+      "fixed_spec_names": [
+        "battery_chemistry",
+        "efficiency_percent",
+        "frame_capacity_kw",
+        "frequency_hz",
+        "input_voltage_v",
+        "module_rating_kw",
+        "output_voltage_v",
+        "rated_power_kva",
+        "rated_power_kw",
+        "ride_through_seconds",
+        "runtime_minutes",
+        "scalable_capacity_flag",
+        "transfer_time_ms",
+        "ups_topology"
+      ],
+      "source_urls": [
+        "https://library.e.abb.com/public/131daa659a8345249d2174978f21dfbb/Conceptpower%20DPA%20500-UL_Guide_Spec_111115.pdf",
+        "https://library.e.abb.com/public/ab300d3d0b864b4583893b06db6cfcdf/Product_Overview_EN.pdf"
+      ],
+      "manufacturer_aliases": [
+        "ABB"
+      ],
+      "model_aliases": [
+        "Conceptpower DPA 500",
+        "ConceptpowerDPA500"
+      ],
+      "source_domains": [
+        "library.e.abb.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://library.e.abb.com/public/131daa659a8345249d2174978f21dfbb/Conceptpower%20DPA%20500-UL_Guide_Spec_111115.pdf",
+          "source_domain": "library.e.abb.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        },
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://library.e.abb.com/public/ab300d3d0b864b4583893b06db6cfcdf/Product_Overview_EN.pdf",
+          "source_domain": "library.e.abb.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "ups",
+        "ABB",
+        "Conceptpower DPA 500",
+        "battery_chemistry",
+        "efficiency_percent",
+        "frame_capacity_kw",
+        "frequency_hz",
+        "input_voltage_v",
+        "module_rating_kw",
+        "output_voltage_v",
+        "rated_power_kva",
+        "rated_power_kw",
+        "ride_through_seconds",
+        "runtime_minutes",
+        "scalable_capacity_flag",
+        "transfer_time_ms",
+        "ups_topology"
+      ]
+    },
+    {
+      "equipment_family": "ups",
+      "manufacturer": "ABB",
+      "model_or_product_line": "DPA UPScale ST",
+      "record_status": "drop_in_ready_with_backfilled_fixed_specs",
+      "spec_path": "knowledge/vendor_reference/families/ups/vendors/abb/specs/dpa_upscale_st.json",
+      "fixed_spec_names": [
+        "battery_chemistry",
+        "efficiency_percent",
+        "frame_capacity_kw",
+        "frequency_hz",
+        "input_voltage_v",
+        "module_rating_kw",
+        "output_voltage_v",
+        "rated_power_kva",
+        "rated_power_kw",
+        "ride_through_seconds",
+        "runtime_minutes",
+        "scalable_capacity_flag",
+        "transfer_time_ms",
+        "ups_topology"
+      ],
+      "source_urls": [
+        "https://library.e.abb.com/public/5c36ddc0ec1c4648bf3cd24bd228bd66/DPA_UPScale_ST_Series2.pdf",
+        "https://library.e.abb.com/public/ab300d3d0b864b4583893b06db6cfcdf/Product_Overview_EN.pdf"
+      ],
+      "manufacturer_aliases": [
+        "ABB"
+      ],
+      "model_aliases": [
+        "DPA UPScale ST",
+        "DPAUPScaleST"
+      ],
+      "source_domains": [
+        "library.e.abb.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://library.e.abb.com/public/5c36ddc0ec1c4648bf3cd24bd228bd66/DPA_UPScale_ST_Series2.pdf",
+          "source_domain": "library.e.abb.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        },
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://library.e.abb.com/public/ab300d3d0b864b4583893b06db6cfcdf/Product_Overview_EN.pdf",
+          "source_domain": "library.e.abb.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "ups",
+        "ABB",
+        "DPA UPScale ST",
+        "battery_chemistry",
+        "efficiency_percent",
+        "frame_capacity_kw",
+        "frequency_hz",
+        "input_voltage_v",
+        "module_rating_kw",
+        "output_voltage_v",
+        "rated_power_kva",
+        "rated_power_kw",
+        "ride_through_seconds",
+        "runtime_minutes",
+        "scalable_capacity_flag",
+        "transfer_time_ms",
+        "ups_topology"
+      ]
+    },
+    {
+      "equipment_family": "ups",
+      "manufacturer": "ABB",
+      "model_or_product_line": "MegaFlex DPA",
+      "record_status": "drop_in_ready_with_backfilled_fixed_specs",
+      "spec_path": "knowledge/vendor_reference/families/ups/vendors/abb/specs/megaflex_dpa.json",
+      "fixed_spec_names": [
+        "battery_chemistry",
+        "efficiency_percent",
+        "frame_capacity_kw",
+        "frequency_hz",
+        "input_voltage_v",
+        "module_rating_kw",
+        "output_voltage_v",
+        "rated_power_kva",
+        "rated_power_kw",
+        "ride_through_seconds",
+        "runtime_minutes",
+        "scalable_capacity_flag",
+        "transfer_time_ms",
+        "ups_topology"
+      ],
+      "source_urls": [
+        "https://search.abb.com/library/Download.aspx?Action=Launch&DocumentID=9AKK108471A8305&DocumentPartId=&LanguageCode=en"
+      ],
+      "manufacturer_aliases": [
+        "ABB"
+      ],
+      "model_aliases": [
+        "MegaFlex DPA",
+        "MegaFlexDPA"
+      ],
+      "source_domains": [
+        "search.abb.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://search.abb.com/library/Download.aspx?Action=Launch&DocumentID=9AKK108471A8305&DocumentPartId=&LanguageCode=en",
+          "source_domain": "search.abb.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "ups",
+        "ABB",
+        "MegaFlex DPA",
+        "battery_chemistry",
+        "efficiency_percent",
+        "frame_capacity_kw",
+        "frequency_hz",
+        "input_voltage_v",
+        "module_rating_kw",
+        "output_voltage_v",
+        "rated_power_kva",
+        "rated_power_kw",
+        "ride_through_seconds",
+        "runtime_minutes",
+        "scalable_capacity_flag",
+        "transfer_time_ms",
+        "ups_topology"
+      ]
+    },
+    {
+      "equipment_family": "ups",
+      "manufacturer": "ABB",
+      "model_or_product_line": "PowerWave 33",
+      "record_status": "drop_in_ready_with_backfilled_fixed_specs",
+      "spec_path": "knowledge/vendor_reference/families/ups/vendors/abb/specs/powerwave_33.json",
+      "fixed_spec_names": [
+        "battery_chemistry",
+        "efficiency_percent",
+        "frame_capacity_kw",
+        "frequency_hz",
+        "input_voltage_v",
+        "module_rating_kw",
+        "output_voltage_v",
+        "rated_power_kva",
+        "rated_power_kw",
+        "ride_through_seconds",
+        "runtime_minutes",
+        "scalable_capacity_flag",
+        "transfer_time_ms",
+        "ups_topology"
+      ],
+      "source_urls": [
+        "https://library.e.abb.com/public/26b4606d4afb447fc1257bc10036b7aa/2UCD301125-P_a%20Power%20protection%20brochure.pdf",
+        "https://library.e.abb.com/public/35de3494f44a4b46a9f7d44f80c0a0f3/ABB_UPS_Catalogue_web.pdf"
+      ],
+      "manufacturer_aliases": [
+        "ABB"
+      ],
+      "model_aliases": [
+        "PowerWave 33",
+        "PowerWave33"
+      ],
+      "source_domains": [
+        "library.e.abb.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://library.e.abb.com/public/26b4606d4afb447fc1257bc10036b7aa/2UCD301125-P_a%20Power%20protection%20brochure.pdf",
+          "source_domain": "library.e.abb.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        },
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://library.e.abb.com/public/35de3494f44a4b46a9f7d44f80c0a0f3/ABB_UPS_Catalogue_web.pdf",
+          "source_domain": "library.e.abb.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "ups",
+        "ABB",
+        "PowerWave 33",
+        "battery_chemistry",
+        "efficiency_percent",
+        "frame_capacity_kw",
+        "frequency_hz",
+        "input_voltage_v",
+        "module_rating_kw",
+        "output_voltage_v",
+        "rated_power_kva",
+        "rated_power_kw",
+        "ride_through_seconds",
+        "runtime_minutes",
+        "scalable_capacity_flag",
+        "transfer_time_ms",
+        "ups_topology"
+      ]
+    },
+    {
+      "equipment_family": "ups",
+      "manufacturer": "Eaton",
+      "model_or_product_line": "93E",
+      "record_status": "drop_in_ready_with_backfilled_fixed_specs",
+      "spec_path": "knowledge/vendor_reference/families/ups/vendors/eaton/specs/93e.json",
+      "fixed_spec_names": [
+        "battery_chemistry",
+        "efficiency_percent",
+        "frame_capacity_kw",
+        "frequency_hz",
+        "input_voltage_v",
+        "module_rating_kw",
+        "output_voltage_v",
+        "rated_power_kva",
+        "rated_power_kw",
+        "ride_through_seconds",
+        "runtime_minutes",
+        "scalable_capacity_flag",
+        "transfer_time_ms",
+        "ups_topology"
+      ],
+      "source_urls": [
+        "https://www.eaton.com/content/dam/eaton/products/backup-power-ups-surge-it-power-distribution/93e-he/eaton-93E-he-ups-brochure-final.pdf",
+        "https://www.eaton.com/content/dam/eaton/products/backup-power-ups-surge-it-power-distribution/backup-power-ups/eaton-9155-marine-ups-emea/eaton-power-infrastructure-solutions-and-products-catalogue2018-ca153003en.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Eaton"
+      ],
+      "model_aliases": [
+        "93E"
+      ],
+      "source_domains": [
+        "www.eaton.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.eaton.com/content/dam/eaton/products/backup-power-ups-surge-it-power-distribution/93e-he/eaton-93E-he-ups-brochure-final.pdf",
+          "source_domain": "www.eaton.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        },
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.eaton.com/content/dam/eaton/products/backup-power-ups-surge-it-power-distribution/backup-power-ups/eaton-9155-marine-ups-emea/eaton-power-infrastructure-solutions-and-products-catalogue2018-ca153003en.pdf",
+          "source_domain": "www.eaton.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "ups",
+        "Eaton",
+        "93E",
+        "battery_chemistry",
+        "efficiency_percent",
+        "frame_capacity_kw",
+        "frequency_hz",
+        "input_voltage_v",
+        "module_rating_kw",
+        "output_voltage_v",
+        "rated_power_kva",
+        "rated_power_kw",
+        "ride_through_seconds",
+        "runtime_minutes",
+        "scalable_capacity_flag",
+        "transfer_time_ms",
+        "ups_topology"
+      ]
+    },
+    {
+      "equipment_family": "ups",
+      "manufacturer": "Eaton",
+      "model_or_product_line": "93PM",
+      "record_status": "drop_in_ready_with_backfilled_fixed_specs",
+      "spec_path": "knowledge/vendor_reference/families/ups/vendors/eaton/specs/93pm.json",
+      "fixed_spec_names": [
+        "battery_chemistry",
+        "efficiency_percent",
+        "frame_capacity_kw",
+        "frequency_hz",
+        "input_voltage_v",
+        "module_rating_kw",
+        "output_voltage_v",
+        "rated_power_kva",
+        "rated_power_kw",
+        "ride_through_seconds",
+        "runtime_minutes",
+        "scalable_capacity_flag",
+        "transfer_time_ms",
+        "ups_topology"
+      ],
+      "source_urls": [
+        "https://www.eaton.com/content/dam/eaton/products/backup-power-ups-surge-it-power-distribution/backup-power-ups/eaton-93pm-ups/eaton-93pm-ups-30-250kva-datasheet-ps153029en.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Eaton"
+      ],
+      "model_aliases": [
+        "93PM"
+      ],
+      "source_domains": [
+        "www.eaton.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.eaton.com/content/dam/eaton/products/backup-power-ups-surge-it-power-distribution/backup-power-ups/eaton-93pm-ups/eaton-93pm-ups-30-250kva-datasheet-ps153029en.pdf",
+          "source_domain": "www.eaton.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "ups",
+        "Eaton",
+        "93PM",
+        "battery_chemistry",
+        "efficiency_percent",
+        "frame_capacity_kw",
+        "frequency_hz",
+        "input_voltage_v",
+        "module_rating_kw",
+        "output_voltage_v",
+        "rated_power_kva",
+        "rated_power_kw",
+        "ride_through_seconds",
+        "runtime_minutes",
+        "scalable_capacity_flag",
+        "transfer_time_ms",
+        "ups_topology"
+      ]
+    },
+    {
+      "equipment_family": "ups",
+      "manufacturer": "Eaton",
+      "model_or_product_line": "93T",
+      "record_status": "drop_in_ready_with_backfilled_fixed_specs",
+      "spec_path": "knowledge/vendor_reference/families/ups/vendors/eaton/specs/93t.json",
+      "fixed_spec_names": [
+        "battery_chemistry",
+        "efficiency_percent",
+        "frame_capacity_kw",
+        "frequency_hz",
+        "input_voltage_v",
+        "module_rating_kw",
+        "output_voltage_v",
+        "rated_power_kva",
+        "rated_power_kw",
+        "ride_through_seconds",
+        "runtime_minutes",
+        "scalable_capacity_flag",
+        "transfer_time_ms",
+        "ups_topology"
+      ],
+      "source_urls": [
+        "https://www.eaton.com/content/dam/eaton/products/backup-power-ups-surge-it-power-distribution/backup-power-ups/eaton-93t-ups/eaton-93t-ups-datasheet-ps153072-en-us.pdf",
+        "https://www.eaton.com/ie/en-gb/catalog/backup-power-ups-surge-it-power-distribution/eaton-93t-ups.html"
+      ],
+      "manufacturer_aliases": [
+        "Eaton"
+      ],
+      "model_aliases": [
+        "93T"
+      ],
+      "source_domains": [
+        "www.eaton.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.eaton.com/content/dam/eaton/products/backup-power-ups-surge-it-power-distribution/backup-power-ups/eaton-93t-ups/eaton-93t-ups-datasheet-ps153072-en-us.pdf",
+          "source_domain": "www.eaton.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        },
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.eaton.com/ie/en-gb/catalog/backup-power-ups-surge-it-power-distribution/eaton-93t-ups.html",
+          "source_domain": "www.eaton.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "ups",
+        "Eaton",
+        "93T",
+        "battery_chemistry",
+        "efficiency_percent",
+        "frame_capacity_kw",
+        "frequency_hz",
+        "input_voltage_v",
+        "module_rating_kw",
+        "output_voltage_v",
+        "rated_power_kva",
+        "rated_power_kw",
+        "ride_through_seconds",
+        "runtime_minutes",
+        "scalable_capacity_flag",
+        "transfer_time_ms",
+        "ups_topology"
+      ]
+    },
+    {
+      "equipment_family": "ups",
+      "manufacturer": "Eaton",
+      "model_or_product_line": "Power Xpert 9395",
+      "record_status": "drop_in_ready_with_backfilled_fixed_specs",
+      "spec_path": "knowledge/vendor_reference/families/ups/vendors/eaton/specs/power_xpert_9395.json",
+      "fixed_spec_names": [
+        "battery_chemistry",
+        "efficiency_percent",
+        "frame_capacity_kw",
+        "frequency_hz",
+        "input_voltage_v",
+        "module_rating_kw",
+        "output_voltage_v",
+        "rated_power_kva",
+        "rated_power_kw",
+        "ride_through_seconds",
+        "runtime_minutes",
+        "scalable_capacity_flag",
+        "transfer_time_ms",
+        "ups_topology"
+      ],
+      "source_urls": [
+        "https://www.eaton.com/cr/en-us/catalog/backup-power-ups-surge-it-power-distribution/power-xpert-9395.html",
+        "https://www.eaton.com/content/dam/eaton/products/backup-power-ups-surge-it-power-distribution/backup-power-ups/power-xpert-9395/9395/9395-resources/Eaton-9395UPS-Brochure-9395FXA.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Eaton"
+      ],
+      "model_aliases": [
+        "Power Xpert 9395",
+        "PowerXpert9395",
+        "9395"
+      ],
+      "source_domains": [
+        "www.eaton.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.eaton.com/cr/en-us/catalog/backup-power-ups-surge-it-power-distribution/power-xpert-9395.html",
+          "source_domain": "www.eaton.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        },
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.eaton.com/content/dam/eaton/products/backup-power-ups-surge-it-power-distribution/backup-power-ups/power-xpert-9395/9395/9395-resources/Eaton-9395UPS-Brochure-9395FXA.pdf",
+          "source_domain": "www.eaton.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "ups",
+        "Eaton",
+        "Power Xpert 9395",
+        "battery_chemistry",
+        "efficiency_percent",
+        "frame_capacity_kw",
+        "frequency_hz",
+        "input_voltage_v",
+        "module_rating_kw",
+        "output_voltage_v",
+        "rated_power_kva",
+        "rated_power_kw",
+        "ride_through_seconds",
+        "runtime_minutes",
+        "scalable_capacity_flag",
+        "transfer_time_ms",
+        "ups_topology"
+      ]
+    },
+    {
+      "equipment_family": "ups",
+      "manufacturer": "Eaton",
+      "model_or_product_line": "Power Xpert 9395P",
+      "record_status": "drop_in_ready_with_backfilled_fixed_specs",
+      "spec_path": "knowledge/vendor_reference/families/ups/vendors/eaton/specs/power_xpert_9395p.json",
+      "fixed_spec_names": [
+        "battery_chemistry",
+        "efficiency_percent",
+        "frame_capacity_kw",
+        "frequency_hz",
+        "input_voltage_v",
+        "module_rating_kw",
+        "output_voltage_v",
+        "rated_power_kva",
+        "rated_power_kw",
+        "ride_through_seconds",
+        "runtime_minutes",
+        "scalable_capacity_flag",
+        "transfer_time_ms",
+        "ups_topology"
+      ],
+      "source_urls": [
+        "https://www.eaton.com/sg/en-us/catalog/backup-power-ups-surge-it-power-distribution/power-xpert-9395P.html",
+        "https://www.eaton.com/content/dam/eaton/products/backup-power-ups-surge-it-power-distribution/backup-power-ups/power-xpert-9395/power-xpert-9395P-ups-250-1200-kva-datasheet-ps153008en.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Eaton"
+      ],
+      "model_aliases": [
+        "Power Xpert 9395P",
+        "PowerXpert9395P",
+        "9395P"
+      ],
+      "source_domains": [
+        "www.eaton.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.eaton.com/sg/en-us/catalog/backup-power-ups-surge-it-power-distribution/power-xpert-9395P.html",
+          "source_domain": "www.eaton.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        },
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.eaton.com/content/dam/eaton/products/backup-power-ups-surge-it-power-distribution/backup-power-ups/power-xpert-9395/power-xpert-9395P-ups-250-1200-kva-datasheet-ps153008en.pdf",
+          "source_domain": "www.eaton.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "ups",
+        "Eaton",
+        "Power Xpert 9395P",
+        "battery_chemistry",
+        "efficiency_percent",
+        "frame_capacity_kw",
+        "frequency_hz",
+        "input_voltage_v",
+        "module_rating_kw",
+        "output_voltage_v",
+        "rated_power_kva",
+        "rated_power_kw",
+        "ride_through_seconds",
+        "runtime_minutes",
+        "scalable_capacity_flag",
+        "transfer_time_ms",
+        "ups_topology"
+      ]
+    },
+    {
+      "equipment_family": "ups",
+      "manufacturer": "Mitsubishi Electric",
+      "model_or_product_line": "9900AEGIS",
+      "record_status": "drop_in_ready_with_backfilled_fixed_specs",
+      "spec_path": "knowledge/vendor_reference/families/ups/vendors/mitsubishi_electric/specs/9900aegis.json",
+      "fixed_spec_names": [
+        "battery_chemistry",
+        "efficiency_percent",
+        "frame_capacity_kw",
+        "frequency_hz",
+        "input_voltage_v",
+        "module_rating_kw",
+        "output_voltage_v",
+        "rated_power_kva",
+        "rated_power_kw",
+        "ride_through_seconds",
+        "runtime_minutes",
+        "scalable_capacity_flag",
+        "transfer_time_ms",
+        "ups_topology"
+      ],
+      "source_urls": [
+        "https://mitsubishicritical.com/wp-content/uploads/2025/02/sa-enl0054-9900aegis-data-sheet.pdf",
+        "https://mitsubishicritical.com/wp-content/uploads/2025/02/u-ens00057-9900aegis-specification.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Mitsubishi Electric",
+        "Mitsubishi"
+      ],
+      "model_aliases": [
+        "9900AEGIS"
+      ],
+      "source_domains": [
+        "mitsubishicritical.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://mitsubishicritical.com/wp-content/uploads/2025/02/sa-enl0054-9900aegis-data-sheet.pdf",
+          "source_domain": "mitsubishicritical.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        },
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://mitsubishicritical.com/wp-content/uploads/2025/02/u-ens00057-9900aegis-specification.pdf",
+          "source_domain": "mitsubishicritical.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "ups",
+        "Mitsubishi Electric",
+        "9900AEGIS",
+        "battery_chemistry",
+        "efficiency_percent",
+        "frame_capacity_kw",
+        "frequency_hz",
+        "input_voltage_v",
+        "module_rating_kw",
+        "output_voltage_v",
+        "rated_power_kva",
+        "rated_power_kw",
+        "ride_through_seconds",
+        "runtime_minutes",
+        "scalable_capacity_flag",
+        "transfer_time_ms",
+        "ups_topology"
+      ]
+    },
+    {
+      "equipment_family": "ups",
+      "manufacturer": "Mitsubishi Electric",
+      "model_or_product_line": "9900B MMS",
+      "record_status": "drop_in_ready_with_backfilled_fixed_specs",
+      "spec_path": "knowledge/vendor_reference/families/ups/vendors/mitsubishi_electric/specs/9900b_mms.json",
+      "fixed_spec_names": [
+        "battery_chemistry",
+        "efficiency_percent",
+        "frame_capacity_kw",
+        "frequency_hz",
+        "input_voltage_v",
+        "module_rating_kw",
+        "output_voltage_v",
+        "rated_power_kva",
+        "rated_power_kw",
+        "ride_through_seconds",
+        "runtime_minutes",
+        "scalable_capacity_flag",
+        "transfer_time_ms",
+        "ups_topology"
+      ],
+      "source_urls": [
+        "https://mitsubishicritical.com/wp-content/uploads/2025/02/u-ens00012-9900b-facility-planning-data-sheet.pdf",
+        "https://mitsubishicritical.com/wp-content/uploads/2025/02/u-ens00023-9900b-mms-specification.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Mitsubishi Electric",
+        "Mitsubishi"
+      ],
+      "model_aliases": [
+        "9900B MMS",
+        "9900BMMS"
+      ],
+      "source_domains": [
+        "mitsubishicritical.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://mitsubishicritical.com/wp-content/uploads/2025/02/u-ens00012-9900b-facility-planning-data-sheet.pdf",
+          "source_domain": "mitsubishicritical.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        },
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://mitsubishicritical.com/wp-content/uploads/2025/02/u-ens00023-9900b-mms-specification.pdf",
+          "source_domain": "mitsubishicritical.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "ups",
+        "Mitsubishi Electric",
+        "9900B MMS",
+        "battery_chemistry",
+        "efficiency_percent",
+        "frame_capacity_kw",
+        "frequency_hz",
+        "input_voltage_v",
+        "module_rating_kw",
+        "output_voltage_v",
+        "rated_power_kva",
+        "rated_power_kw",
+        "ride_through_seconds",
+        "runtime_minutes",
+        "scalable_capacity_flag",
+        "transfer_time_ms",
+        "ups_topology"
+      ]
+    },
+    {
+      "equipment_family": "ups",
+      "manufacturer": "Mitsubishi Electric",
+      "model_or_product_line": "9900B SMS",
+      "record_status": "drop_in_ready_with_backfilled_fixed_specs",
+      "spec_path": "knowledge/vendor_reference/families/ups/vendors/mitsubishi_electric/specs/9900b_sms.json",
+      "fixed_spec_names": [
+        "battery_chemistry",
+        "efficiency_percent",
+        "frame_capacity_kw",
+        "frequency_hz",
+        "input_voltage_v",
+        "module_rating_kw",
+        "output_voltage_v",
+        "rated_power_kva",
+        "rated_power_kw",
+        "ride_through_seconds",
+        "runtime_minutes",
+        "scalable_capacity_flag",
+        "transfer_time_ms",
+        "ups_topology"
+      ],
+      "source_urls": [
+        "https://mitsubishicritical.com/wp-content/uploads/2025/02/u-ens00012-9900b-facility-planning-data-sheet.pdf",
+        "https://mitsubishicritical.com/wp-content/uploads/2025/02/u-ens00015-9900b-sms-specification.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Mitsubishi Electric",
+        "Mitsubishi"
+      ],
+      "model_aliases": [
+        "9900B SMS",
+        "9900BSMS"
+      ],
+      "source_domains": [
+        "mitsubishicritical.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://mitsubishicritical.com/wp-content/uploads/2025/02/u-ens00012-9900b-facility-planning-data-sheet.pdf",
+          "source_domain": "mitsubishicritical.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        },
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://mitsubishicritical.com/wp-content/uploads/2025/02/u-ens00015-9900b-sms-specification.pdf",
+          "source_domain": "mitsubishicritical.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "ups",
+        "Mitsubishi Electric",
+        "9900B SMS",
+        "battery_chemistry",
+        "efficiency_percent",
+        "frame_capacity_kw",
+        "frequency_hz",
+        "input_voltage_v",
+        "module_rating_kw",
+        "output_voltage_v",
+        "rated_power_kva",
+        "rated_power_kw",
+        "ride_through_seconds",
+        "runtime_minutes",
+        "scalable_capacity_flag",
+        "transfer_time_ms",
+        "ups_topology"
+      ]
+    },
+    {
+      "equipment_family": "ups",
+      "manufacturer": "Vertiv",
+      "model_or_product_line": "Liebert APM2",
+      "record_status": "drop_in_ready_with_backfilled_fixed_specs",
+      "spec_path": "knowledge/vendor_reference/families/ups/vendors/vertiv/specs/liebert_apm2.json",
+      "fixed_spec_names": [
+        "battery_chemistry",
+        "efficiency_percent",
+        "frame_capacity_kw",
+        "frequency_hz",
+        "input_voltage_v",
+        "module_rating_kw",
+        "output_voltage_v",
+        "rated_power_kva",
+        "rated_power_kw",
+        "ride_through_seconds",
+        "runtime_minutes",
+        "scalable_capacity_flag",
+        "transfer_time_ms",
+        "ups_topology"
+      ],
+      "source_urls": [
+        "https://www.vertiv.com/493f37/globalassets/shared/vertiv-liebert-apm2-data-sheet-sl-71300.pdf",
+        "https://www.vertiv.com/49d9c0/globalassets/shared/vertiv-liebert-apm2-10-600kw-brochure-sl-71311.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Vertiv"
+      ],
+      "model_aliases": [
+        "Liebert APM2",
+        "LiebertAPM2",
+        "APM2"
+      ],
+      "source_domains": [
+        "www.vertiv.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.vertiv.com/493f37/globalassets/shared/vertiv-liebert-apm2-data-sheet-sl-71300.pdf",
+          "source_domain": "www.vertiv.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        },
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.vertiv.com/49d9c0/globalassets/shared/vertiv-liebert-apm2-10-600kw-brochure-sl-71311.pdf",
+          "source_domain": "www.vertiv.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "ups",
+        "Vertiv",
+        "Liebert APM2",
+        "battery_chemistry",
+        "efficiency_percent",
+        "frame_capacity_kw",
+        "frequency_hz",
+        "input_voltage_v",
+        "module_rating_kw",
+        "output_voltage_v",
+        "rated_power_kva",
+        "rated_power_kw",
+        "ride_through_seconds",
+        "runtime_minutes",
+        "scalable_capacity_flag",
+        "transfer_time_ms",
+        "ups_topology"
+      ]
+    },
+    {
+      "equipment_family": "ups",
+      "manufacturer": "Vertiv",
+      "model_or_product_line": "Liebert EXL S1",
+      "record_status": "drop_in_ready_with_backfilled_fixed_specs",
+      "spec_path": "knowledge/vendor_reference/families/ups/vendors/vertiv/specs/liebert_exl_s1.json",
+      "fixed_spec_names": [
+        "battery_chemistry",
+        "efficiency_percent",
+        "frame_capacity_kw",
+        "frequency_hz",
+        "input_voltage_v",
+        "module_rating_kw",
+        "output_voltage_v",
+        "rated_power_kva",
+        "rated_power_kw",
+        "ride_through_seconds",
+        "runtime_minutes",
+        "scalable_capacity_flag",
+        "transfer_time_ms",
+        "ups_topology"
+      ],
+      "source_urls": [
+        "https://www.vertiv.com/en-ca/products-catalog/critical-power/uninterruptible-power-supplies-ups/liebert-exl-s1/",
+        "https://www.vertiv.com/globalassets/products/critical-power/uninterruptible-power-supplies-ups/liebert-exl-s1-480v-ce/vertiv-liebert-exl-s1-300-to-1200-kw-480v-brochure.pdf"
+      ],
+      "manufacturer_aliases": [
+        "Vertiv"
+      ],
+      "model_aliases": [
+        "Liebert EXL S1",
+        "LiebertEXLS1",
+        "EXL S1"
+      ],
+      "source_domains": [
+        "www.vertiv.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.vertiv.com/en-ca/products-catalog/critical-power/uninterruptible-power-supplies-ups/liebert-exl-s1/",
+          "source_domain": "www.vertiv.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        },
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.vertiv.com/globalassets/products/critical-power/uninterruptible-power-supplies-ups/liebert-exl-s1-480v-ce/vertiv-liebert-exl-s1-300-to-1200-kw-480v-brochure.pdf",
+          "source_domain": "www.vertiv.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "ups",
+        "Vertiv",
+        "Liebert EXL S1",
+        "battery_chemistry",
+        "efficiency_percent",
+        "frame_capacity_kw",
+        "frequency_hz",
+        "input_voltage_v",
+        "module_rating_kw",
+        "output_voltage_v",
+        "rated_power_kva",
+        "rated_power_kw",
+        "ride_through_seconds",
+        "runtime_minutes",
+        "scalable_capacity_flag",
+        "transfer_time_ms",
+        "ups_topology"
+      ]
+    },
+    {
+      "equipment_family": "ups",
+      "manufacturer": "Vertiv",
+      "model_or_product_line": "Liebert EXM2",
+      "record_status": "drop_in_ready_with_backfilled_fixed_specs",
+      "spec_path": "knowledge/vendor_reference/families/ups/vendors/vertiv/specs/liebert_exm2.json",
+      "fixed_spec_names": [
+        "battery_chemistry",
+        "efficiency_percent",
+        "frame_capacity_kw",
+        "frequency_hz",
+        "input_voltage_v",
+        "module_rating_kw",
+        "output_voltage_v",
+        "rated_power_kva",
+        "rated_power_kw",
+        "ride_through_seconds",
+        "runtime_minutes",
+        "scalable_capacity_flag",
+        "transfer_time_ms",
+        "ups_topology"
+      ],
+      "source_urls": [
+        "https://www.vertiv.com/49122f/globalassets/products/critical-power/uninterruptible-power-supplies-ups/vertiv-liebert-exm2-100-to-250-kw-brochure.pdf",
+        "https://www.vertiv.com/en-ca/products-catalog/critical-power/uninterruptible-power-supplies-ups/liebert-exm22/"
+      ],
+      "manufacturer_aliases": [
+        "Vertiv"
+      ],
+      "model_aliases": [
+        "Liebert EXM2",
+        "LiebertEXM2",
+        "EXM2"
+      ],
+      "source_domains": [
+        "www.vertiv.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.vertiv.com/49122f/globalassets/products/critical-power/uninterruptible-power-supplies-ups/vertiv-liebert-exm2-100-to-250-kw-brochure.pdf",
+          "source_domain": "www.vertiv.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        },
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.vertiv.com/en-ca/products-catalog/critical-power/uninterruptible-power-supplies-ups/liebert-exm22/",
+          "source_domain": "www.vertiv.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "ups",
+        "Vertiv",
+        "Liebert EXM2",
+        "battery_chemistry",
+        "efficiency_percent",
+        "frame_capacity_kw",
+        "frequency_hz",
+        "input_voltage_v",
+        "module_rating_kw",
+        "output_voltage_v",
+        "rated_power_kva",
+        "rated_power_kw",
+        "ride_through_seconds",
+        "runtime_minutes",
+        "scalable_capacity_flag",
+        "transfer_time_ms",
+        "ups_topology"
+      ]
+    },
+    {
+      "equipment_family": "ups",
+      "manufacturer": "Vertiv",
+      "model_or_product_line": "Liebert Trinergy Cube",
+      "record_status": "drop_in_ready_with_backfilled_fixed_specs",
+      "spec_path": "knowledge/vendor_reference/families/ups/vendors/vertiv/specs/liebert_trinergy_cube.json",
+      "fixed_spec_names": [
+        "battery_chemistry",
+        "efficiency_percent",
+        "frame_capacity_kw",
+        "frequency_hz",
+        "input_voltage_v",
+        "module_rating_kw",
+        "output_voltage_v",
+        "rated_power_kva",
+        "rated_power_kw",
+        "ride_through_seconds",
+        "runtime_minutes",
+        "scalable_capacity_flag",
+        "transfer_time_ms",
+        "ups_topology"
+      ],
+      "source_urls": [
+        "https://www.vertiv.com/493ae1/globalassets/products/critical-power/uninterruptible-power-supplies-ups/liebert-trinergy-cube-brochure-ul.pdf",
+        "https://www.vertiv.com/en-us/products-catalog/critical-power/uninterruptible-power-supplies-ups/vertiv-trinergy/"
+      ],
+      "manufacturer_aliases": [
+        "Vertiv"
+      ],
+      "model_aliases": [
+        "Liebert Trinergy Cube",
+        "LiebertTrinergyCube",
+        "Trinergy Cube"
+      ],
+      "source_domains": [
+        "www.vertiv.com"
+      ],
+      "retrieval_priority": "high",
+      "trust_level": "high",
+      "evidence_tier": "structured_catalog",
+      "document_type": "structured_spec_json",
+      "source_documents": [
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.vertiv.com/493ae1/globalassets/products/critical-power/uninterruptible-power-supplies-ups/liebert-trinergy-cube-brochure-ul.pdf",
+          "source_domain": "www.vertiv.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        },
+        {
+          "document_type": "official_vendor_source",
+          "source_url": "https://www.vertiv.com/en-us/products-catalog/critical-power/uninterruptible-power-supplies-ups/vertiv-trinergy/",
+          "source_domain": "www.vertiv.com",
+          "trust_level": "high",
+          "evidence_tier": "official_vendor_document"
+        }
+      ],
+      "search_keywords": [
+        "ups",
+        "Vertiv",
+        "Liebert Trinergy Cube",
+        "battery_chemistry",
+        "efficiency_percent",
+        "frame_capacity_kw",
+        "frequency_hz",
+        "input_voltage_v",
+        "module_rating_kw",
+        "output_voltage_v",
+        "rated_power_kva",
+        "rated_power_kw",
+        "ride_through_seconds",
+        "runtime_minutes",
+        "scalable_capacity_flag",
+        "transfer_time_ms",
+        "ups_topology"
+      ]
+    }
+  ]
+}

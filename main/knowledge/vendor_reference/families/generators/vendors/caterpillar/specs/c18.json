@@ -1,0 +1,137 @@
+{
+  "schema_version": "1.0.0",
+  "equipment_family": "generators",
+  "manufacturer": "Caterpillar",
+  "model": "C18",
+  "record_status": "drop_in_ready_with_source_backed_fixed_specs",
+  "identity": {
+    "manufacturer": {
+      "value": "Caterpillar",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "model": {
+      "value": "C18",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    }
+  },
+  "fixed_specs": {
+    "rated_power_kw": {
+      "value": 600,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "rated_power_kva": {
+      "value": 750,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "voltage_v": {
+      "value": 480,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "frequency_hz": {
+      "value": 60,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "power_factor": {
+      "value": 0.8,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false,
+      "note": "Derived from source-backed kW/kVA values."
+    },
+    "standby_or_prime_rating": {
+      "value": "standby",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    }
+  },
+  "project_specific_fields": {
+    "quantity": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define installed quantity."
+    },
+    "startup_delay_seconds": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Controls/system dependent; ask applicant."
+    },
+    "step_load_acceptance_percent": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Package/control/application dependent; ask applicant unless a model-specific official document later supports a fixed value."
+    },
+    "synchronization_behavior": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Paralleling and control-system dependent; ask applicant."
+    },
+    "loading_sequence": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Project restoration design field; ask applicant."
+    },
+    "breaker_configuration": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Package/switchgear/application dependent; ask applicant."
+    },
+    "transfer_or_islanding_mode": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Transfer design and operating mode field; ask applicant."
+    }
+  },
+  "alternate_ratings": [],
+  "source_documents": [
+    {
+      "document_id": "cat_c18_selected_variant",
+      "title": "C18 600 ekW / 750 kVA Technical Data Sheet",
+      "source_url": "https://emc.cat.com/pubdirect.ashx?media_string_id=TSS-DM8518-04-GS-EPG-9045560.pdf",
+      "evidence": "Representative Cat C18 standby variant: 600 ekW / 750 kVA / 60 Hz / 480 V / 0.8 PF.",
+      "source_class": "official_pdf"
+    }
+  ],
+  "notes": [
+    "This Caterpillar record is intentionally normalized to one specific official standby variant so the library can operate as a concrete drop-in model library."
+  ],
+  "library_readiness": "drop_in_ready",
+  "qa": {
+    "populated_fixed_fields": [],
+    "missing_fixed_fields": [
+      "rated_power_kw",
+      "rated_power_kva",
+      "voltage_v",
+      "frequency_hz",
+      "power_factor",
+      "standby_or_prime_rating"
+    ],
+    "project_specific_fields_expected_null": [
+      "quantity",
+      "startup_delay_seconds",
+      "step_load_acceptance_percent",
+      "synchronization_behavior",
+      "loading_sequence",
+      "breaker_configuration",
+      "transfer_or_islanding_mode"
+    ],
+    "recommended_next_action": "select_specific_variant_and_replace_platform_record"
+  },
+  "drop_in_contract": {
+    "record_complete_schema": true,
+    "source_backed_fixed_fields_only": true,
+    "project_specific_fields_left_null_by_design": true,
+    "ready_for_program_ingestion": true
+  }
+}

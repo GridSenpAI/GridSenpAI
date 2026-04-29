@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0.0",
+  "equipment_family": "transformers",
+  "manufacturer": "Siemens",
+  "product_line": "Dry Type Transformers",
+  "record_status": "drop_in_ready_with_backfilled_product_line_specs",
+  "library_readiness": "drop_in_ready",
+  "identity": {
+    "manufacturer": {
+      "value": "Siemens",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "product_line": {
+      "value": "Dry Type Transformers",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    }
+  },
+  "fixed_specs": {
+    "rated_power_kva": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "primary_voltage_v": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "secondary_voltage_v": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "impedance_percent": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "winding_configuration": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "vector_group": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "frequency_hz": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "cooling_class": {
+      "value": "dry-type",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "tap_changer_flag": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "tap_range": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    }
+  },
+  "project_specific_fields": {
+    "quantity": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured value."
+    },
+    "redundancy_scheme": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured value."
+    },
+    "installed_topology_role": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured value."
+    },
+    "deployed_tap_setting": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured value."
+    },
+    "build_phase_status": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured value."
+    }
+  },
+  "source_documents": [
+    {
+      "document_id": "siemens_dry_type_catalog",
+      "title": "Siemens Dry Type Transformers Catalog",
+      "source_url": "https://assets.new.siemens.com/siemens/assets/api/uuid%3A7a553373-0eac-4520-a1b3-d1a294c25b2d/s07-dry-type-transformers.pdf",
+      "source_class": "official_pdf"
+    }
+  ],
+  "drop_in_contract": {
+    "record_complete_schema": true,
+    "source_backed_fixed_fields_only": true,
+    "project_specific_fields_left_null_by_design": true,
+    "ready_for_program_ingestion": true
+  },
+  "notes": [
+    "Product-line record retained because Siemens publishes a clean official dry-type transformer catalog, but this pass does not set one family-wide numeric fixed capacity ceiling from the catalog."
+  ]
+}

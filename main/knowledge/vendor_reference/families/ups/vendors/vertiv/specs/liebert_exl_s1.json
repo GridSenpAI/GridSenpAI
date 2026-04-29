@@ -1,0 +1,156 @@
+{
+  "schema_version": "2.0.0",
+  "equipment_family": "ups",
+  "manufacturer": "Vertiv",
+  "model": "Liebert EXL S1",
+  "record_status": "drop_in_ready_with_backfilled_fixed_specs",
+  "library_readiness": "drop_in_ready",
+  "identity": {
+    "manufacturer": {
+      "value": "Vertiv",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "model": {
+      "value": "Liebert EXL S1",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    }
+  },
+  "fixed_specs": {
+    "rated_power_kw": {
+      "value": 1200,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false,
+      "note": "Maximum line rating from official product overview for EXL S1 250\u20131200 kVA/kW family."
+    },
+    "rated_power_kva": {
+      "value": 1200,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false,
+      "note": "Maximum line rating from official product overview for EXL S1 250\u20131200 kVA/kW family."
+    },
+    "input_voltage_v": {
+      "value": 480,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false,
+      "note": "Official product overview lists 480 V input range."
+    },
+    "output_voltage_v": {
+      "value": 480,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false,
+      "note": "Official product overview lists 480 V output range."
+    },
+    "frequency_hz": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false,
+      "note": "Frequency was not explicitly confirmed in the cited source set for this selected record."
+    },
+    "ups_topology": {
+      "value": "online double conversion",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "transfer_time_ms": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "ride_through_seconds": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "runtime_minutes": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "battery_chemistry": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "efficiency_percent": {
+      "value": 97.0,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false,
+      "note": "Official source states up to 97% double conversion efficiency."
+    },
+    "frame_capacity_kw": {
+      "value": 1200,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "module_rating_kw": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "scalable_capacity_flag": {
+      "value": true,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    }
+  },
+  "project_specific_fields": {
+    "quantity": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured behavior."
+    },
+    "redundancy_scheme": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured behavior."
+    },
+    "recharge_behavior": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured behavior."
+    },
+    "bypass_behavior": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured behavior."
+    },
+    "loading_sequence": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured behavior."
+    },
+    "restoration_sequence": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured behavior."
+    }
+  },
+  "source_documents": [
+    {
+      "document_id": "vertiv_exl_s1_product_overview",
+      "title": "Liebert EXL S1 UPS 250-1200kW product overview",
+      "source_url": "https://www.vertiv.com/en-ca/products-catalog/critical-power/uninterruptible-power-supplies-ups/liebert-exl-s1/",
+      "source_class": "official_product_page"
+    },
+    {
+      "document_id": "vertiv_exl_s1_brochure_480v",
+      "title": "Liebert EXL S1 300-1200 kW 480V Brochure",
+      "source_url": "https://www.vertiv.com/globalassets/products/critical-power/uninterruptible-power-supplies-ups/liebert-exl-s1-480v-ce/vertiv-liebert-exl-s1-300-to-1200-kw-480v-brochure.pdf",
+      "source_class": "official_pdf"
+    }
+  ],
+  "drop_in_contract": {
+    "record_complete_schema": true,
+    "source_backed_fixed_fields_only": true,
+    "project_specific_fields_left_null_by_design": true,
+    "ready_for_program_ingestion": true
+  }
+}

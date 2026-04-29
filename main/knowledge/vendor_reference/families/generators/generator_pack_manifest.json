@@ -1,0 +1,389 @@
+{
+  "schema_version": "2.0.0",
+  "equipment_family": "generators",
+  "record_count": 25,
+  "drop_in_ready": true,
+  "ingestion_rules": {
+    "use_populated_fixed_specs_as_vendor_reference_candidates": true,
+    "leave_null_fixed_specs_unfilled_until_better_source_available": true,
+    "always_prompt_for_project_specific_fields_when_needed": true
+  },
+  "manufacturers": [
+    "Caterpillar",
+    "Cummins",
+    "Generac",
+    "Rehlko",
+    "Rolls-Royce / mtu"
+  ],
+  "records": [
+    {
+      "manufacturer": "Cummins",
+      "model": "C600D6E",
+      "fixed_fields_populated": [
+        "rated_power_kw",
+        "rated_power_kva",
+        "frequency_hz",
+        "power_factor"
+      ],
+      "fixed_fields_null": [
+        "voltage_v",
+        "standby_or_prime_rating"
+      ],
+      "source_count": 1
+    },
+    {
+      "manufacturer": "Cummins",
+      "model": "C1000D6ED",
+      "fixed_fields_populated": [
+        "rated_power_kw",
+        "rated_power_kva",
+        "frequency_hz",
+        "power_factor"
+      ],
+      "fixed_fields_null": [
+        "voltage_v",
+        "standby_or_prime_rating"
+      ],
+      "source_count": 1
+    },
+    {
+      "manufacturer": "Cummins",
+      "model": "C1250D6E",
+      "fixed_fields_populated": [
+        "rated_power_kw",
+        "rated_power_kva",
+        "frequency_hz",
+        "power_factor",
+        "standby_or_prime_rating"
+      ],
+      "fixed_fields_null": [
+        "voltage_v"
+      ],
+      "source_count": 1
+    },
+    {
+      "manufacturer": "Cummins",
+      "model": "C2000D6E",
+      "fixed_fields_populated": [
+        "rated_power_kw",
+        "rated_power_kva",
+        "frequency_hz",
+        "power_factor",
+        "standby_or_prime_rating"
+      ],
+      "fixed_fields_null": [
+        "voltage_v"
+      ],
+      "source_count": 1
+    },
+    {
+      "manufacturer": "Cummins",
+      "model": "C3000D6EB",
+      "fixed_fields_populated": [
+        "frequency_hz"
+      ],
+      "fixed_fields_null": [
+        "rated_power_kw",
+        "rated_power_kva",
+        "voltage_v",
+        "power_factor",
+        "standby_or_prime_rating"
+      ],
+      "source_count": 1
+    },
+    {
+      "manufacturer": "Caterpillar",
+      "model": "C18",
+      "fixed_fields_populated": [
+        "rated_power_kw",
+        "rated_power_kva",
+        "voltage_v",
+        "frequency_hz",
+        "power_factor",
+        "standby_or_prime_rating"
+      ],
+      "fixed_fields_null": [],
+      "source_count": 1
+    },
+    {
+      "manufacturer": "Caterpillar",
+      "model": "C27",
+      "fixed_fields_populated": [
+        "rated_power_kw",
+        "rated_power_kva",
+        "voltage_v",
+        "frequency_hz",
+        "power_factor",
+        "standby_or_prime_rating"
+      ],
+      "fixed_fields_null": [],
+      "source_count": 1
+    },
+    {
+      "manufacturer": "Caterpillar",
+      "model": "C32",
+      "fixed_fields_populated": [
+        "rated_power_kw",
+        "rated_power_kva",
+        "voltage_v",
+        "frequency_hz",
+        "power_factor",
+        "standby_or_prime_rating"
+      ],
+      "fixed_fields_null": [],
+      "source_count": 1
+    },
+    {
+      "manufacturer": "Caterpillar",
+      "model": "3512",
+      "fixed_fields_populated": [
+        "rated_power_kw",
+        "rated_power_kva",
+        "voltage_v",
+        "frequency_hz",
+        "power_factor",
+        "standby_or_prime_rating"
+      ],
+      "fixed_fields_null": [],
+      "source_count": 1
+    },
+    {
+      "manufacturer": "Caterpillar",
+      "model": "3516C",
+      "fixed_fields_populated": [
+        "rated_power_kw",
+        "rated_power_kva",
+        "frequency_hz",
+        "power_factor",
+        "standby_or_prime_rating"
+      ],
+      "fixed_fields_null": [
+        "voltage_v"
+      ],
+      "source_count": 1
+    },
+    {
+      "manufacturer": "Rolls-Royce / mtu",
+      "model": "12V4000 DS1650",
+      "fixed_fields_populated": [
+        "frequency_hz"
+      ],
+      "fixed_fields_null": [
+        "rated_power_kw",
+        "rated_power_kva",
+        "voltage_v",
+        "power_factor",
+        "standby_or_prime_rating"
+      ],
+      "source_count": 1
+    },
+    {
+      "manufacturer": "Rolls-Royce / mtu",
+      "model": "12V4000 DS2000",
+      "fixed_fields_populated": [
+        "frequency_hz"
+      ],
+      "fixed_fields_null": [
+        "rated_power_kw",
+        "rated_power_kva",
+        "voltage_v",
+        "power_factor",
+        "standby_or_prime_rating"
+      ],
+      "source_count": 1
+    },
+    {
+      "manufacturer": "Rolls-Royce / mtu",
+      "model": "16V4000 DS2500",
+      "fixed_fields_populated": [
+        "rated_power_kw",
+        "frequency_hz",
+        "standby_or_prime_rating"
+      ],
+      "fixed_fields_null": [
+        "rated_power_kva",
+        "voltage_v",
+        "power_factor"
+      ],
+      "source_count": 1
+    },
+    {
+      "manufacturer": "Rolls-Royce / mtu",
+      "model": "20V4000 DS2750",
+      "fixed_fields_populated": [
+        "frequency_hz"
+      ],
+      "fixed_fields_null": [
+        "rated_power_kw",
+        "rated_power_kva",
+        "voltage_v",
+        "power_factor",
+        "standby_or_prime_rating"
+      ],
+      "source_count": 1
+    },
+    {
+      "manufacturer": "Rolls-Royce / mtu",
+      "model": "20V4000 DS3100",
+      "fixed_fields_populated": [
+        "frequency_hz"
+      ],
+      "fixed_fields_null": [
+        "rated_power_kw",
+        "rated_power_kva",
+        "voltage_v",
+        "power_factor",
+        "standby_or_prime_rating"
+      ],
+      "source_count": 1
+    },
+    {
+      "manufacturer": "Rehlko",
+      "model": "KD1250",
+      "fixed_fields_populated": [
+        "rated_power_kw",
+        "rated_power_kva",
+        "frequency_hz",
+        "power_factor",
+        "standby_or_prime_rating"
+      ],
+      "fixed_fields_null": [
+        "voltage_v"
+      ],
+      "source_count": 2
+    },
+    {
+      "manufacturer": "Rehlko",
+      "model": "KD1500",
+      "fixed_fields_populated": [
+        "rated_power_kw",
+        "rated_power_kva",
+        "frequency_hz",
+        "power_factor",
+        "standby_or_prime_rating"
+      ],
+      "fixed_fields_null": [
+        "voltage_v"
+      ],
+      "source_count": 2
+    },
+    {
+      "manufacturer": "Rehlko",
+      "model": "KD1750",
+      "fixed_fields_populated": [
+        "rated_power_kw",
+        "rated_power_kva",
+        "frequency_hz",
+        "power_factor",
+        "standby_or_prime_rating"
+      ],
+      "fixed_fields_null": [
+        "voltage_v"
+      ],
+      "source_count": 2
+    },
+    {
+      "manufacturer": "Rehlko",
+      "model": "KD2000",
+      "fixed_fields_populated": [
+        "rated_power_kw",
+        "rated_power_kva",
+        "frequency_hz",
+        "power_factor",
+        "standby_or_prime_rating"
+      ],
+      "fixed_fields_null": [
+        "voltage_v"
+      ],
+      "source_count": 2
+    },
+    {
+      "manufacturer": "Rehlko",
+      "model": "KD2500",
+      "fixed_fields_populated": [
+        "rated_power_kw",
+        "rated_power_kva",
+        "frequency_hz",
+        "power_factor",
+        "standby_or_prime_rating"
+      ],
+      "fixed_fields_null": [
+        "voltage_v"
+      ],
+      "source_count": 2
+    },
+    {
+      "manufacturer": "Generac",
+      "model": "SD1250",
+      "fixed_fields_populated": [
+        "rated_power_kw",
+        "frequency_hz",
+        "standby_or_prime_rating"
+      ],
+      "fixed_fields_null": [
+        "rated_power_kva",
+        "voltage_v",
+        "power_factor"
+      ],
+      "source_count": 1
+    },
+    {
+      "manufacturer": "Generac",
+      "model": "SD1500",
+      "fixed_fields_populated": [
+        "rated_power_kw",
+        "frequency_hz"
+      ],
+      "fixed_fields_null": [
+        "rated_power_kva",
+        "voltage_v",
+        "power_factor",
+        "standby_or_prime_rating"
+      ],
+      "source_count": 1
+    },
+    {
+      "manufacturer": "Generac",
+      "model": "SDMD2250",
+      "fixed_fields_populated": [],
+      "fixed_fields_null": [
+        "rated_power_kw",
+        "rated_power_kva",
+        "voltage_v",
+        "frequency_hz",
+        "power_factor",
+        "standby_or_prime_rating"
+      ],
+      "source_count": 1
+    },
+    {
+      "manufacturer": "Generac",
+      "model": "SDMD2500",
+      "fixed_fields_populated": [
+        "rated_power_kw",
+        "rated_power_kva",
+        "frequency_hz",
+        "power_factor",
+        "standby_or_prime_rating"
+      ],
+      "fixed_fields_null": [
+        "voltage_v"
+      ],
+      "source_count": 1
+    },
+    {
+      "manufacturer": "Generac",
+      "model": "SDMD3000",
+      "fixed_fields_populated": [],
+      "fixed_fields_null": [
+        "rated_power_kw",
+        "rated_power_kva",
+        "voltage_v",
+        "frequency_hz",
+        "power_factor",
+        "standby_or_prime_rating"
+      ],
+      "source_count": 1
+    }
+  ]
+}

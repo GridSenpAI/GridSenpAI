@@ -1,0 +1,118 @@
+{
+  "schema_version": "2.0.0",
+  "equipment_family": "switchgear",
+  "manufacturer": "Schneider Electric",
+  "product_line": "RM6",
+  "record_status": "drop_in_ready_with_backfilled_product_line_specs",
+  "library_readiness": "drop_in_ready",
+  "identity": {
+    "manufacturer": {
+      "value": "Schneider Electric",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "product_line": {
+      "value": "RM6",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    }
+  },
+  "fixed_specs": {
+    "voltage_class_v": {
+      "value": 24000,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false,
+      "note": "Official Schneider RM6 line is a medium-voltage compact switchgear/RMU family up to 24 kV class."
+    },
+    "current_rating_a": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "interrupting_rating_ka": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "switchgear_class": {
+      "value": "medium-voltage compact switchgear",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "breaker_type": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "enclosure_type": {
+      "value": "compact metal-enclosed",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "indoor_outdoor": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "insulation_type": {
+      "value": "gas-insulated",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    }
+  },
+  "project_specific_fields": {
+    "sectionalization_role": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured value."
+    },
+    "tie_configuration": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured value."
+    },
+    "normal_open_closed_status": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured value."
+    },
+    "installed_topology_role": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured value."
+    },
+    "redundancy_scheme": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured value."
+    },
+    "build_phase_status": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured value."
+    }
+  },
+  "source_documents": [
+    {
+      "document_id": "schneider_rm6_product_page",
+      "title": "RM6 medium voltage compact switchgear",
+      "source_url": "https://www.se.com/ww/en/product-range/2116-rm6/",
+      "source_class": "official_product_page"
+    }
+  ],
+  "drop_in_contract": {
+    "record_complete_schema": true,
+    "source_backed_fixed_fields_only": true,
+    "project_specific_fields_left_null_by_design": true,
+    "ready_for_program_ingestion": true
+  },
+  "notes": [
+    "Retained as a compact/RMU switchgear family relevant to data-center MV distribution contexts."
+  ]
+}

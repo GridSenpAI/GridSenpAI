@@ -1,0 +1,21 @@
+Large-load ramping guidance for GridSenpAI modeling retrieval.
+
+Legacy note:
+Large data center loads typically ramp in phases corresponding to buildout.
+
+Typical characteristics include:
+
+- phased MW increments
+- ramp envelopes tied to equipment energization
+- step changes during commissioning
+
+Planner-output relevance:
+- steady_state.p_mw and steady_state.q_mvar should reflect the requested operating point or stage-specific load block.
+- ramping.max_ramp_up_mw_per_min should be bounded using commissioning phasing, staged equipment energization, and applicant-provided load commissioning plans.
+- ramping.max_ramp_down_mw_per_min should reflect the credible unloading or trip-down envelope, not an invented symmetric assumption.
+
+Evidence preference:
+1. applicant load commissioning plan and staged MW schedule
+2. applicant one-line / sequence of operation / controls narrative
+3. modeling references and planner guidance
+4. interview clarification if the ramp envelope remains unclear

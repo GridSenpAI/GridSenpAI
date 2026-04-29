@@ -1,0 +1,120 @@
+{
+  "schema_version": "2.0.0",
+  "equipment_family": "switchgear",
+  "manufacturer": "Eaton",
+  "product_line": "Power Xpert IGX",
+  "record_status": "drop_in_ready_with_backfilled_product_line_specs",
+  "library_readiness": "drop_in_ready",
+  "identity": {
+    "manufacturer": {
+      "value": "Eaton",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "product_line": {
+      "value": "Power Xpert IGX",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    }
+  },
+  "fixed_specs": {
+    "voltage_class_v": {
+      "value": 15000,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false,
+      "note": "Official selector guide lists 15 kV class for Power Xpert IGX."
+    },
+    "current_rating_a": {
+      "value": 4000,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false,
+      "note": "Official selector guide lists up to 4000 A."
+    },
+    "interrupting_rating_ka": {
+      "value": 50000,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false,
+      "note": "Official selector guide lists up to 50 kA."
+    },
+    "switchgear_class": {
+      "value": "medium-voltage metal-clad switchgear",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "breaker_type": {
+      "value": "vacuum circuit breaker",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "enclosure_type": {
+      "value": "metal-clad",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "indoor_outdoor": {
+      "value": "indoor",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "insulation_type": {
+      "value": "air-insulated",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    }
+  },
+  "project_specific_fields": {
+    "sectionalization_role": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured value."
+    },
+    "tie_configuration": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured value."
+    },
+    "normal_open_closed_status": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured value."
+    },
+    "installed_topology_role": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured value."
+    },
+    "redundancy_scheme": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured value."
+    },
+    "build_phase_status": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured value."
+    }
+  },
+  "source_documents": [
+    {
+      "document_id": "eaton_power_xpert_igx_selector",
+      "title": "Power Xpert IGX selector guide",
+      "source_url": "https://www.eaton.com/content/dam/eaton/products/medium-voltage-power-distribution-control-systems/mv-switchgear/igx/eaton-power-xpert-igx-selector-guide-sa042011en.pdf",
+      "source_class": "official_pdf"
+    }
+  ],
+  "drop_in_contract": {
+    "record_complete_schema": true,
+    "source_backed_fixed_fields_only": true,
+    "project_specific_fields_left_null_by_design": true,
+    "ready_for_program_ingestion": true
+  },
+  "notes": [
+    "Static voltage/current/fault class values are source-backed from the official selector guide."
+  ]
+}

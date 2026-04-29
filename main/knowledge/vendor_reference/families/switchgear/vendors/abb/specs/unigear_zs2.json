@@ -1,0 +1,126 @@
+{
+  "schema_version": "2.0.0",
+  "equipment_family": "switchgear",
+  "manufacturer": "ABB",
+  "product_line": "UniGear ZS2",
+  "record_status": "drop_in_ready_with_backfilled_product_line_specs",
+  "library_readiness": "drop_in_ready",
+  "identity": {
+    "manufacturer": {
+      "value": "ABB",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "product_line": {
+      "value": "UniGear ZS2",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    }
+  },
+  "fixed_specs": {
+    "voltage_class_v": {
+      "value": 36000,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false,
+      "note": "Official ABB brochure title indicates 36 kV."
+    },
+    "current_rating_a": {
+      "value": 3150,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false,
+      "note": "Official ABB brochure states primary distribution up to 36 kV, 3150 A, 31.5 kA."
+    },
+    "interrupting_rating_ka": {
+      "value": 31500,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false,
+      "note": "Official ABB brochure states 31.5 kA."
+    },
+    "switchgear_class": {
+      "value": "medium-voltage air-insulated switchgear",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "breaker_type": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "enclosure_type": {
+      "value": "metal-enclosed",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "indoor_outdoor": {
+      "value": "indoor",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "insulation_type": {
+      "value": "air-insulated",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    }
+  },
+  "project_specific_fields": {
+    "sectionalization_role": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured value."
+    },
+    "tie_configuration": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured value."
+    },
+    "normal_open_closed_status": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured value."
+    },
+    "installed_topology_role": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured value."
+    },
+    "redundancy_scheme": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured value."
+    },
+    "build_phase_status": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured value."
+    }
+  },
+  "source_documents": [
+    {
+      "document_id": "abb_unigear_zs2_catalogue",
+      "title": "UniGear ZS2 36 kV, 2500A, 31.5 kA",
+      "source_url": "https://library.e.abb.com/public/7f805917cb20a435c1257b1300574297/Cat_UniGear%20ZS2-En.pdf",
+      "source_class": "official_pdf"
+    },
+    {
+      "document_id": "abb_unigear_zs2_newer_brochure",
+      "title": "UniGear ZS2 Medium-voltage air-insulated switchgear up to 36 kV",
+      "source_url": "https://library.e.abb.com/public/0bf847a1152c4e2aac8eeb197fa11b84/UniGearZS2_EN.pdf",
+      "source_class": "official_pdf"
+    }
+  ],
+  "drop_in_contract": {
+    "record_complete_schema": true,
+    "source_backed_fixed_fields_only": true,
+    "project_specific_fields_left_null_by_design": true,
+    "ready_for_program_ingestion": true
+  },
+  "notes": [
+    "Static voltage/current/fault class values are source-backed from the official ABB brochure."
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "schema_version": "1.0.0",
+  "equipment_family": "generators",
+  "manufacturer": "Cummins",
+  "model": "C1000D6ED",
+  "record_status": "ready_for_library_with_partial_population",
+  "identity": {
+    "manufacturer": {
+      "value": "Cummins",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "model": {
+      "value": "C1000D6ED",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    }
+  },
+  "fixed_specs": {
+    "rated_power_kw": {
+      "value": 1000,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "rated_power_kva": {
+      "value": 1250,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "voltage_v": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "frequency_hz": {
+      "value": 60,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "power_factor": {
+      "value": 0.8,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false,
+      "note": "Derived from kW/kVA when both were available from source."
+    },
+    "standby_or_prime_rating": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    }
+  },
+  "project_specific_fields": {
+    "quantity": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define installed quantity."
+    },
+    "startup_delay_seconds": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Controls/system dependent; ask applicant."
+    },
+    "step_load_acceptance_percent": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Package/control/application dependent; ask applicant unless a model-specific official document later supports a fixed value."
+    },
+    "synchronization_behavior": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Paralleling and control-system dependent; ask applicant."
+    },
+    "loading_sequence": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Project restoration design field; ask applicant."
+    },
+    "breaker_configuration": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Package/switchgear/application dependent; ask applicant."
+    },
+    "transfer_or_islanding_mode": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Transfer design and operating mode field; ask applicant."
+    }
+  },
+  "alternate_ratings": [],
+  "source_documents": [
+    {
+      "document_id": "cummins_s17_centum_spec_sheet_rev_5_25",
+      "title": "S17 Centum Series Generator Set Specifications",
+      "source_url": "https://www.social.cummins.com/sites/default/files/2025-06/s-6786-spec-sheet.pdf",
+      "evidence": "Model list includes C1000D6ED 1000 (1250).",
+      "source_class": "official_pdf"
+    }
+  ],
+  "notes": [
+    "Voltage options were not populated in this pass because they were not confirmed from the parsed official source excerpt used here.",
+    "Power factor is derived from 1000/1250 = 0.8."
+  ],
+  "library_readiness": "drop_in_ready",
+  "qa": {
+    "populated_fixed_fields": [
+      "rated_power_kw",
+      "rated_power_kva",
+      "frequency_hz",
+      "power_factor"
+    ],
+    "missing_fixed_fields": [
+      "voltage_v",
+      "standby_or_prime_rating"
+    ],
+    "project_specific_fields_expected_null": [
+      "quantity",
+      "startup_delay_seconds",
+      "step_load_acceptance_percent",
+      "synchronization_behavior",
+      "loading_sequence",
+      "breaker_configuration",
+      "transfer_or_islanding_mode"
+    ],
+    "recommended_next_action": "expand_fixed_specs_from_additional_official_documents"
+  },
+  "drop_in_contract": {
+    "record_complete_schema": true,
+    "source_backed_fixed_fields_only": true,
+    "project_specific_fields_left_null_by_design": true,
+    "ready_for_program_ingestion": true
+  }
+}

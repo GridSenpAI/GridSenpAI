@@ -1,0 +1,5255 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gridsenpai.local/schemas/gridsenpai_outputs_schema.json",
+  "title": "GridSenpAI Outputs Schema",
+  "description": "Derived planner packet and adjudicated output schema generated from planner_required_fields. planner_required_fields remains the authoritative field contract.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "run_id",
+    "schema_version",
+    "planner_required_fields_version",
+    "accepted_field_values",
+    "field_resolution",
+    "planner_packet"
+  ],
+  "x-derived-from": "shared/schemas/planner_required_fields.json",
+  "x-derived-from-version": "2.0.0",
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "schema_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "planner_required_fields_version": {
+      "type": "string",
+      "const": "2.0.0"
+    },
+    "accepted_field_values": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Best-supported accepted value for each planner field keyed by planner_required_fields.field_id.",
+      "properties": {
+        "submission_as_of_date": {
+          "description": "Package as-of date",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "project_name": {
+          "description": "Project name",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "project_aliases": {
+          "description": "Project aliases / alternate names",
+          "x-requiredness": "optional",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string"
+          }
+        },
+        "load_customer_name": {
+          "description": "Load customer legal name",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "parent_holding_company": {
+          "description": "Parent holding company",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "primary_engineering_contact": {
+          "description": "Primary engineering contact",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": true,
+          "properties": {
+            "name": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "email": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "phone": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "organization": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "role": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "primary_operations_contact": {
+          "description": "Primary operations contact",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": true,
+          "properties": {
+            "name": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "email": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "phone": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "organization": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "role": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "utility_or_tsp_primary_contact": {
+          "description": "Utility/TSP primary contact",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": true,
+          "properties": {
+            "name": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "email": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "phone": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "organization": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "role": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "project_parties_and_contacts": {
+          "description": "Project parties and contacts",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "phone": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "is_new_standalone_datacenter": {
+          "description": "New standalone data center flag",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "load_type_detail": {
+          "description": "Load type detail / use case",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "qualifies_large_load_process": {
+          "description": "Large load process applicability",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "yes",
+            "no",
+            "tbd",
+            null
+          ]
+        },
+        "application_or_queue_id": {
+          "description": "Application / queue / request identifier",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "study_region_or_iso": {
+          "description": "Study region / ISO / utility jurisdiction",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "requested_in_service_date": {
+          "description": "Requested in-service date",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "earliest_energization_date": {
+          "description": "Earliest energization date",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "target_full_buildout_date": {
+          "description": "Target full buildout date",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "submission_document_inventory": {
+          "description": "Submitted document inventory",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+              "document_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "document_type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          }
+        },
+        "missing_required_document_flags": {
+          "description": "Missing required document flags",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string"
+          }
+        },
+        "document_version_matrix": {
+          "description": "Document version matrix",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": true
+        },
+        "planner_packet_preparer_notes": {
+          "description": "GridSenpAI preparer notes",
+          "x-requiredness": "optional",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "site_name": {
+          "description": "Site name / campus name",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "site_address": {
+          "description": "Site address",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": true,
+          "properties": {
+            "street": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "city": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "state": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "postal_code": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "country": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "site_latitude": {
+          "description": "Site latitude",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "site_longitude": {
+          "description": "Site longitude",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "county_or_parish": {
+          "description": "County / parish",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "state_or_province": {
+          "description": "State / province",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "utility_service_territory": {
+          "description": "Utility service territory",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tsp_or_host_transmission_owner": {
+          "description": "Transmission service provider / host transmission owner",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "point_of_interconnection_name": {
+          "description": "Point of interconnection name",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "point_of_interconnection_voltage_kv": {
+          "description": "POI nominal voltage kV",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "point_of_interconnection_bus_id": {
+          "description": "POI bus identifier / modeled bus reference",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "interconnection_configuration": {
+          "description": "Interconnection configuration",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "number_of_pois": {
+          "description": "Number of points of interconnection",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "service_entry_configuration": {
+          "description": "Service entry configuration",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "substation_name": {
+          "description": "Associated substation name",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "substation_topology_summary": {
+          "description": "Substation topology summary",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "utility_required_interconnection_documents": {
+          "description": "Utility/ISO required interconnection documents",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+              "document_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "document_type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          }
+        },
+        "site_control_status": {
+          "description": "Site control status",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "easement_and_right_of_way_constraints": {
+          "description": "Easement / ROW constraints",
+          "x-requiredness": "optional",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "existing_vs_greenfield_flag": {
+          "description": "Existing vs greenfield flag",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "existing",
+            "greenfield",
+            "hybrid",
+            null
+          ]
+        },
+        "expansion_of_existing_load_flag": {
+          "description": "Expansion of existing load flag",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "co_located_generation_flag": {
+          "description": "Co-located generation present flag",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "co_located_generation_summary": {
+          "description": "Co-located generation summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "behind_the_meter_resources_summary": {
+          "description": "Behind-the-meter resources summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "service_reliability_target": {
+          "description": "Service reliability target / uptime class",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "single_line_diagram_present": {
+          "description": "Single-line diagram present",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "electrical_topology_summary": {
+          "description": "Electrical topology summary",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "incoming_service_count": {
+          "description": "Incoming service count",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "incoming_service_voltage_levels": {
+          "description": "Incoming service voltage levels",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "number"
+          }
+        },
+        "main_bus_nominal_voltage_kv": {
+          "description": "Main bus nominal voltage kV",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "main_bus_configuration": {
+          "description": "Main bus configuration",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "distribution_voltage_levels": {
+          "description": "Distribution voltage levels",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "number"
+          }
+        },
+        "service_transformer_arrangement": {
+          "description": "Service transformer arrangement",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "redundancy_architecture": {
+          "description": "Redundancy architecture (N, N+1, 2N, 2N+1, etc.)",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "bus_tie_configuration": {
+          "description": "Bus tie configuration",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "normally_open_normally_closed_points": {
+          "description": "Normally open / normally closed points",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string"
+          }
+        },
+        "source_transfer_scheme_summary": {
+          "description": "Source transfer scheme summary",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "islanded_operation_capability": {
+          "description": "Islanded operation capability",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "islanded_operation_summary": {
+          "description": "Islanded operation summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "black_start_or_reenergization_constraints": {
+          "description": "Re-energization / restoration constraints",
+          "x-requiredness": "optional",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "one_line_revision_date": {
+          "description": "One-line revision date",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "equipment_schedule_present": {
+          "description": "Equipment schedule present",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "motor_schedule_present": {
+          "description": "Motor schedule present",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "short_circuit_data_present": {
+          "description": "Short-circuit data present",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "harmonic_filtering_present": {
+          "description": "Harmonic filtering present",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "power_quality_constraints_summary": {
+          "description": "Power quality constraints summary",
+          "x-requiredness": "optional",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "peak_demand_mw": {
+          "description": "Peak demand MW",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "minimum_demand_mw": {
+          "description": "Minimum demand MW",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "normal_operating_demand_mw": {
+          "description": "Normal operating demand MW",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "summer_peak_demand_mw": {
+          "description": "Summer peak demand MW",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "winter_peak_demand_mw": {
+          "description": "Winter peak demand MW",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "expected_load_factor": {
+          "description": "Expected load factor",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "net_power_factor_at_poi": {
+          "description": "Net power factor at POI",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "reactive_power_capability_or_requirement": {
+          "description": "Reactive power capability / requirement",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "steady_state_zip_fraction_z": {
+          "description": "ZIP fraction Z",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "steady_state_zip_fraction_i": {
+          "description": "ZIP fraction I",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "steady_state_zip_fraction_p": {
+          "description": "ZIP fraction P",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "dynamic_load_model_type": {
+          "description": "Dynamic load model type / representation",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "load_step_size_mw": {
+          "description": "Largest expected load step MW",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "load_step_duration_seconds": {
+          "description": "Load step duration seconds",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "largest_single_contingent_load_block_mw": {
+          "description": "Largest single contingent load block MW",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "largest_motor_start_mw": {
+          "description": "Largest motor start MW",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "largest_motor_start_method": {
+          "description": "Largest motor start method",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "load_diversity_summary": {
+          "description": "Load diversity summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "it_load_share_percent": {
+          "description": "IT load share percent",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "mechanical_load_share_percent": {
+          "description": "Mechanical load share percent",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "miscellaneous_load_share_percent": {
+          "description": "Miscellaneous load share percent",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "nonlinear_load_share_percent": {
+          "description": "Nonlinear load share percent",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "harmonic_source_summary": {
+          "description": "Harmonic source summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "inrush_sensitive_equipment_summary": {
+          "description": "Inrush-sensitive equipment summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "planned_demand_response_or_curtailment_capability": {
+          "description": "Demand response / curtailment capability",
+          "x-requiredness": "optional",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "operating_states_summary": {
+          "description": "Operating states summary",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "critical_load_shed_hierarchy": {
+          "description": "Critical load shed hierarchy",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "load_ramp_profile_summary": {
+          "description": "Load ramp profile summary",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "commissioning_load_steps": {
+          "description": "Commissioning load steps",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        },
+        "seasonal_or_environmental_load_dependence": {
+          "description": "Seasonal / environmental load dependence",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "generator_equipment_name": {
+          "description": "Generator equipment name",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "generator_tag_or_designator": {
+          "description": "Generator tag / designator",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "generator_equipment_type": {
+          "description": "Generator equipment type",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "generator_equipment_subtype": {
+          "description": "Generator equipment subtype",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "generator_manufacturer": {
+          "description": "Generator manufacturer",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "generator_model": {
+          "description": "Generator model",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "generator_model_family": {
+          "description": "Generator model family / series",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "generator_catalog_number": {
+          "description": "Generator catalog / part number",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "generator_firmware_or_software_version": {
+          "description": "Generator firmware / software version",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "generator_unit_count": {
+          "description": "Generator unit count",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "generator_installed_spares_count": {
+          "description": "Generator installed spare count",
+          "x-requiredness": "optional",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "generator_location_or_room": {
+          "description": "Generator location / room",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "generator_associated_bus_or_switchboard": {
+          "description": "Generator associated bus / switchboard",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "generator_nameplate_summary": {
+          "description": "Generator nameplate summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "generator_source_document_reference": {
+          "description": "Generator source document reference",
+          "x-requiredness": "optional",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "generator_fuel_type": {
+          "description": "Generator fuel type",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "generator_prime_or_standby_rating_basis": {
+          "description": "Generator rating basis (prime/standby/continuous)",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "generator_rated_kw_per_unit": {
+          "description": "Generator rated kW per unit",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "generator_rated_kva_per_unit": {
+          "description": "Generator rated kVA per unit",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "generator_power_factor_rating": {
+          "description": "Generator power factor rating",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "generator_terminal_voltage_kv": {
+          "description": "Generator terminal voltage kV",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "generator_frequency_hz": {
+          "description": "Generator frequency Hz",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "generator_step_load_acceptance_percent": {
+          "description": "Generator step load acceptance percent",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "generator_startup_time_seconds": {
+          "description": "Generator startup time seconds",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "generator_paralleling_capability": {
+          "description": "Generator paralleling capability",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "generator_sync_method": {
+          "description": "Generator synchronization method",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "generator_governor_type": {
+          "description": "Generator governor type",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "generator_excitation_type": {
+          "description": "Generator excitation type",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "generator_subtransient_reactance_xdpp": {
+          "description": "Generator subtransient reactance Xd\"",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "generator_transient_reactance_xdp": {
+          "description": "Generator transient reactance Xd'",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "generator_inertia_constant_h": {
+          "description": "Generator inertia constant H",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "generator_short_circuit_contribution_summary": {
+          "description": "Generator short-circuit contribution summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "generator_controls_summary": {
+          "description": "Generator controls summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "generator_transfer_sequence_summary": {
+          "description": "Generator transfer sequence summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "generator_runtime_limitations": {
+          "description": "Generator runtime limitations",
+          "x-requiredness": "optional",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "generator_black_start_role": {
+          "description": "Generator black-start / restoration role",
+          "x-requiredness": "optional",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "generator_emissions_or_permitting_constraints": {
+          "description": "Generator emissions / permitting constraints",
+          "x-requiredness": "optional",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ups_equipment_name": {
+          "description": "UPS equipment name",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ups_tag_or_designator": {
+          "description": "UPS tag / designator",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ups_equipment_type": {
+          "description": "UPS equipment type",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ups_equipment_subtype": {
+          "description": "UPS equipment subtype",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ups_manufacturer": {
+          "description": "UPS manufacturer",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ups_model": {
+          "description": "UPS model",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ups_model_family": {
+          "description": "UPS model family / series",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ups_catalog_number": {
+          "description": "UPS catalog / part number",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ups_firmware_or_software_version": {
+          "description": "UPS firmware / software version",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ups_unit_count": {
+          "description": "UPS unit count",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "ups_installed_spares_count": {
+          "description": "UPS installed spare count",
+          "x-requiredness": "optional",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "ups_location_or_room": {
+          "description": "UPS location / room",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ups_associated_bus_or_switchboard": {
+          "description": "UPS associated bus / switchboard",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ups_nameplate_summary": {
+          "description": "UPS nameplate summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ups_source_document_reference": {
+          "description": "UPS source document reference",
+          "x-requiredness": "optional",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ups_topology": {
+          "description": "UPS topology",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ups_capacity_kw_per_unit": {
+          "description": "UPS capacity kW per unit",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "ups_capacity_kva_per_unit": {
+          "description": "UPS capacity kVA per unit",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "ups_input_voltage_kv_or_v": {
+          "description": "UPS input voltage",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "ups_output_voltage_kv_or_v": {
+          "description": "UPS output voltage",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "ups_static_switch_present": {
+          "description": "UPS static switch present",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "ups_bypass_configuration": {
+          "description": "UPS bypass configuration",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ups_rectifier_type": {
+          "description": "UPS rectifier type",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ups_inverter_type": {
+          "description": "UPS inverter type",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ups_battery_chemistry": {
+          "description": "UPS battery chemistry",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ups_battery_runtime_minutes": {
+          "description": "UPS battery runtime minutes",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "ups_harmonic_mitigation_summary": {
+          "description": "UPS harmonic mitigation summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ups_transfer_behavior_summary": {
+          "description": "UPS transfer behavior summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ups_fault_current_behavior_summary": {
+          "description": "UPS fault current behavior summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "battery_equipment_name": {
+          "description": "Battery energy storage / DC system equipment name",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "battery_tag_or_designator": {
+          "description": "Battery energy storage / DC system tag / designator",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "battery_equipment_type": {
+          "description": "Battery energy storage / DC system equipment type",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "battery_equipment_subtype": {
+          "description": "Battery energy storage / DC system equipment subtype",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "battery_manufacturer": {
+          "description": "Battery energy storage / DC system manufacturer",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "battery_model": {
+          "description": "Battery energy storage / DC system model",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "battery_model_family": {
+          "description": "Battery energy storage / DC system model family / series",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "battery_catalog_number": {
+          "description": "Battery energy storage / DC system catalog / part number",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "battery_firmware_or_software_version": {
+          "description": "Battery energy storage / DC system firmware / software version",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "battery_unit_count": {
+          "description": "Battery energy storage / DC system unit count",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "battery_installed_spares_count": {
+          "description": "Battery energy storage / DC system installed spare count",
+          "x-requiredness": "optional",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "battery_location_or_room": {
+          "description": "Battery energy storage / DC system location / room",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "battery_associated_bus_or_switchboard": {
+          "description": "Battery energy storage / DC system associated bus / switchboard",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "battery_nameplate_summary": {
+          "description": "Battery energy storage / DC system nameplate summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "battery_source_document_reference": {
+          "description": "Battery energy storage / DC system source document reference",
+          "x-requiredness": "optional",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pdu_equipment_name": {
+          "description": "Power distribution unit equipment name",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pdu_tag_or_designator": {
+          "description": "Power distribution unit tag / designator",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pdu_equipment_type": {
+          "description": "Power distribution unit equipment type",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pdu_equipment_subtype": {
+          "description": "Power distribution unit equipment subtype",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pdu_manufacturer": {
+          "description": "Power distribution unit manufacturer",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pdu_model": {
+          "description": "Power distribution unit model",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pdu_model_family": {
+          "description": "Power distribution unit model family / series",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pdu_catalog_number": {
+          "description": "Power distribution unit catalog / part number",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pdu_firmware_or_software_version": {
+          "description": "Power distribution unit firmware / software version",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pdu_unit_count": {
+          "description": "Power distribution unit unit count",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "pdu_installed_spares_count": {
+          "description": "Power distribution unit installed spare count",
+          "x-requiredness": "optional",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "pdu_location_or_room": {
+          "description": "Power distribution unit location / room",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pdu_associated_bus_or_switchboard": {
+          "description": "Power distribution unit associated bus / switchboard",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pdu_nameplate_summary": {
+          "description": "Power distribution unit nameplate summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pdu_source_document_reference": {
+          "description": "Power distribution unit source document reference",
+          "x-requiredness": "optional",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sts_equipment_name": {
+          "description": "Static transfer switch equipment name",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sts_tag_or_designator": {
+          "description": "Static transfer switch tag / designator",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sts_equipment_type": {
+          "description": "Static transfer switch equipment type",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sts_equipment_subtype": {
+          "description": "Static transfer switch equipment subtype",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sts_manufacturer": {
+          "description": "Static transfer switch manufacturer",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sts_model": {
+          "description": "Static transfer switch model",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sts_model_family": {
+          "description": "Static transfer switch model family / series",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sts_catalog_number": {
+          "description": "Static transfer switch catalog / part number",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sts_firmware_or_software_version": {
+          "description": "Static transfer switch firmware / software version",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sts_unit_count": {
+          "description": "Static transfer switch unit count",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "sts_installed_spares_count": {
+          "description": "Static transfer switch installed spare count",
+          "x-requiredness": "optional",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "sts_location_or_room": {
+          "description": "Static transfer switch location / room",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sts_associated_bus_or_switchboard": {
+          "description": "Static transfer switch associated bus / switchboard",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sts_nameplate_summary": {
+          "description": "Static transfer switch nameplate summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sts_source_document_reference": {
+          "description": "Static transfer switch source document reference",
+          "x-requiredness": "optional",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "vfd_equipment_name": {
+          "description": "Variable frequency drive equipment name",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "vfd_tag_or_designator": {
+          "description": "Variable frequency drive tag / designator",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "vfd_equipment_type": {
+          "description": "Variable frequency drive equipment type",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "vfd_equipment_subtype": {
+          "description": "Variable frequency drive equipment subtype",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "vfd_manufacturer": {
+          "description": "Variable frequency drive manufacturer",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "vfd_model": {
+          "description": "Variable frequency drive model",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "vfd_model_family": {
+          "description": "Variable frequency drive model family / series",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "vfd_catalog_number": {
+          "description": "Variable frequency drive catalog / part number",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "vfd_firmware_or_software_version": {
+          "description": "Variable frequency drive firmware / software version",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "vfd_unit_count": {
+          "description": "Variable frequency drive unit count",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "vfd_installed_spares_count": {
+          "description": "Variable frequency drive installed spare count",
+          "x-requiredness": "optional",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "vfd_location_or_room": {
+          "description": "Variable frequency drive location / room",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "vfd_associated_bus_or_switchboard": {
+          "description": "Variable frequency drive associated bus / switchboard",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "vfd_nameplate_summary": {
+          "description": "Variable frequency drive nameplate summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "vfd_source_document_reference": {
+          "description": "Variable frequency drive source document reference",
+          "x-requiredness": "optional",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "interconnection_transformer_equipment_name": {
+          "description": "Interconnection transformer equipment name",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "interconnection_transformer_tag_or_designator": {
+          "description": "Interconnection transformer tag / designator",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "interconnection_transformer_equipment_type": {
+          "description": "Interconnection transformer equipment type",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "interconnection_transformer_equipment_subtype": {
+          "description": "Interconnection transformer equipment subtype",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "interconnection_transformer_manufacturer": {
+          "description": "Interconnection transformer manufacturer",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "interconnection_transformer_model": {
+          "description": "Interconnection transformer model",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "interconnection_transformer_model_family": {
+          "description": "Interconnection transformer model family / series",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "interconnection_transformer_catalog_number": {
+          "description": "Interconnection transformer catalog / part number",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "interconnection_transformer_firmware_or_software_version": {
+          "description": "Interconnection transformer firmware / software version",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "interconnection_transformer_unit_count": {
+          "description": "Interconnection transformer unit count",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "interconnection_transformer_installed_spares_count": {
+          "description": "Interconnection transformer installed spare count",
+          "x-requiredness": "optional",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "interconnection_transformer_location_or_room": {
+          "description": "Interconnection transformer location / room",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "interconnection_transformer_associated_bus_or_switchboard": {
+          "description": "Interconnection transformer associated bus / switchboard",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "interconnection_transformer_nameplate_summary": {
+          "description": "Interconnection transformer nameplate summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "interconnection_transformer_source_document_reference": {
+          "description": "Interconnection transformer source document reference",
+          "x-requiredness": "optional",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "service_transformer_equipment_name": {
+          "description": "Service transformer equipment name",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "service_transformer_tag_or_designator": {
+          "description": "Service transformer tag / designator",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "service_transformer_equipment_type": {
+          "description": "Service transformer equipment type",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "service_transformer_equipment_subtype": {
+          "description": "Service transformer equipment subtype",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "service_transformer_manufacturer": {
+          "description": "Service transformer manufacturer",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "service_transformer_model": {
+          "description": "Service transformer model",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "service_transformer_model_family": {
+          "description": "Service transformer model family / series",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "service_transformer_catalog_number": {
+          "description": "Service transformer catalog / part number",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "service_transformer_firmware_or_software_version": {
+          "description": "Service transformer firmware / software version",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "service_transformer_unit_count": {
+          "description": "Service transformer unit count",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "service_transformer_installed_spares_count": {
+          "description": "Service transformer installed spare count",
+          "x-requiredness": "optional",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "service_transformer_location_or_room": {
+          "description": "Service transformer location / room",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "service_transformer_associated_bus_or_switchboard": {
+          "description": "Service transformer associated bus / switchboard",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "service_transformer_nameplate_summary": {
+          "description": "Service transformer nameplate summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "service_transformer_source_document_reference": {
+          "description": "Service transformer source document reference",
+          "x-requiredness": "optional",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "switchgear_equipment_name": {
+          "description": "Switchgear lineup equipment name",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "switchgear_tag_or_designator": {
+          "description": "Switchgear lineup tag / designator",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "switchgear_equipment_type": {
+          "description": "Switchgear lineup equipment type",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "switchgear_equipment_subtype": {
+          "description": "Switchgear lineup equipment subtype",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "switchgear_manufacturer": {
+          "description": "Switchgear lineup manufacturer",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "switchgear_model": {
+          "description": "Switchgear lineup model",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "switchgear_model_family": {
+          "description": "Switchgear lineup model family / series",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "switchgear_catalog_number": {
+          "description": "Switchgear lineup catalog / part number",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "switchgear_firmware_or_software_version": {
+          "description": "Switchgear lineup firmware / software version",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "switchgear_unit_count": {
+          "description": "Switchgear lineup unit count",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "switchgear_installed_spares_count": {
+          "description": "Switchgear lineup installed spare count",
+          "x-requiredness": "optional",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "switchgear_location_or_room": {
+          "description": "Switchgear lineup location / room",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "switchgear_associated_bus_or_switchboard": {
+          "description": "Switchgear lineup associated bus / switchboard",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "switchgear_nameplate_summary": {
+          "description": "Switchgear lineup nameplate summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "switchgear_source_document_reference": {
+          "description": "Switchgear lineup source document reference",
+          "x-requiredness": "optional",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "breaker_equipment_name": {
+          "description": "Breaker equipment name",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "breaker_tag_or_designator": {
+          "description": "Breaker tag / designator",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "breaker_equipment_type": {
+          "description": "Breaker equipment type",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "breaker_equipment_subtype": {
+          "description": "Breaker equipment subtype",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "breaker_manufacturer": {
+          "description": "Breaker manufacturer",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "breaker_model": {
+          "description": "Breaker model",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "breaker_model_family": {
+          "description": "Breaker model family / series",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "breaker_catalog_number": {
+          "description": "Breaker catalog / part number",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "breaker_firmware_or_software_version": {
+          "description": "Breaker firmware / software version",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "breaker_unit_count": {
+          "description": "Breaker unit count",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "breaker_installed_spares_count": {
+          "description": "Breaker installed spare count",
+          "x-requiredness": "optional",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "breaker_location_or_room": {
+          "description": "Breaker location / room",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "breaker_associated_bus_or_switchboard": {
+          "description": "Breaker associated bus / switchboard",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "breaker_nameplate_summary": {
+          "description": "Breaker nameplate summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "breaker_source_document_reference": {
+          "description": "Breaker source document reference",
+          "x-requiredness": "optional",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "interconnection_transformer_mva_per_unit": {
+          "description": "Interconnection transformer MVA per unit",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "interconnection_transformer_hv_kv": {
+          "description": "Interconnection transformer high-side kV",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "interconnection_transformer_lv_kv": {
+          "description": "Interconnection transformer low-side kV",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "interconnection_transformer_impedance_percent": {
+          "description": "Interconnection transformer impedance percent",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "interconnection_transformer_vector_group": {
+          "description": "Interconnection transformer vector group",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "interconnection_transformer_tap_range": {
+          "description": "Interconnection transformer tap range",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "service_transformer_rating_summary": {
+          "description": "Service transformer rating summary",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "switchgear_bus_rating_amps": {
+          "description": "Switchgear bus rating amps",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "switchgear_interrupting_rating_ka": {
+          "description": "Switchgear interrupting rating kA",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "breaker_interrupting_rating_ka": {
+          "description": "Breaker interrupting rating kA",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "breaker_trip_unit_or_relay_reference": {
+          "description": "Breaker trip unit / relay reference",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "bus_configuration_summary": {
+          "description": "Bus configuration summary",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "arc_flash_or_equipment_duty_constraints": {
+          "description": "Arc flash / equipment duty constraints",
+          "x-requiredness": "optional",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "relay_equipment_name": {
+          "description": "Protective relay equipment name",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "relay_tag_or_designator": {
+          "description": "Protective relay tag / designator",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "relay_equipment_type": {
+          "description": "Protective relay equipment type",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "relay_equipment_subtype": {
+          "description": "Protective relay equipment subtype",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "relay_manufacturer": {
+          "description": "Protective relay manufacturer",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "relay_model": {
+          "description": "Protective relay model",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "relay_model_family": {
+          "description": "Protective relay model family / series",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "relay_catalog_number": {
+          "description": "Protective relay catalog / part number",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "relay_firmware_or_software_version": {
+          "description": "Protective relay firmware / software version",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "relay_unit_count": {
+          "description": "Protective relay unit count",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "relay_installed_spares_count": {
+          "description": "Protective relay installed spare count",
+          "x-requiredness": "optional",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "relay_location_or_room": {
+          "description": "Protective relay location / room",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "relay_associated_bus_or_switchboard": {
+          "description": "Protective relay associated bus / switchboard",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "relay_nameplate_summary": {
+          "description": "Protective relay nameplate summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "relay_source_document_reference": {
+          "description": "Protective relay source document reference",
+          "x-requiredness": "optional",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "controller_equipment_name": {
+          "description": "Controller / PLC equipment name",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "controller_tag_or_designator": {
+          "description": "Controller / PLC tag / designator",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "controller_equipment_type": {
+          "description": "Controller / PLC equipment type",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "controller_equipment_subtype": {
+          "description": "Controller / PLC equipment subtype",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "controller_manufacturer": {
+          "description": "Controller / PLC manufacturer",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "controller_model": {
+          "description": "Controller / PLC model",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "controller_model_family": {
+          "description": "Controller / PLC model family / series",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "controller_catalog_number": {
+          "description": "Controller / PLC catalog / part number",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "controller_firmware_or_software_version": {
+          "description": "Controller / PLC firmware / software version",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "controller_unit_count": {
+          "description": "Controller / PLC unit count",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "controller_installed_spares_count": {
+          "description": "Controller / PLC installed spare count",
+          "x-requiredness": "optional",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "controller_location_or_room": {
+          "description": "Controller / PLC location / room",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "controller_associated_bus_or_switchboard": {
+          "description": "Controller / PLC associated bus / switchboard",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "controller_nameplate_summary": {
+          "description": "Controller / PLC nameplate summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "controller_source_document_reference": {
+          "description": "Controller / PLC source document reference",
+          "x-requiredness": "optional",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ats_equipment_name": {
+          "description": "Automatic transfer switch equipment name",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ats_tag_or_designator": {
+          "description": "Automatic transfer switch tag / designator",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ats_equipment_type": {
+          "description": "Automatic transfer switch equipment type",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ats_equipment_subtype": {
+          "description": "Automatic transfer switch equipment subtype",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ats_manufacturer": {
+          "description": "Automatic transfer switch manufacturer",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ats_model": {
+          "description": "Automatic transfer switch model",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ats_model_family": {
+          "description": "Automatic transfer switch model family / series",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ats_catalog_number": {
+          "description": "Automatic transfer switch catalog / part number",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ats_firmware_or_software_version": {
+          "description": "Automatic transfer switch firmware / software version",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ats_unit_count": {
+          "description": "Automatic transfer switch unit count",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "ats_installed_spares_count": {
+          "description": "Automatic transfer switch installed spare count",
+          "x-requiredness": "optional",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "ats_location_or_room": {
+          "description": "Automatic transfer switch location / room",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ats_associated_bus_or_switchboard": {
+          "description": "Automatic transfer switch associated bus / switchboard",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ats_nameplate_summary": {
+          "description": "Automatic transfer switch nameplate summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ats_source_document_reference": {
+          "description": "Automatic transfer switch source document reference",
+          "x-requiredness": "optional",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "protection_scheme_summary": {
+          "description": "Protection scheme summary",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "relay_settings_file_present": {
+          "description": "Relay settings file present",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "transfer_scheme_logic_summary": {
+          "description": "Transfer scheme logic summary",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "uvls_ufls_or_load_shed_logic_summary": {
+          "description": "UVLS / UFLS / load shed logic summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "breaker_failure_scheme_present": {
+          "description": "Breaker failure scheme present",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "sync_check_scheme_present": {
+          "description": "Sync-check scheme present",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "relay_model_and_firmware_summary": {
+          "description": "Relay model and firmware summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "relay_setting_groups_summary": {
+          "description": "Relay setting groups summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "controls_interlocks_summary": {
+          "description": "Controls interlocks summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sequence_of_operations_summary": {
+          "description": "Sequence of operations summary",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "meter_equipment_name": {
+          "description": "Meter equipment name",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "meter_tag_or_designator": {
+          "description": "Meter tag / designator",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "meter_equipment_type": {
+          "description": "Meter equipment type",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "meter_equipment_subtype": {
+          "description": "Meter equipment subtype",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "meter_manufacturer": {
+          "description": "Meter manufacturer",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "meter_model": {
+          "description": "Meter model",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "meter_model_family": {
+          "description": "Meter model family / series",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "meter_catalog_number": {
+          "description": "Meter catalog / part number",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "meter_firmware_or_software_version": {
+          "description": "Meter firmware / software version",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "meter_unit_count": {
+          "description": "Meter unit count",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "meter_installed_spares_count": {
+          "description": "Meter installed spare count",
+          "x-requiredness": "optional",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "meter_location_or_room": {
+          "description": "Meter location / room",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "meter_associated_bus_or_switchboard": {
+          "description": "Meter associated bus / switchboard",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "meter_nameplate_summary": {
+          "description": "Meter nameplate summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "meter_source_document_reference": {
+          "description": "Meter source document reference",
+          "x-requiredness": "optional",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rtu_equipment_name": {
+          "description": "RTU / gateway equipment name",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rtu_tag_or_designator": {
+          "description": "RTU / gateway tag / designator",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rtu_equipment_type": {
+          "description": "RTU / gateway equipment type",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rtu_equipment_subtype": {
+          "description": "RTU / gateway equipment subtype",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rtu_manufacturer": {
+          "description": "RTU / gateway manufacturer",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rtu_model": {
+          "description": "RTU / gateway model",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rtu_model_family": {
+          "description": "RTU / gateway model family / series",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rtu_catalog_number": {
+          "description": "RTU / gateway catalog / part number",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rtu_firmware_or_software_version": {
+          "description": "RTU / gateway firmware / software version",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rtu_unit_count": {
+          "description": "RTU / gateway unit count",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "rtu_installed_spares_count": {
+          "description": "RTU / gateway installed spare count",
+          "x-requiredness": "optional",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "rtu_location_or_room": {
+          "description": "RTU / gateway location / room",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rtu_associated_bus_or_switchboard": {
+          "description": "RTU / gateway associated bus / switchboard",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rtu_nameplate_summary": {
+          "description": "RTU / gateway nameplate summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rtu_source_document_reference": {
+          "description": "RTU / gateway source document reference",
+          "x-requiredness": "optional",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "scada_equipment_name": {
+          "description": "SCADA / EMS interface equipment name",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "scada_tag_or_designator": {
+          "description": "SCADA / EMS interface tag / designator",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "scada_equipment_type": {
+          "description": "SCADA / EMS interface equipment type",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "scada_equipment_subtype": {
+          "description": "SCADA / EMS interface equipment subtype",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "scada_manufacturer": {
+          "description": "SCADA / EMS interface manufacturer",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "scada_model": {
+          "description": "SCADA / EMS interface model",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "scada_model_family": {
+          "description": "SCADA / EMS interface model family / series",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "scada_catalog_number": {
+          "description": "SCADA / EMS interface catalog / part number",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "scada_firmware_or_software_version": {
+          "description": "SCADA / EMS interface firmware / software version",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "scada_unit_count": {
+          "description": "SCADA / EMS interface unit count",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "scada_installed_spares_count": {
+          "description": "SCADA / EMS interface installed spare count",
+          "x-requiredness": "optional",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "scada_location_or_room": {
+          "description": "SCADA / EMS interface location / room",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "scada_associated_bus_or_switchboard": {
+          "description": "SCADA / EMS interface associated bus / switchboard",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "scada_nameplate_summary": {
+          "description": "SCADA / EMS interface nameplate summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "scada_source_document_reference": {
+          "description": "SCADA / EMS interface source document reference",
+          "x-requiredness": "optional",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "revenue_metering_configuration": {
+          "description": "Revenue metering configuration",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "telemetry_points_list_present": {
+          "description": "Telemetry points list present",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "required_real_time_points_summary": {
+          "description": "Required real-time points summary",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "iccp_or_scada_protocols": {
+          "description": "ICCP / SCADA protocols",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string"
+          }
+        },
+        "breaker_status_telemetry_present": {
+          "description": "Breaker status telemetry present",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "mw_mvar_telemetry_present": {
+          "description": "MW / MVAR telemetry present",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "voltage_frequency_telemetry_present": {
+          "description": "Voltage / frequency telemetry present",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "disturbance_recording_capability": {
+          "description": "Disturbance recording capability",
+          "x-requiredness": "optional",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "operations_visibility_constraints": {
+          "description": "Operations visibility constraints",
+          "x-requiredness": "optional",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chiller_equipment_name": {
+          "description": "Chiller equipment name",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chiller_tag_or_designator": {
+          "description": "Chiller tag / designator",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chiller_equipment_type": {
+          "description": "Chiller equipment type",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chiller_equipment_subtype": {
+          "description": "Chiller equipment subtype",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chiller_manufacturer": {
+          "description": "Chiller manufacturer",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chiller_model": {
+          "description": "Chiller model",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chiller_model_family": {
+          "description": "Chiller model family / series",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chiller_catalog_number": {
+          "description": "Chiller catalog / part number",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chiller_firmware_or_software_version": {
+          "description": "Chiller firmware / software version",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chiller_unit_count": {
+          "description": "Chiller unit count",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "chiller_installed_spares_count": {
+          "description": "Chiller installed spare count",
+          "x-requiredness": "optional",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "chiller_location_or_room": {
+          "description": "Chiller location / room",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chiller_associated_bus_or_switchboard": {
+          "description": "Chiller associated bus / switchboard",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chiller_nameplate_summary": {
+          "description": "Chiller nameplate summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chiller_source_document_reference": {
+          "description": "Chiller source document reference",
+          "x-requiredness": "optional",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cooling_tower_equipment_name": {
+          "description": "Cooling tower equipment name",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cooling_tower_tag_or_designator": {
+          "description": "Cooling tower tag / designator",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cooling_tower_equipment_type": {
+          "description": "Cooling tower equipment type",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cooling_tower_equipment_subtype": {
+          "description": "Cooling tower equipment subtype",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cooling_tower_manufacturer": {
+          "description": "Cooling tower manufacturer",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cooling_tower_model": {
+          "description": "Cooling tower model",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cooling_tower_model_family": {
+          "description": "Cooling tower model family / series",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cooling_tower_catalog_number": {
+          "description": "Cooling tower catalog / part number",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cooling_tower_firmware_or_software_version": {
+          "description": "Cooling tower firmware / software version",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cooling_tower_unit_count": {
+          "description": "Cooling tower unit count",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "cooling_tower_installed_spares_count": {
+          "description": "Cooling tower installed spare count",
+          "x-requiredness": "optional",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "cooling_tower_location_or_room": {
+          "description": "Cooling tower location / room",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cooling_tower_associated_bus_or_switchboard": {
+          "description": "Cooling tower associated bus / switchboard",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cooling_tower_nameplate_summary": {
+          "description": "Cooling tower nameplate summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cooling_tower_source_document_reference": {
+          "description": "Cooling tower source document reference",
+          "x-requiredness": "optional",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pump_equipment_name": {
+          "description": "Pump equipment name",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pump_tag_or_designator": {
+          "description": "Pump tag / designator",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pump_equipment_type": {
+          "description": "Pump equipment type",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pump_equipment_subtype": {
+          "description": "Pump equipment subtype",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pump_manufacturer": {
+          "description": "Pump manufacturer",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pump_model": {
+          "description": "Pump model",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pump_model_family": {
+          "description": "Pump model family / series",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pump_catalog_number": {
+          "description": "Pump catalog / part number",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pump_firmware_or_software_version": {
+          "description": "Pump firmware / software version",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pump_unit_count": {
+          "description": "Pump unit count",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "pump_installed_spares_count": {
+          "description": "Pump installed spare count",
+          "x-requiredness": "optional",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "pump_location_or_room": {
+          "description": "Pump location / room",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pump_associated_bus_or_switchboard": {
+          "description": "Pump associated bus / switchboard",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pump_nameplate_summary": {
+          "description": "Pump nameplate summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pump_source_document_reference": {
+          "description": "Pump source document reference",
+          "x-requiredness": "optional",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "fan_equipment_name": {
+          "description": "Fan equipment name",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "fan_tag_or_designator": {
+          "description": "Fan tag / designator",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "fan_equipment_type": {
+          "description": "Fan equipment type",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "fan_equipment_subtype": {
+          "description": "Fan equipment subtype",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "fan_manufacturer": {
+          "description": "Fan manufacturer",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "fan_model": {
+          "description": "Fan model",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "fan_model_family": {
+          "description": "Fan model family / series",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "fan_catalog_number": {
+          "description": "Fan catalog / part number",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "fan_firmware_or_software_version": {
+          "description": "Fan firmware / software version",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "fan_unit_count": {
+          "description": "Fan unit count",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "fan_installed_spares_count": {
+          "description": "Fan installed spare count",
+          "x-requiredness": "optional",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "fan_location_or_room": {
+          "description": "Fan location / room",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "fan_associated_bus_or_switchboard": {
+          "description": "Fan associated bus / switchboard",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "fan_nameplate_summary": {
+          "description": "Fan nameplate summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "fan_source_document_reference": {
+          "description": "Fan source document reference",
+          "x-requiredness": "optional",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "crac_crah_equipment_name": {
+          "description": "CRAC/CRAH unit equipment name",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "crac_crah_tag_or_designator": {
+          "description": "CRAC/CRAH unit tag / designator",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "crac_crah_equipment_type": {
+          "description": "CRAC/CRAH unit equipment type",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "crac_crah_equipment_subtype": {
+          "description": "CRAC/CRAH unit equipment subtype",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "crac_crah_manufacturer": {
+          "description": "CRAC/CRAH unit manufacturer",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "crac_crah_model": {
+          "description": "CRAC/CRAH unit model",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "crac_crah_model_family": {
+          "description": "CRAC/CRAH unit model family / series",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "crac_crah_catalog_number": {
+          "description": "CRAC/CRAH unit catalog / part number",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "crac_crah_firmware_or_software_version": {
+          "description": "CRAC/CRAH unit firmware / software version",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "crac_crah_unit_count": {
+          "description": "CRAC/CRAH unit unit count",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "crac_crah_installed_spares_count": {
+          "description": "CRAC/CRAH unit installed spare count",
+          "x-requiredness": "optional",
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "crac_crah_location_or_room": {
+          "description": "CRAC/CRAH unit location / room",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "crac_crah_associated_bus_or_switchboard": {
+          "description": "CRAC/CRAH unit associated bus / switchboard",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "crac_crah_nameplate_summary": {
+          "description": "CRAC/CRAH unit nameplate summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "crac_crah_source_document_reference": {
+          "description": "CRAC/CRAH unit source document reference",
+          "x-requiredness": "optional",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cooling_architecture_summary": {
+          "description": "Cooling architecture summary",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cooling_design_capacity_summary": {
+          "description": "Cooling design capacity summary",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "largest_chiller_kw": {
+          "description": "Largest chiller kW",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "largest_pump_kw": {
+          "description": "Largest pump kW",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "largest_fan_kw": {
+          "description": "Largest fan kW",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "motor_starting_sequence_summary": {
+          "description": "Motor starting sequence summary",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cooling_load_share_percent_of_total": {
+          "description": "Cooling load share percent of total",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "water_system_dependency_summary": {
+          "description": "Water system dependency summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "environmental_extremes_effect_on_load": {
+          "description": "Environmental extremes effect on load",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "thermal_storage_present": {
+          "description": "Thermal storage present",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "load_commissioning_plan_present": {
+          "description": "Load commissioning plan present",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "phased_buildout_flag": {
+          "description": "Phased buildout flag",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "buildout_phases_summary": {
+          "description": "Buildout phases summary",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        },
+        "energization_sequence_summary": {
+          "description": "Energization sequence summary",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "commissioning_constraints_summary": {
+          "description": "Commissioning constraints summary",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "maximum_daily_weekly_monthly_ramp_summary": {
+          "description": "Maximum daily/weekly/monthly ramp summary",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "temporary_generation_during_commissioning": {
+          "description": "Temporary generation during commissioning",
+          "x-requiredness": "optional",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "planned_operating_modes_summary": {
+          "description": "Planned operating modes summary",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "maintenance_or_outage_operating_modes": {
+          "description": "Maintenance/outage operating modes",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "emergency_operating_mode_summary": {
+          "description": "Emergency operating mode summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "restoration_or_reclose_constraints": {
+          "description": "Restoration or reclose constraints",
+          "x-requiredness": "optional",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "operator_actions_required_summary": {
+          "description": "Operator actions required summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "accepted_peak_demand_mw": {
+          "description": "Accepted peak demand MW",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "accepted_normal_operating_demand_mw": {
+          "description": "Accepted normal operating demand MW",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "accepted_zip_representation": {
+          "description": "Accepted ZIP representation",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": true
+        },
+        "accepted_dynamic_representation": {
+          "description": "Accepted dynamic representation",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": true
+        },
+        "accepted_motor_starting_representation": {
+          "description": "Accepted motor-start representation",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": true
+        },
+        "accepted_short_circuit_representation": {
+          "description": "Accepted short-circuit representation",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": true
+        },
+        "assumptions_summary": {
+          "description": "Accepted assumptions summary",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "scenario_typical_summary": {
+          "description": "Typical scenario summary",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "scenario_conservative_summary": {
+          "description": "Conservative scenario summary",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "scenario_best_case_summary": {
+          "description": "Best-case scenario summary",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "study_limitations_summary": {
+          "description": "Study limitations summary",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "planner_review_priority_summary": {
+          "description": "Planner review priority summary",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "accepted_value_table": {
+          "description": "Accepted value table",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        },
+        "alternate_candidate_table": {
+          "description": "Alternate candidate table",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        },
+        "open_conflict_table": {
+          "description": "Open conflict table",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        },
+        "unresolved_required_fields": {
+          "description": "Unresolved required fields",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string"
+          }
+        },
+        "missing_information_request_list": {
+          "description": "Missing information request list",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string"
+          }
+        },
+        "field_resolution_rationale_log": {
+          "description": "Field resolution rationale log",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        },
+        "evidence_anchor_index": {
+          "description": "Evidence anchor index",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        },
+        "applicant_confirmation_log": {
+          "description": "Applicant confirmation log",
+          "x-requiredness": "conditional_required",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        },
+        "review_flags": {
+          "description": "Review flags",
+          "x-planner-critical": true,
+          "x-requiredness": "required",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string"
+          }
+        },
+        "deferred_for_manual_review_fields": {
+          "description": "Deferred for manual review fields",
+          "x-planner-critical": true,
+          "x-requiredness": "conditional_required",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "field_resolution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ledger",
+        "backlog"
+      ],
+      "properties": {
+        "ledger": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "required": [
+              "field_id",
+              "status"
+            ],
+            "properties": {
+              "field_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "accepted_value": {},
+              "accepted_unit": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "confirmed",
+                  "inferred",
+                  "assumed",
+                  "conflicting",
+                  "missing",
+                  "review_required",
+                  "unresolved"
+                ]
+              },
+              "confidence": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "confidence_tag": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "why_accepted": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "accepted_source_type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "accepted_source_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "accepted_source_anchor": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "accepted_source_hierarchy": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "accepted_specificity": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "alternatives": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": true
+                }
+              },
+              "candidates": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": true
+                }
+              },
+              "planner_review_flag": {
+                "type": "boolean"
+              },
+              "needs_applicant_confirmation": {
+                "type": "boolean"
+              },
+              "candidate_evidence_appendix": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": true
+                }
+              }
+            }
+          }
+        },
+        "backlog": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "required": [
+              "field_id"
+            ],
+            "properties": {
+              "field_id": {
+                "type": "string"
+              },
+              "label": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "priority": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "reason": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "planner_critical": {
+                "type": "boolean"
+              },
+              "requiredness": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "current_best_value": {},
+              "alternate_values": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": true
+                }
+              }
+            }
+          }
+        },
+        "open_items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "required": [
+              "field_id"
+            ],
+            "properties": {
+              "field_id": {
+                "type": "string"
+              },
+              "label": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "priority": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "reason": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "planner_critical": {
+                "type": "boolean"
+              },
+              "requiredness": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "current_best_value": {},
+              "alternate_values": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": true
+                }
+              }
+            }
+          }
+        },
+        "accepted_field_index": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": true,
+            "required": [
+              "field_id",
+              "status"
+            ],
+            "properties": {
+              "field_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "accepted_value": {},
+              "accepted_unit": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "confirmed",
+                  "inferred",
+                  "assumed",
+                  "conflicting",
+                  "missing",
+                  "review_required",
+                  "unresolved"
+                ]
+              },
+              "confidence": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "confidence_tag": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "why_accepted": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "accepted_source_type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "accepted_source_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "accepted_source_anchor": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "accepted_source_hierarchy": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "accepted_specificity": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "alternatives": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": true
+                }
+              },
+              "candidates": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": true
+                }
+              },
+              "planner_review_flag": {
+                "type": "boolean"
+              },
+              "needs_applicant_confirmation": {
+                "type": "boolean"
+              },
+              "candidate_evidence_appendix": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": true
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "planner_packet": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "field_rows_by_section"
+      ],
+      "properties": {
+        "field_rows_by_section": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": true,
+              "required": [
+                "field_id",
+                "label",
+                "status"
+              ],
+              "properties": {
+                "field_id": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "value": {},
+                "units": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "confidence": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                },
+                "confidence_tag": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "why_accepted": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "anchors": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "alternatives": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": true
+                  }
+                },
+                "planner_critical": {
+                  "type": "boolean"
+                },
+                "requiredness": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "resolution_priority_queue": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "required": [
+              "field_id"
+            ],
+            "properties": {
+              "field_id": {
+                "type": "string"
+              },
+              "label": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "priority": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "reason": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "planner_critical": {
+                "type": "boolean"
+              },
+              "requiredness": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "current_best_value": {},
+              "alternate_values": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": true
+                }
+              }
+            }
+          }
+        },
+        "planner_critical_open_items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "required": [
+              "field_id"
+            ],
+            "properties": {
+              "field_id": {
+                "type": "string"
+              },
+              "label": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "priority": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "reason": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "planner_critical": {
+                "type": "boolean"
+              },
+              "requiredness": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "current_best_value": {},
+              "alternate_values": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": true
+                }
+              }
+            }
+          }
+        },
+        "field_resolution_evidence_appendix": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        }
+      }
+    },
+    "translated_model_outputs": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "output_parameters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "scenarios": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "governed_summary": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  }
+}

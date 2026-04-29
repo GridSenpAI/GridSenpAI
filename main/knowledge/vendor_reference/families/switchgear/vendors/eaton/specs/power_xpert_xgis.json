@@ -1,0 +1,126 @@
+{
+  "schema_version": "2.0.0",
+  "equipment_family": "switchgear",
+  "manufacturer": "Eaton",
+  "product_line": "Power Xpert XGIS",
+  "record_status": "drop_in_ready_with_backfilled_product_line_specs",
+  "library_readiness": "drop_in_ready",
+  "identity": {
+    "manufacturer": {
+      "value": "Eaton",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "product_line": {
+      "value": "Power Xpert XGIS",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    }
+  },
+  "fixed_specs": {
+    "voltage_class_v": {
+      "value": 38000,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false,
+      "note": "Official product page states voltage up to 38 kV."
+    },
+    "current_rating_a": {
+      "value": 2500,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false,
+      "note": "Official product page states continuous current up to 2500 A."
+    },
+    "interrupting_rating_ka": {
+      "value": 31500,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false,
+      "note": "Official product page states interrupt rating up to 31.5 kAIC."
+    },
+    "switchgear_class": {
+      "value": "medium-voltage gas-insulated switchgear",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "breaker_type": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "enclosure_type": {
+      "value": "gas-insulated",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "indoor_outdoor": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "insulation_type": {
+      "value": "gas-insulated",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    }
+  },
+  "project_specific_fields": {
+    "sectionalization_role": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured value."
+    },
+    "tie_configuration": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured value."
+    },
+    "normal_open_closed_status": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured value."
+    },
+    "installed_topology_role": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured value."
+    },
+    "redundancy_scheme": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured value."
+    },
+    "build_phase_status": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured value."
+    }
+  },
+  "source_documents": [
+    {
+      "document_id": "eaton_power_xpert_xgis_product_page",
+      "title": "Power Xpert XGIS GIS Medium-Voltage Switchgear",
+      "source_url": "https://www.eaton.com/in/en-us/catalog/medium-voltage-power-distribution-control-systems/power-xpert-xgis-gas-insulated-medium-voltage-switchgear.html",
+      "source_class": "official_product_page"
+    },
+    {
+      "document_id": "eaton_xgis_install_commissioning",
+      "title": "XGIS Installation and Commissioning",
+      "source_url": "https://www.eaton.com/content/dam/eaton/products/medium-voltage-power-distribution-control-systems/power-xpert-xgis-gas-insulated-medium-voltage-switchgear/eaton-xgis-install-commissioning-ib022018en.pdf",
+      "source_class": "official_pdf"
+    }
+  ],
+  "drop_in_contract": {
+    "record_complete_schema": true,
+    "source_backed_fixed_fields_only": true,
+    "project_specific_fields_left_null_by_design": true,
+    "ready_for_program_ingestion": true
+  },
+  "notes": [
+    "Retained as a source-backed facility-side MV GIS product-line record."
+  ]
+}

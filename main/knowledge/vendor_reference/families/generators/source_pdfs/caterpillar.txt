@@ -1,0 +1,35 @@
+C18 representative technical spec PDF:
+https://emc.cat.com/pubdirect.ashx?media_string_id=TSS-DM8518-04-GS-EPG-9045560.pdf
+
+C18 broader family PDF:
+https://emc.cat.com/pubdirect.ashx?media_string_id=TSS-DM8518-04-GS-EPG-13048792.pdf
+
+C27 family PDF:
+https://emc.cat.com/pubdirect.ashx?media_string_id=SS-7401742-18331497-025.pdf
+
+C27 representative technical spec PDF:
+https://emc.cat.com/pubdirect.ashx?media_string_id=TSS-DM9072-02-GS-EPG-10708382.pdf
+
+C27 800 ekW technical spec PDF:
+https://emc.cat.com/pubdirect.ashx?media_string_id=TSS-DM7696-04-GS-EPG-10859436.pdf
+
+C32 family PDF:
+https://emc.cat.com/pubdirect.ashx?media_string_id=SS-9249201-18332039-017.pdf
+
+C32 alternate family PDF:
+https://emc.cat.com/pubdirect.ashx?media_string_id=LEHE0937-00.pdf
+
+3512 family PDF:
+https://emc.cat.com/pubdirect.ashx?media_string_id=MSS-EPG-1000006024-054.pdf
+
+3512 alternate family PDF:
+https://emc.cat.com/pubdirect.ashx?media_string_id=MSS-EPG-1000028918-068.pdf
+
+3516C mission-critical standby PDF:
+https://emc.cat.com/pubdirect.ashx?media_string_id=SS-8076867-18331919-023.pdf
+
+3516C spec PDF:
+https://emc.cat.com/pubdirect.ashx?media_string_id=MSS-EPG-1000028912-085.pdf
+
+3516C 2000 ekW / 2500 kVA technical spec PDF:
+https://emc.cat.com/pubdirect.ashx?media_string_id=TSS-DM8263-03-GS-EPG-9042193.pdf

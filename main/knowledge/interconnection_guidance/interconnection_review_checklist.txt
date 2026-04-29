@@ -1,0 +1,11 @@
+GridSenpAI interconnection checklist notes for retrieval and gap resolution.
+When interconnection-critical fields are missing, prioritize applicant packet evidence before interview:
+- service_delivery_point_voltage_kv
+- closest_sswg_bus_number or equivalent bus mapping
+- requested_peak_demand_mw and power factor
+- lcp_stage_schedule / energization phasing
+- telemetry_and_metering_requirements
+- protection_diagrams / relay settings summary
+- site plan and one-line path from utility source to major load blocks
+
+If these cannot be extracted from applicant artifacts, preserve them as missing or review-required. Do not fabricate interconnection values from vendor equipment specs.

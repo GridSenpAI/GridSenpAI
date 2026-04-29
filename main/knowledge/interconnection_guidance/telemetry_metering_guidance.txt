@@ -1,0 +1,21 @@
+Telemetry and metering guidance for GridSenpAI retrieval.
+Use this file when planner-facing outputs or interconnection review depend on operational visibility, metering context, or energization readiness signals.
+
+Focus retrieval on:
+- telemetry provider, contact, and communications path
+- SCADA / EMS visibility points required for operations
+- MW, MVAr, voltage, breaker status, and major load-block point mappings
+- operations-model references and naming/mnemonic details when present
+- metering ownership, metering voltage level, and interval/settlement context when supplied
+- staged energization dates, production-load date, and operations handoff milestones
+
+Planner-facing implications:
+- missing telemetry visibility should remain review-required rather than assumed complete
+- operations-model point mapping belongs in planner packet notes when present
+- metering and telemetry requirements can affect energization readiness even when vendor equipment specs are complete
+
+Evidence preference:
+1. applicant telemetry / operations-model package
+2. utility or ISO requirements present in applicant packet
+3. interconnection guidance and planner checklists
+4. interview clarification for unresolved point mapping, provider, or readiness details

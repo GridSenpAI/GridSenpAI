@@ -1,0 +1,24 @@
+ZIP load modeling guidance for GridSenpAI retrieval.
+
+Legacy note:
+ZIP load models are commonly used to represent composite load behavior.
+
+The model consists of three components:
+
+Z: constant impedance portion
+I: constant current portion
+P: constant power portion
+
+Typical data center loads trend toward high constant-power fractions
+due to switch-mode power supplies and UPS systems.
+
+Planner-output relevance:
+- zip_model.constant_power_fraction is often dominant for UPS-backed and switch-mode power-supply data center loads.
+- zip_model.constant_current_fraction and zip_model.constant_impedance_fraction should only be populated from evidence, bounded assumptions, or review-approved modeling guidance.
+- When UPS topology, battery support mode, bypass configuration, or transformer arrangement materially change load behavior, preserve rationale and confidence with the ZIP split.
+
+Evidence preference:
+1. applicant UPS topology and electrical design documents
+2. vendor UPS references and sequence-of-operation notes
+3. modeling references for typical bounded assumptions
+4. interview clarification if the composite ZIP split remains uncertain

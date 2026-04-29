@@ -1,0 +1,12 @@
+{
+  "family_id": "switchgear",
+  "version": "2.0.0",
+  "record_count": 17,
+  "manufacturer_count": 4,
+  "drop_in_ready": true,
+  "population_policy": {
+    "product_line_records_used_instead_of_fake_exact_models": true,
+    "only_source_backed_fixed_fields_populated": true,
+    "project_specific_fields_left_null": true
+  }
+}

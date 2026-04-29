@@ -1,0 +1,93 @@
+{
+  "schema_version": "2.0.0",
+  "equipment_family": "ups",
+  "record_count": 16,
+  "manufacturers": [
+    "ABB",
+    "Eaton",
+    "Mitsubishi Electric",
+    "Vertiv"
+  ],
+  "records": [
+    {
+      "manufacturer": "Vertiv",
+      "model": "Liebert EXL S1",
+      "source_count": 2
+    },
+    {
+      "manufacturer": "Vertiv",
+      "model": "Liebert Trinergy Cube",
+      "source_count": 2
+    },
+    {
+      "manufacturer": "Vertiv",
+      "model": "Liebert APM2",
+      "source_count": 2
+    },
+    {
+      "manufacturer": "Vertiv",
+      "model": "Liebert EXM2",
+      "source_count": 2
+    },
+    {
+      "manufacturer": "Eaton",
+      "model": "Power Xpert 9395P",
+      "source_count": 2
+    },
+    {
+      "manufacturer": "Eaton",
+      "model": "93PM",
+      "source_count": 1
+    },
+    {
+      "manufacturer": "Eaton",
+      "model": "93T",
+      "source_count": 2
+    },
+    {
+      "manufacturer": "Eaton",
+      "model": "93E",
+      "source_count": 2
+    },
+    {
+      "manufacturer": "Eaton",
+      "model": "Power Xpert 9395",
+      "source_count": 2
+    },
+    {
+      "manufacturer": "ABB",
+      "model": "MegaFlex DPA",
+      "source_count": 1
+    },
+    {
+      "manufacturer": "ABB",
+      "model": "DPA UPScale ST",
+      "source_count": 2
+    },
+    {
+      "manufacturer": "ABB",
+      "model": "Conceptpower DPA 500",
+      "source_count": 2
+    },
+    {
+      "manufacturer": "ABB",
+      "model": "PowerWave 33",
+      "source_count": 2
+    },
+    {
+      "manufacturer": "Mitsubishi Electric",
+      "model": "9900AEGIS",
+      "source_count": 2
+    },
+    {
+      "manufacturer": "Mitsubishi Electric",
+      "model": "9900B SMS",
+      "source_count": 2
+    },
+    {
+      "manufacturer": "Mitsubishi Electric",
+      "model": "9900B MMS",
+      "source_count": 2
+    }
+  ]
+}
