@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.0.0",
+  "equipment_family": "generators",
+  "manufacturer": "Rehlko",
+  "model": "KD2500",
+  "record_status": "ready_for_library_with_partial_population",
+  "identity": {
+    "manufacturer": {
+      "value": "Rehlko",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "model": {
+      "value": "KD2500",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    }
+  },
+  "fixed_specs": {
+    "rated_power_kw": {
+      "value": 2500,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "rated_power_kva": {
+      "value": 3125,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "voltage_v": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "frequency_hz": {
+      "value": 60,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "power_factor": {
+      "value": 0.8,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false,
+      "note": "Derived from kW/kVA when both were available from source."
+    },
+    "standby_or_prime_rating": {
+      "value": "standby",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    }
+  },
+  "project_specific_fields": {
+    "quantity": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define installed quantity."
+    },
+    "startup_delay_seconds": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Controls/system dependent; ask applicant."
+    },
+    "step_load_acceptance_percent": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Package/control/application dependent; ask applicant unless a model-specific official document later supports a fixed value."
+    },
+    "synchronization_behavior": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Paralleling and control-system dependent; ask applicant."
+    },
+    "loading_sequence": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Project restoration design field; ask applicant."
+    },
+    "breaker_configuration": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Package/switchgear/application dependent; ask applicant."
+    },
+    "transfer_or_islanding_mode": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Transfer design and operating mode field; ask applicant."
+    }
+  },
+  "alternate_ratings": [
+    {
+      "rating_type": "prime",
+      "rated_power_kw": 2270,
+      "rated_power_kva": 2837
+    }
+  ],
+  "source_documents": [
+    {
+      "document_id": "rehlko_full_line_brochure",
+      "title": "North America Full Line Industrial Power Systems",
+      "source_url": "https://techcomm.rehlko.com/%24web/techcomm/pdf/Rehlko_Industrial_Full_Line_Brochure.pdf",
+      "evidence": "KD2500 2500/3125 standby and 2270/2837 prime in the North America full-line brochure.",
+      "source_class": "official_pdf"
+    },
+    {
+      "document_id": "rehlko_kd2500_pdf",
+      "title": "Industrial Generator Diesel Set - KD2500",
+      "source_url": "https://techcomm.rehlko.com/techcomm/pdf/g5628.pdf",
+      "evidence": "Model-specific official PDF for KD2500.",
+      "source_class": "official_pdf"
+    }
+  ],
+  "notes": [
+    "Power factor is derived from 2500/3125 = 0.8."
+  ],
+  "library_readiness": "drop_in_ready",
+  "qa": {
+    "populated_fixed_fields": [
+      "rated_power_kw",
+      "rated_power_kva",
+      "frequency_hz",
+      "power_factor",
+      "standby_or_prime_rating"
+    ],
+    "missing_fixed_fields": [
+      "voltage_v"
+    ],
+    "project_specific_fields_expected_null": [
+      "quantity",
+      "startup_delay_seconds",
+      "step_load_acceptance_percent",
+      "synchronization_behavior",
+      "loading_sequence",
+      "breaker_configuration",
+      "transfer_or_islanding_mode"
+    ],
+    "recommended_next_action": "expand_fixed_specs_from_additional_official_documents"
+  },
+  "drop_in_contract": {
+    "record_complete_schema": true,
+    "source_backed_fixed_fields_only": true,
+    "project_specific_fields_left_null_by_design": true,
+    "ready_for_program_ingestion": true
+  }
+}

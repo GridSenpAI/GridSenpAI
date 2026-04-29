@@ -1,0 +1,107 @@
+{
+  "schema_version": "3.0.0",
+  "equipment_family": "switchgear",
+  "record_count": 17,
+  "manufacturers": [
+    "ABB",
+    "Eaton",
+    "Schneider Electric",
+    "Siemens"
+  ],
+  "records": [
+    {
+      "manufacturer": "Eaton",
+      "product_line": "Power Xpert XGIS",
+      "source_count": 2
+    },
+    {
+      "manufacturer": "Eaton",
+      "product_line": "Power Xpert IGX",
+      "source_count": 1
+    },
+    {
+      "manufacturer": "Eaton",
+      "product_line": "VacClad-W",
+      "source_count": 1
+    },
+    {
+      "manufacturer": "Eaton",
+      "product_line": "MVS",
+      "source_count": 1
+    },
+    {
+      "manufacturer": "Eaton",
+      "product_line": "MEB / MSB",
+      "source_count": 1
+    },
+    {
+      "manufacturer": "Siemens",
+      "product_line": "NXAirS",
+      "source_count": 1
+    },
+    {
+      "manufacturer": "Siemens",
+      "product_line": "NXAIR M",
+      "source_count": 1
+    },
+    {
+      "manufacturer": "Siemens",
+      "product_line": "8DA10 / 8DB10 / 8DAB",
+      "source_count": 1
+    },
+    {
+      "manufacturer": "Siemens",
+      "product_line": "SIMOSEC",
+      "source_count": 1
+    },
+    {
+      "manufacturer": "Schneider Electric",
+      "product_line": "Masterclad MV Metal-Clad Switchgear",
+      "source_count": 2
+    },
+    {
+      "manufacturer": "Schneider Electric",
+      "product_line": "SureSeT Air Insulated Switchgear",
+      "source_count": 2
+    },
+    {
+      "manufacturer": "Schneider Electric",
+      "product_line": "MCset 4",
+      "source_count": 1
+    },
+    {
+      "manufacturer": "Schneider Electric",
+      "product_line": "RM6",
+      "source_count": 1
+    },
+    {
+      "manufacturer": "ABB",
+      "product_line": "UniGear ZS2",
+      "source_count": 1
+    },
+    {
+      "manufacturer": "ABB",
+      "product_line": "UniGear 550",
+      "source_count": 1
+    },
+    {
+      "manufacturer": "ABB",
+      "product_line": "ZS8.4",
+      "source_count": 1
+    },
+    {
+      "manufacturer": "ABB",
+      "product_line": "PrimeGear ZX0",
+      "source_count": 1
+    }
+  ],
+  "hardening_pass": {
+    "updated_records": [
+      "Power Xpert XGIS",
+      "VacClad-W",
+      "UniGear ZS2",
+      "Masterclad MV Metal-Clad Switchgear"
+    ],
+    "goal": "Backfill additional source-supported static fields from official vendor sources."
+  }
+}

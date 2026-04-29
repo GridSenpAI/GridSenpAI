@@ -1,0 +1,20 @@
+Dynamic behavior review guidance for GridSenpAI retrieval.
+Use this file when planner packets need bounded statements about dynamic behavior, controls, ride-through, staged restart, or review-required assumptions.
+
+Focus retrieval on:
+- staged energization and restart sequencing from commissioning plans
+- transfer-trip, reconnect, and load restoration logic
+- UPS ride-through / bypass behavior and generator transition narratives
+- cooling-system sequencing that can create MW step changes or delayed restoration
+- explicit statements that dynamic models are unavailable and assumptions are bounded
+
+Planner-output relevance:
+- scenario notes should distinguish confirmed dynamic behavior from bounded engineering assumptions
+- dynamic-model absence should not block packet generation, but it should surface as review-required with rationale
+- large-load restoration and restart behavior should be tied to evidence, not generic data-center stereotypes
+
+Evidence preference:
+1. applicant commissioning plan, controls narrative, and one-line context
+2. vendor references that explicitly describe sequence-of-operation behavior
+3. modeling guidance for bounded assumptions
+4. interview clarification when restart or restoration logic remains unclear

@@ -1,0 +1,177 @@
+[
+  {
+    "manufacturer": "Generac",
+    "model": "SD1250",
+    "library_readiness": "usable_partial_fixed_spec_record",
+    "populated_fixed_field_count": 3,
+    "missing_fixed_field_count": 3
+  },
+  {
+    "manufacturer": "Generac",
+    "model": "SD1500",
+    "library_readiness": "usable_partial_fixed_spec_record",
+    "populated_fixed_field_count": 2,
+    "missing_fixed_field_count": 4
+  },
+  {
+    "manufacturer": "Generac",
+    "model": "SDMD2250",
+    "library_readiness": "model_record_needs_better_official_pdf",
+    "populated_fixed_field_count": 0,
+    "missing_fixed_field_count": 6
+  },
+  {
+    "manufacturer": "Generac",
+    "model": "SDMD2500",
+    "library_readiness": "usable_partial_fixed_spec_record",
+    "populated_fixed_field_count": 5,
+    "missing_fixed_field_count": 1
+  },
+  {
+    "manufacturer": "Generac",
+    "model": "SDMD3000",
+    "library_readiness": "model_record_needs_better_official_pdf",
+    "populated_fixed_field_count": 0,
+    "missing_fixed_field_count": 6
+  },
+  {
+    "manufacturer": "Rehlko",
+    "model": "KD1250",
+    "library_readiness": "usable_partial_fixed_spec_record",
+    "populated_fixed_field_count": 5,
+    "missing_fixed_field_count": 1
+  },
+  {
+    "manufacturer": "Rehlko",
+    "model": "KD1500",
+    "library_readiness": "usable_partial_fixed_spec_record",
+    "populated_fixed_field_count": 5,
+    "missing_fixed_field_count": 1
+  },
+  {
+    "manufacturer": "Rehlko",
+    "model": "KD1750",
+    "library_readiness": "usable_partial_fixed_spec_record",
+    "populated_fixed_field_count": 5,
+    "missing_fixed_field_count": 1
+  },
+  {
+    "manufacturer": "Rehlko",
+    "model": "KD2000",
+    "library_readiness": "usable_partial_fixed_spec_record",
+    "populated_fixed_field_count": 5,
+    "missing_fixed_field_count": 1
+  },
+  {
+    "manufacturer": "Rehlko",
+    "model": "KD2500",
+    "library_readiness": "usable_partial_fixed_spec_record",
+    "populated_fixed_field_count": 5,
+    "missing_fixed_field_count": 1
+  },
+  {
+    "manufacturer": "Rolls-Royce / mtu",
+    "model": "12V4000 DS1650",
+    "library_readiness": "model_record_needs_better_official_pdf",
+    "populated_fixed_field_count": 1,
+    "missing_fixed_field_count": 5
+  },
+  {
+    "manufacturer": "Rolls-Royce / mtu",
+    "model": "12V4000 DS2000",
+    "library_readiness": "model_record_needs_better_official_pdf",
+    "populated_fixed_field_count": 1,
+    "missing_fixed_field_count": 5
+  },
+  {
+    "manufacturer": "Rolls-Royce / mtu",
+    "model": "16V4000 DS2500",
+    "library_readiness": "usable_partial_fixed_spec_record",
+    "populated_fixed_field_count": 3,
+    "missing_fixed_field_count": 3
+  },
+  {
+    "manufacturer": "Rolls-Royce / mtu",
+    "model": "20V4000 DS2750",
+    "library_readiness": "model_record_needs_better_official_pdf",
+    "populated_fixed_field_count": 1,
+    "missing_fixed_field_count": 5
+  },
+  {
+    "manufacturer": "Rolls-Royce / mtu",
+    "model": "20V4000 DS3100",
+    "library_readiness": "model_record_needs_better_official_pdf",
+    "populated_fixed_field_count": 1,
+    "missing_fixed_field_count": 5
+  },
+  {
+    "manufacturer": "Caterpillar",
+    "model": "C18",
+    "library_readiness": "family_or_platform_record_requires_variant_selection",
+    "populated_fixed_field_count": 0,
+    "missing_fixed_field_count": 6
+  },
+  {
+    "manufacturer": "Caterpillar",
+    "model": "C27",
+    "library_readiness": "family_or_platform_record_requires_variant_selection",
+    "populated_fixed_field_count": 0,
+    "missing_fixed_field_count": 6
+  },
+  {
+    "manufacturer": "Caterpillar",
+    "model": "C32",
+    "library_readiness": "family_or_platform_record_requires_variant_selection",
+    "populated_fixed_field_count": 0,
+    "missing_fixed_field_count": 6
+  },
+  {
+    "manufacturer": "Caterpillar",
+    "model": "3512",
+    "library_readiness": "family_or_platform_record_requires_variant_selection",
+    "populated_fixed_field_count": 0,
+    "missing_fixed_field_count": 6
+  },
+  {
+    "manufacturer": "Caterpillar",
+    "model": "3516C",
+    "library_readiness": "family_or_platform_record_requires_variant_selection",
+    "populated_fixed_field_count": 0,
+    "missing_fixed_field_count": 6
+  },
+  {
+    "manufacturer": "Cummins",
+    "model": "C600D6E",
+    "library_readiness": "usable_partial_fixed_spec_record",
+    "populated_fixed_field_count": 4,
+    "missing_fixed_field_count": 2
+  },
+  {
+    "manufacturer": "Cummins",
+    "model": "C1000D6ED",
+    "library_readiness": "usable_partial_fixed_spec_record",
+    "populated_fixed_field_count": 4,
+    "missing_fixed_field_count": 2
+  },
+  {
+    "manufacturer": "Cummins",
+    "model": "C1250D6E",
+    "library_readiness": "usable_partial_fixed_spec_record",
+    "populated_fixed_field_count": 5,
+    "missing_fixed_field_count": 1
+  },
+  {
+    "manufacturer": "Cummins",
+    "model": "C2000D6E",
+    "library_readiness": "usable_partial_fixed_spec_record",
+    "populated_fixed_field_count": 5,
+    "missing_fixed_field_count": 1
+  },
+  {
+    "manufacturer": "Cummins",
+    "model": "C3000D6EB",
+    "library_readiness": "model_record_needs_better_official_pdf",
+    "populated_fixed_field_count": 1,
+    "missing_fixed_field_count": 5
+  }
+]

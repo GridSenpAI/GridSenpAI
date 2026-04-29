@@ -1,0 +1,536 @@
+[
+  {
+    "manufacturer": "Generac",
+    "model": "SD1250",
+    "missing_fixed_field": "rated_power_kva",
+    "reason": "not_supported_from_current_official_source_set"
+  },
+  {
+    "manufacturer": "Generac",
+    "model": "SD1250",
+    "missing_fixed_field": "voltage_v",
+    "reason": "not_supported_from_current_official_source_set"
+  },
+  {
+    "manufacturer": "Generac",
+    "model": "SD1250",
+    "missing_fixed_field": "power_factor",
+    "reason": "not_supported_from_current_official_source_set"
+  },
+  {
+    "manufacturer": "Generac",
+    "model": "SD1500",
+    "missing_fixed_field": "rated_power_kva",
+    "reason": "not_supported_from_current_official_source_set"
+  },
+  {
+    "manufacturer": "Generac",
+    "model": "SD1500",
+    "missing_fixed_field": "voltage_v",
+    "reason": "not_supported_from_current_official_source_set"
+  },
+  {
+    "manufacturer": "Generac",
+    "model": "SD1500",
+    "missing_fixed_field": "power_factor",
+    "reason": "not_supported_from_current_official_source_set"
+  },
+  {
+    "manufacturer": "Generac",
+    "model": "SD1500",
+    "missing_fixed_field": "standby_or_prime_rating",
+    "reason": "not_supported_from_current_official_source_set"
+  },
+  {
+    "manufacturer": "Generac",
+    "model": "SDMD2250",
+    "missing_fixed_field": "rated_power_kw",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  },
+  {
+    "manufacturer": "Generac",
+    "model": "SDMD2250",
+    "missing_fixed_field": "rated_power_kva",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  },
+  {
+    "manufacturer": "Generac",
+    "model": "SDMD2250",
+    "missing_fixed_field": "voltage_v",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  },
+  {
+    "manufacturer": "Generac",
+    "model": "SDMD2250",
+    "missing_fixed_field": "frequency_hz",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  },
+  {
+    "manufacturer": "Generac",
+    "model": "SDMD2250",
+    "missing_fixed_field": "power_factor",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  },
+  {
+    "manufacturer": "Generac",
+    "model": "SDMD2250",
+    "missing_fixed_field": "standby_or_prime_rating",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  },
+  {
+    "manufacturer": "Generac",
+    "model": "SDMD2500",
+    "missing_fixed_field": "voltage_v",
+    "reason": "not_supported_from_current_official_source_set"
+  },
+  {
+    "manufacturer": "Generac",
+    "model": "SDMD3000",
+    "missing_fixed_field": "rated_power_kw",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  },
+  {
+    "manufacturer": "Generac",
+    "model": "SDMD3000",
+    "missing_fixed_field": "rated_power_kva",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  },
+  {
+    "manufacturer": "Generac",
+    "model": "SDMD3000",
+    "missing_fixed_field": "voltage_v",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  },
+  {
+    "manufacturer": "Generac",
+    "model": "SDMD3000",
+    "missing_fixed_field": "frequency_hz",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  },
+  {
+    "manufacturer": "Generac",
+    "model": "SDMD3000",
+    "missing_fixed_field": "power_factor",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  },
+  {
+    "manufacturer": "Generac",
+    "model": "SDMD3000",
+    "missing_fixed_field": "standby_or_prime_rating",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  },
+  {
+    "manufacturer": "Rehlko",
+    "model": "KD1250",
+    "missing_fixed_field": "voltage_v",
+    "reason": "not_supported_from_current_official_source_set"
+  },
+  {
+    "manufacturer": "Rehlko",
+    "model": "KD1500",
+    "missing_fixed_field": "voltage_v",
+    "reason": "not_supported_from_current_official_source_set"
+  },
+  {
+    "manufacturer": "Rehlko",
+    "model": "KD1750",
+    "missing_fixed_field": "voltage_v",
+    "reason": "not_supported_from_current_official_source_set"
+  },
+  {
+    "manufacturer": "Rehlko",
+    "model": "KD2000",
+    "missing_fixed_field": "voltage_v",
+    "reason": "not_supported_from_current_official_source_set"
+  },
+  {
+    "manufacturer": "Rehlko",
+    "model": "KD2500",
+    "missing_fixed_field": "voltage_v",
+    "reason": "not_supported_from_current_official_source_set"
+  },
+  {
+    "manufacturer": "Rolls-Royce / mtu",
+    "model": "12V4000 DS1650",
+    "missing_fixed_field": "rated_power_kw",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  },
+  {
+    "manufacturer": "Rolls-Royce / mtu",
+    "model": "12V4000 DS1650",
+    "missing_fixed_field": "rated_power_kva",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  },
+  {
+    "manufacturer": "Rolls-Royce / mtu",
+    "model": "12V4000 DS1650",
+    "missing_fixed_field": "voltage_v",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  },
+  {
+    "manufacturer": "Rolls-Royce / mtu",
+    "model": "12V4000 DS1650",
+    "missing_fixed_field": "power_factor",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  },
+  {
+    "manufacturer": "Rolls-Royce / mtu",
+    "model": "12V4000 DS1650",
+    "missing_fixed_field": "standby_or_prime_rating",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  },
+  {
+    "manufacturer": "Rolls-Royce / mtu",
+    "model": "12V4000 DS2000",
+    "missing_fixed_field": "rated_power_kw",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  },
+  {
+    "manufacturer": "Rolls-Royce / mtu",
+    "model": "12V4000 DS2000",
+    "missing_fixed_field": "rated_power_kva",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  },
+  {
+    "manufacturer": "Rolls-Royce / mtu",
+    "model": "12V4000 DS2000",
+    "missing_fixed_field": "voltage_v",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  },
+  {
+    "manufacturer": "Rolls-Royce / mtu",
+    "model": "12V4000 DS2000",
+    "missing_fixed_field": "power_factor",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  },
+  {
+    "manufacturer": "Rolls-Royce / mtu",
+    "model": "12V4000 DS2000",
+    "missing_fixed_field": "standby_or_prime_rating",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  },
+  {
+    "manufacturer": "Rolls-Royce / mtu",
+    "model": "16V4000 DS2500",
+    "missing_fixed_field": "rated_power_kva",
+    "reason": "not_supported_from_current_official_source_set"
+  },
+  {
+    "manufacturer": "Rolls-Royce / mtu",
+    "model": "16V4000 DS2500",
+    "missing_fixed_field": "voltage_v",
+    "reason": "not_supported_from_current_official_source_set"
+  },
+  {
+    "manufacturer": "Rolls-Royce / mtu",
+    "model": "16V4000 DS2500",
+    "missing_fixed_field": "power_factor",
+    "reason": "not_supported_from_current_official_source_set"
+  },
+  {
+    "manufacturer": "Rolls-Royce / mtu",
+    "model": "20V4000 DS2750",
+    "missing_fixed_field": "rated_power_kw",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  },
+  {
+    "manufacturer": "Rolls-Royce / mtu",
+    "model": "20V4000 DS2750",
+    "missing_fixed_field": "rated_power_kva",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  },
+  {
+    "manufacturer": "Rolls-Royce / mtu",
+    "model": "20V4000 DS2750",
+    "missing_fixed_field": "voltage_v",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  },
+  {
+    "manufacturer": "Rolls-Royce / mtu",
+    "model": "20V4000 DS2750",
+    "missing_fixed_field": "power_factor",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  },
+  {
+    "manufacturer": "Rolls-Royce / mtu",
+    "model": "20V4000 DS2750",
+    "missing_fixed_field": "standby_or_prime_rating",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  },
+  {
+    "manufacturer": "Rolls-Royce / mtu",
+    "model": "20V4000 DS3100",
+    "missing_fixed_field": "rated_power_kw",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  },
+  {
+    "manufacturer": "Rolls-Royce / mtu",
+    "model": "20V4000 DS3100",
+    "missing_fixed_field": "rated_power_kva",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  },
+  {
+    "manufacturer": "Rolls-Royce / mtu",
+    "model": "20V4000 DS3100",
+    "missing_fixed_field": "voltage_v",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  },
+  {
+    "manufacturer": "Rolls-Royce / mtu",
+    "model": "20V4000 DS3100",
+    "missing_fixed_field": "power_factor",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  },
+  {
+    "manufacturer": "Rolls-Royce / mtu",
+    "model": "20V4000 DS3100",
+    "missing_fixed_field": "standby_or_prime_rating",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  },
+  {
+    "manufacturer": "Caterpillar",
+    "model": "C18",
+    "missing_fixed_field": "rated_power_kw",
+    "reason": "platform_or_family_identifier_not_single_fixed_variant"
+  },
+  {
+    "manufacturer": "Caterpillar",
+    "model": "C18",
+    "missing_fixed_field": "rated_power_kva",
+    "reason": "platform_or_family_identifier_not_single_fixed_variant"
+  },
+  {
+    "manufacturer": "Caterpillar",
+    "model": "C18",
+    "missing_fixed_field": "voltage_v",
+    "reason": "platform_or_family_identifier_not_single_fixed_variant"
+  },
+  {
+    "manufacturer": "Caterpillar",
+    "model": "C18",
+    "missing_fixed_field": "frequency_hz",
+    "reason": "platform_or_family_identifier_not_single_fixed_variant"
+  },
+  {
+    "manufacturer": "Caterpillar",
+    "model": "C18",
+    "missing_fixed_field": "power_factor",
+    "reason": "platform_or_family_identifier_not_single_fixed_variant"
+  },
+  {
+    "manufacturer": "Caterpillar",
+    "model": "C18",
+    "missing_fixed_field": "standby_or_prime_rating",
+    "reason": "platform_or_family_identifier_not_single_fixed_variant"
+  },
+  {
+    "manufacturer": "Caterpillar",
+    "model": "C27",
+    "missing_fixed_field": "rated_power_kw",
+    "reason": "platform_or_family_identifier_not_single_fixed_variant"
+  },
+  {
+    "manufacturer": "Caterpillar",
+    "model": "C27",
+    "missing_fixed_field": "rated_power_kva",
+    "reason": "platform_or_family_identifier_not_single_fixed_variant"
+  },
+  {
+    "manufacturer": "Caterpillar",
+    "model": "C27",
+    "missing_fixed_field": "voltage_v",
+    "reason": "platform_or_family_identifier_not_single_fixed_variant"
+  },
+  {
+    "manufacturer": "Caterpillar",
+    "model": "C27",
+    "missing_fixed_field": "frequency_hz",
+    "reason": "platform_or_family_identifier_not_single_fixed_variant"
+  },
+  {
+    "manufacturer": "Caterpillar",
+    "model": "C27",
+    "missing_fixed_field": "power_factor",
+    "reason": "platform_or_family_identifier_not_single_fixed_variant"
+  },
+  {
+    "manufacturer": "Caterpillar",
+    "model": "C27",
+    "missing_fixed_field": "standby_or_prime_rating",
+    "reason": "platform_or_family_identifier_not_single_fixed_variant"
+  },
+  {
+    "manufacturer": "Caterpillar",
+    "model": "C32",
+    "missing_fixed_field": "rated_power_kw",
+    "reason": "platform_or_family_identifier_not_single_fixed_variant"
+  },
+  {
+    "manufacturer": "Caterpillar",
+    "model": "C32",
+    "missing_fixed_field": "rated_power_kva",
+    "reason": "platform_or_family_identifier_not_single_fixed_variant"
+  },
+  {
+    "manufacturer": "Caterpillar",
+    "model": "C32",
+    "missing_fixed_field": "voltage_v",
+    "reason": "platform_or_family_identifier_not_single_fixed_variant"
+  },
+  {
+    "manufacturer": "Caterpillar",
+    "model": "C32",
+    "missing_fixed_field": "frequency_hz",
+    "reason": "platform_or_family_identifier_not_single_fixed_variant"
+  },
+  {
+    "manufacturer": "Caterpillar",
+    "model": "C32",
+    "missing_fixed_field": "power_factor",
+    "reason": "platform_or_family_identifier_not_single_fixed_variant"
+  },
+  {
+    "manufacturer": "Caterpillar",
+    "model": "C32",
+    "missing_fixed_field": "standby_or_prime_rating",
+    "reason": "platform_or_family_identifier_not_single_fixed_variant"
+  },
+  {
+    "manufacturer": "Caterpillar",
+    "model": "3512",
+    "missing_fixed_field": "rated_power_kw",
+    "reason": "platform_or_family_identifier_not_single_fixed_variant"
+  },
+  {
+    "manufacturer": "Caterpillar",
+    "model": "3512",
+    "missing_fixed_field": "rated_power_kva",
+    "reason": "platform_or_family_identifier_not_single_fixed_variant"
+  },
+  {
+    "manufacturer": "Caterpillar",
+    "model": "3512",
+    "missing_fixed_field": "voltage_v",
+    "reason": "platform_or_family_identifier_not_single_fixed_variant"
+  },
+  {
+    "manufacturer": "Caterpillar",
+    "model": "3512",
+    "missing_fixed_field": "frequency_hz",
+    "reason": "platform_or_family_identifier_not_single_fixed_variant"
+  },
+  {
+    "manufacturer": "Caterpillar",
+    "model": "3512",
+    "missing_fixed_field": "power_factor",
+    "reason": "platform_or_family_identifier_not_single_fixed_variant"
+  },
+  {
+    "manufacturer": "Caterpillar",
+    "model": "3512",
+    "missing_fixed_field": "standby_or_prime_rating",
+    "reason": "platform_or_family_identifier_not_single_fixed_variant"
+  },
+  {
+    "manufacturer": "Caterpillar",
+    "model": "3516C",
+    "missing_fixed_field": "rated_power_kw",
+    "reason": "platform_or_family_identifier_not_single_fixed_variant"
+  },
+  {
+    "manufacturer": "Caterpillar",
+    "model": "3516C",
+    "missing_fixed_field": "rated_power_kva",
+    "reason": "platform_or_family_identifier_not_single_fixed_variant"
+  },
+  {
+    "manufacturer": "Caterpillar",
+    "model": "3516C",
+    "missing_fixed_field": "voltage_v",
+    "reason": "platform_or_family_identifier_not_single_fixed_variant"
+  },
+  {
+    "manufacturer": "Caterpillar",
+    "model": "3516C",
+    "missing_fixed_field": "frequency_hz",
+    "reason": "platform_or_family_identifier_not_single_fixed_variant"
+  },
+  {
+    "manufacturer": "Caterpillar",
+    "model": "3516C",
+    "missing_fixed_field": "power_factor",
+    "reason": "platform_or_family_identifier_not_single_fixed_variant"
+  },
+  {
+    "manufacturer": "Caterpillar",
+    "model": "3516C",
+    "missing_fixed_field": "standby_or_prime_rating",
+    "reason": "platform_or_family_identifier_not_single_fixed_variant"
+  },
+  {
+    "manufacturer": "Cummins",
+    "model": "C600D6E",
+    "missing_fixed_field": "voltage_v",
+    "reason": "not_supported_from_current_official_source_set"
+  },
+  {
+    "manufacturer": "Cummins",
+    "model": "C600D6E",
+    "missing_fixed_field": "standby_or_prime_rating",
+    "reason": "not_supported_from_current_official_source_set"
+  },
+  {
+    "manufacturer": "Cummins",
+    "model": "C1000D6ED",
+    "missing_fixed_field": "voltage_v",
+    "reason": "not_supported_from_current_official_source_set"
+  },
+  {
+    "manufacturer": "Cummins",
+    "model": "C1000D6ED",
+    "missing_fixed_field": "standby_or_prime_rating",
+    "reason": "not_supported_from_current_official_source_set"
+  },
+  {
+    "manufacturer": "Cummins",
+    "model": "C1250D6E",
+    "missing_fixed_field": "voltage_v",
+    "reason": "not_supported_from_current_official_source_set"
+  },
+  {
+    "manufacturer": "Cummins",
+    "model": "C2000D6E",
+    "missing_fixed_field": "voltage_v",
+    "reason": "not_supported_from_current_official_source_set"
+  },
+  {
+    "manufacturer": "Cummins",
+    "model": "C3000D6EB",
+    "missing_fixed_field": "rated_power_kw",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  },
+  {
+    "manufacturer": "Cummins",
+    "model": "C3000D6EB",
+    "missing_fixed_field": "rated_power_kva",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  },
+  {
+    "manufacturer": "Cummins",
+    "model": "C3000D6EB",
+    "missing_fixed_field": "voltage_v",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  },
+  {
+    "manufacturer": "Cummins",
+    "model": "C3000D6EB",
+    "missing_fixed_field": "power_factor",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  },
+  {
+    "manufacturer": "Cummins",
+    "model": "C3000D6EB",
+    "missing_fixed_field": "standby_or_prime_rating",
+    "reason": "model_specific_official_pdf_not_confirmed_or_not_parsed"
+  }
+]

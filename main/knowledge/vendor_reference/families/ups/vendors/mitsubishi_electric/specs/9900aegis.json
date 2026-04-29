@@ -1,0 +1,154 @@
+{
+  "schema_version": "2.0.0",
+  "equipment_family": "ups",
+  "manufacturer": "Mitsubishi Electric",
+  "model": "9900AEGIS",
+  "record_status": "drop_in_ready_with_backfilled_fixed_specs",
+  "library_readiness": "drop_in_ready",
+  "identity": {
+    "manufacturer": {
+      "value": "Mitsubishi Electric",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "model": {
+      "value": "9900AEGIS",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    }
+  },
+  "fixed_specs": {
+    "rated_power_kw": {
+      "value": 202.5,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false,
+      "note": "Maximum family rating from official 9900AEGIS data sheet."
+    },
+    "rated_power_kva": {
+      "value": 225,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false,
+      "note": "Maximum family rating from official 9900AEGIS data sheet."
+    },
+    "input_voltage_v": {
+      "value": 480,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "output_voltage_v": {
+      "value": 480,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "frequency_hz": {
+      "value": 60,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "ups_topology": {
+      "value": "online double conversion",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "transfer_time_ms": {
+      "value": 20,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false,
+      "note": "Official source states 20 ms transient recovery time."
+    },
+    "ride_through_seconds": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "runtime_minutes": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "battery_chemistry": {
+      "value": "VRLA | VLA | NiCad | Lithium Ion",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "efficiency_percent": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false,
+      "note": "Energy efficiency was not populated because the cited one-page datasheet snippet did not clearly label an AC/AC efficiency value separate from reliability."
+    },
+    "frame_capacity_kw": {
+      "value": 202.5,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "module_rating_kw": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "scalable_capacity_flag": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    }
+  },
+  "project_specific_fields": {
+    "quantity": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured behavior."
+    },
+    "redundancy_scheme": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured behavior."
+    },
+    "recharge_behavior": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured behavior."
+    },
+    "bypass_behavior": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured behavior."
+    },
+    "loading_sequence": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured behavior."
+    },
+    "restoration_sequence": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured behavior."
+    }
+  },
+  "source_documents": [
+    {
+      "document_id": "mitsubishi_9900aegis_datasheet",
+      "title": "9900AEGIS Data Sheet",
+      "source_url": "https://mitsubishicritical.com/wp-content/uploads/2025/02/sa-enl0054-9900aegis-data-sheet.pdf",
+      "source_class": "official_pdf"
+    },
+    {
+      "document_id": "mitsubishi_9900aegis_spec",
+      "title": "9900AEGIS Specification",
+      "source_url": "https://mitsubishicritical.com/wp-content/uploads/2025/02/u-ens00057-9900aegis-specification.pdf",
+      "source_class": "official_pdf"
+    }
+  ],
+  "drop_in_contract": {
+    "record_complete_schema": true,
+    "source_backed_fixed_fields_only": true,
+    "project_specific_fields_left_null_by_design": true,
+    "ready_for_program_ingestion": true
+  }
+}

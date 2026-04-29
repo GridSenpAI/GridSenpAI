@@ -1,0 +1,137 @@
+{
+  "schema_version": "1.0.0",
+  "equipment_family": "generators",
+  "manufacturer": "Rolls-Royce / mtu",
+  "model": "16V4000 DS2500",
+  "record_status": "ready_for_library_with_partial_population",
+  "identity": {
+    "manufacturer": {
+      "value": "Rolls-Royce / mtu",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "model": {
+      "value": "16V4000 DS2500",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    }
+  },
+  "fixed_specs": {
+    "rated_power_kw": {
+      "value": 2500,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "rated_power_kva": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "voltage_v": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "frequency_hz": {
+      "value": 60,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "power_factor": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "standby_or_prime_rating": {
+      "value": "standby",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    }
+  },
+  "project_specific_fields": {
+    "quantity": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define installed quantity."
+    },
+    "startup_delay_seconds": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Controls/system dependent; ask applicant."
+    },
+    "step_load_acceptance_percent": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Package/control/application dependent; ask applicant unless a model-specific official document later supports a fixed value."
+    },
+    "synchronization_behavior": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Paralleling and control-system dependent; ask applicant."
+    },
+    "loading_sequence": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Project restoration design field; ask applicant."
+    },
+    "breaker_configuration": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Package/switchgear/application dependent; ask applicant."
+    },
+    "transfer_or_islanding_mode": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Transfer design and operating mode field; ask applicant."
+    }
+  },
+  "alternate_ratings": [],
+  "source_documents": [
+    {
+      "document_id": "mtu_16v4000_ds2500_pdf",
+      "title": "16V4000 DS2500 Spec Sheet",
+      "source_url": "https://www.mtu-solutions.com/content/dam/mtu/products/power-generation/powergeneration-product-list-latest/231211_PG_Spec_16V4000DS2500G04_2500kW_3D_T2_SCAQMD_60Hz_45C.pdf/_jcr_content/renditions/original./231211_PG_Spec_16V4000DS2500G04_2500kW_3D_T2_SCAQMD_60Hz_45C.pdf",
+      "evidence": "PDF filename and title confirm 16V4000 DS2500 at 2500 kW, 60 Hz.",
+      "source_class": "official_pdf"
+    }
+  ],
+  "notes": [
+    "kVA and voltage were not populated in this pass because they were not confirmed from the parsed official source excerpt used here."
+  ],
+  "library_readiness": "drop_in_ready",
+  "qa": {
+    "populated_fixed_fields": [
+      "rated_power_kw",
+      "frequency_hz",
+      "standby_or_prime_rating"
+    ],
+    "missing_fixed_fields": [
+      "rated_power_kva",
+      "voltage_v",
+      "power_factor"
+    ],
+    "project_specific_fields_expected_null": [
+      "quantity",
+      "startup_delay_seconds",
+      "step_load_acceptance_percent",
+      "synchronization_behavior",
+      "loading_sequence",
+      "breaker_configuration",
+      "transfer_or_islanding_mode"
+    ],
+    "recommended_next_action": "expand_fixed_specs_from_additional_official_documents"
+  },
+  "drop_in_contract": {
+    "record_complete_schema": true,
+    "source_backed_fixed_fields_only": true,
+    "project_specific_fields_left_null_by_design": true,
+    "ready_for_program_ingestion": true
+  }
+}

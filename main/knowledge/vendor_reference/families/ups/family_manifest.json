@@ -1,0 +1,12 @@
+{
+  "family_id": "ups",
+  "version": "2.0.0",
+  "record_count": 16,
+  "manufacturer_count": 4,
+  "drop_in_ready": true,
+  "population_policy": {
+    "only_source_backed_fixed_fields_populated": true,
+    "omit_models_without_sufficient_static_spec_support": true,
+    "project_specific_fields_left_null": true
+  }
+}

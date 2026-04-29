@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "equipment_family": "transformers",
+  "record_count": 8,
+  "manufacturers": [
+    "Eaton",
+    "Hitachi Energy",
+    "Schneider Electric",
+    "Siemens"
+  ],
+  "records": [
+    {
+      "manufacturer": "Hitachi Energy",
+      "product_line": "RESIBLOC Dry-Type Transformers",
+      "source_count": 2
+    },
+    {
+      "manufacturer": "Hitachi Energy",
+      "product_line": "Dry-Type Distribution Transformers",
+      "source_count": 1
+    },
+    {
+      "manufacturer": "Eaton",
+      "product_line": "Cast Resin Dry-Type Transformer",
+      "source_count": 1
+    },
+    {
+      "manufacturer": "Eaton",
+      "product_line": "Dry-Type Distribution Transformers",
+      "source_count": 1
+    },
+    {
+      "manufacturer": "Eaton",
+      "product_line": "Ulusoy Cast Resin Dry Type Transformer",
+      "source_count": 1
+    },
+    {
+      "manufacturer": "Siemens",
+      "product_line": "GEAFOL Cast-Resin Transformers",
+      "source_count": 2
+    },
+    {
+      "manufacturer": "Siemens",
+      "product_line": "Dry Type Transformers",
+      "source_count": 1
+    },
+    {
+      "manufacturer": "Schneider Electric",
+      "product_line": "Trihal Cast Resin Transformer",
+      "source_count": 1
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "schema_version": "2.0.0",
+  "equipment_family": "ups",
+  "manufacturer": "ABB",
+  "model": "DPA UPScale ST",
+  "record_status": "drop_in_ready_with_backfilled_fixed_specs",
+  "library_readiness": "drop_in_ready",
+  "identity": {
+    "manufacturer": {
+      "value": "ABB",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "model": {
+      "value": "DPA UPScale ST",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    }
+  },
+  "fixed_specs": {
+    "rated_power_kw": {
+      "value": 200,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false,
+      "note": "Official source states power range from 10 kW to 200 kW in a single frame."
+    },
+    "rated_power_kva": {
+      "value": 200,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false,
+      "note": "Official product overview indicates 1.0 output power factor for this family."
+    },
+    "input_voltage_v": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "output_voltage_v": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "frequency_hz": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "ups_topology": {
+      "value": "online double conversion modular",
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "transfer_time_ms": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "ride_through_seconds": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "runtime_minutes": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "battery_chemistry": {
+      "value": null,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "efficiency_percent": {
+      "value": 96.0,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false,
+      "note": "Official source states up to 96% online efficiency."
+    },
+    "frame_capacity_kw": {
+      "value": 200,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false
+    },
+    "module_rating_kw": {
+      "value": 20,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false,
+      "note": "Official product overview indicates 10/20 kW module architecture."
+    },
+    "scalable_capacity_flag": {
+      "value": true,
+      "value_source_type": "vendor_fixed",
+      "requires_applicant_input_when_null": false,
+      "note": "Official source states up to four frames in parallel / horizontal scaling."
+    }
+  },
+  "project_specific_fields": {
+    "quantity": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured behavior."
+    },
+    "redundancy_scheme": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured behavior."
+    },
+    "recharge_behavior": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured behavior."
+    },
+    "bypass_behavior": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured behavior."
+    },
+    "loading_sequence": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured behavior."
+    },
+    "restoration_sequence": {
+      "value": null,
+      "value_source_type": "project_specific",
+      "requires_applicant_input_when_null": true,
+      "note": "Applicant or project documents must define this installed/configured behavior."
+    }
+  },
+  "source_documents": [
+    {
+      "document_id": "abb_dpa_upscale_st_brochure",
+      "title": "DPA UPScale ST 10-200 kW Brochure",
+      "source_url": "https://library.e.abb.com/public/5c36ddc0ec1c4648bf3cd24bd228bd66/DPA_UPScale_ST_Series2.pdf",
+      "source_class": "official_pdf"
+    },
+    {
+      "document_id": "abb_product_overview_en",
+      "title": "ABB UPS Systems Product Overview",
+      "source_url": "https://library.e.abb.com/public/ab300d3d0b864b4583893b06db6cfcdf/Product_Overview_EN.pdf",
+      "source_class": "official_pdf"
+    }
+  ],
+  "drop_in_contract": {
+    "record_complete_schema": true,
+    "source_backed_fixed_fields_only": true,
+    "project_specific_fields_left_null_by_design": true,
+    "ready_for_program_ingestion": true
+  }
+}

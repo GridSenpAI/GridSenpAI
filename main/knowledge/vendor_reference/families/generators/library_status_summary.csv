@@ -1,0 +1,26 @@
+manufacturer,model,library_readiness,populated_fixed_field_count,missing_fixed_field_count
+Generac,SD1250,usable_partial_fixed_spec_record,3,3
+Generac,SD1500,usable_partial_fixed_spec_record,2,4
+Generac,SDMD2250,model_record_needs_better_official_pdf,0,6
+Generac,SDMD2500,usable_partial_fixed_spec_record,5,1
+Generac,SDMD3000,model_record_needs_better_official_pdf,0,6
+Rehlko,KD1250,usable_partial_fixed_spec_record,5,1
+Rehlko,KD1500,usable_partial_fixed_spec_record,5,1
+Rehlko,KD1750,usable_partial_fixed_spec_record,5,1
+Rehlko,KD2000,usable_partial_fixed_spec_record,5,1
+Rehlko,KD2500,usable_partial_fixed_spec_record,5,1
+Rolls-Royce / mtu,12V4000 DS1650,model_record_needs_better_official_pdf,1,5
+Rolls-Royce / mtu,12V4000 DS2000,model_record_needs_better_official_pdf,1,5
+Rolls-Royce / mtu,16V4000 DS2500,usable_partial_fixed_spec_record,3,3
+Rolls-Royce / mtu,20V4000 DS2750,model_record_needs_better_official_pdf,1,5
+Rolls-Royce / mtu,20V4000 DS3100,model_record_needs_better_official_pdf,1,5
+Caterpillar,C18,family_or_platform_record_requires_variant_selection,0,6
+Caterpillar,C27,family_or_platform_record_requires_variant_selection,0,6
+Caterpillar,C32,family_or_platform_record_requires_variant_selection,0,6
+Caterpillar,3512,family_or_platform_record_requires_variant_selection,0,6
+Caterpillar,3516C,family_or_platform_record_requires_variant_selection,0,6
+Cummins,C600D6E,usable_partial_fixed_spec_record,4,2
+Cummins,C1000D6ED,usable_partial_fixed_spec_record,4,2
+Cummins,C1250D6E,usable_partial_fixed_spec_record,5,1
+Cummins,C2000D6E,usable_partial_fixed_spec_record,5,1
+Cummins,C3000D6EB,model_record_needs_better_official_pdf,1,5

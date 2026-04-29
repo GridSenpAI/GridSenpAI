@@ -1,0 +1,22 @@
+Protection and controls guidance for GridSenpAI retrieval.
+Use this file when interconnection sufficiency or planner review depends on relay behavior, transfer-trip logic, reconnect logic, transformer protection, or cooling/load-shed controls.
+
+Focus retrieval on:
+- undervoltage / overvoltage / underfrequency / overfrequency trip settings
+- transfer-trip and direct-transfer-trip behavior
+- automatic reconnection or reclose blocking logic
+- transformer high-side / low-side protection summaries
+- protection communications and permissive/blocking channels
+- cooling disconnect / reconnect sequencing when material to MW step behavior
+- measurement basis notes such as per-phase, RMS, aggregate, or relay element basis
+
+Planner-facing guidance:
+- protection settings should be exported with provenance and review notes, not normalized into unsupported single values when documents disagree
+- reconnect logic and transfer-trip assumptions can materially affect dynamic and ramping interpretations
+- missing relay detail should remain unresolved or review-required rather than inferred from equipment family alone
+
+Evidence preference:
+1. applicant protection package and relay settings summaries
+2. one-line and controls narrative in applicant packet
+3. interconnection/planner guidance
+4. interview clarification for unresolved trip/reconnect logic

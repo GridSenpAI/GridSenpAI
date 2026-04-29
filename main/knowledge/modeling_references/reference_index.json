@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.2.0",
+  "description": "Canonical modeling reference index for active retrieval surfaces. Meta-files are excluded from retrieval records.",
+  "record_count": 4,
+  "records": [
+    {
+      "name": "large_load_ramping_guidance.txt",
+      "path": "knowledge/modeling_references/large_load_ramping_guidance.txt",
+      "size_bytes": 992,
+      "retrieval_priority": "high"
+    },
+    {
+      "name": "zip_load_modeling_guidance.txt",
+      "path": "knowledge/modeling_references/zip_load_modeling_guidance.txt",
+      "size_bytes": 1152,
+      "retrieval_priority": "high"
+    },
+    {
+      "name": "reactive_power_and_power_factor_guidance.txt",
+      "path": "knowledge/modeling_references/reactive_power_and_power_factor_guidance.txt",
+      "size_bytes": 1325,
+      "retrieval_priority": "high"
+    },
+    {
+      "name": "dynamic_behavior_review_guidance.txt",
+      "path": "knowledge/modeling_references/dynamic_behavior_review_guidance.txt",
+      "size_bytes": 1250,
+      "retrieval_priority": "high"
+    }
+  ]
+}
