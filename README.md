@@ -8,6 +8,7 @@
 ![Project Status](https://img.shields.io/badge/status-research-blue)
 ![Architecture](https://img.shields.io/badge/platform-watsonx-purple)
 ![Domain](https://img.shields.io/badge/domain-power%20systems-green)
+
 AI-powered translation between data center electrical design and grid interconnection modeling
 
 ## TLDR
