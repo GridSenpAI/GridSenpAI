@@ -226,3 +226,4 @@ License information will be provided in this repository.
 For research collaboration or discussion regarding grid interconnection modeling challenges:
 
 GridSenpAI Project Team
+**Gridsenpai@gmail.com**
